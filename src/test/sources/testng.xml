@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name= "Test suite" > 
+ <test verbose="2" name="Scenario 1 Test Cases">
+    <classes>
+      <class name="com.r1v2.reporting.test.Scenario1Login"/>
+    </classes>
+ </test>  
+ <test verbose="2" name="Scenario 2 Test Cases">
+    <classes>
+      <class name="com.r1v2.reporting.test.Scenario2Pages"/>
+    </classes>
+ </test>
+
+</suite>

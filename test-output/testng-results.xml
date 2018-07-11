@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[<br>Browser launched successfully]]>
+    </line>
+    <line>
+      <![CDATA[<br>Opened URL : https://qadealeradminv2fr.izmocars.com/login.htm]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@6e01f9b0 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Entered value shaikaslam]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@64c63c79 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Entered value asles]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@47f4e407 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on ]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@4189d70b is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Element Displayed Logout]]>
+    </line>
+    <line>
+      <![CDATA[<br>logout link is displayed on Home page]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@16f7b4af is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Element Displayed Change password]]>
+    </line>
+    <line>
+      <![CDATA[<br>change password is displayed on Home page]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@a1217f9 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on Select Organization]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@6d6bc158 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on SiteList]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@a23a01d is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Entered value citroen-annecy.stg-eudemosite.com]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@edf4f36 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on CITROËN ANNECY]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@73d69c0f is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on Site Builder]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@1440c311 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on Page Builder]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@52b6319f is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on Add new Page]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="54229" started-at="2018-07-11T13:42:32Z" finished-at="2018-07-11T13:43:26Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="54229" started-at="2018-07-11T13:42:32Z" finished-at="2018-07-11T13:43:26Z">
+      <class name="com.r1v2.reporting.test.Scenario2Pages">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.r1v2.reporting.test.Scenario2Pages@5bc79255]" name="beforeClass" is-config="true" duration-ms="5309" started-at="2018-07-11T13:42:32Z" finished-at="2018-07-11T13:42:37Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<br>Browser launched successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setUpOnce1()[pri:0, instance:com.r1v2.reporting.test.Scenario2Pages@5bc79255]" name="setUpOnce1" is-config="true" duration-ms="7582" started-at="2018-07-11T13:42:37Z" finished-at="2018-07-11T13:42:44Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<br>Opened URL : https://qadealeradminv2fr.izmocars.com/login.htm]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@6e01f9b0 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Entered value shaikaslam]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@64c63c79 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Entered value asles]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@47f4e407 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUpOnce1 -->
+        <test-method status="PASS" signature="testRD_2_1()[pri:0, instance:com.r1v2.reporting.test.Scenario2Pages@5bc79255]" name="testRD_2_1" duration-ms="5601" started-at="2018-07-11T13:42:44Z" finished-at="2018-07-11T13:42:50Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@4189d70b is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Element Displayed Logout]]>
+            </line>
+            <line>
+              <![CDATA[<br>logout link is displayed on Home page]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@16f7b4af is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Element Displayed Change password]]>
+            </line>
+            <line>
+              <![CDATA[<br>change password is displayed on Home page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRD_2_1 -->
+        <test-method status="PASS" signature="testRD_2_3()[pri:0, instance:com.r1v2.reporting.test.Scenario2Pages@5bc79255]" name="testRD_2_3" duration-ms="4209" started-at="2018-07-11T13:42:50Z" finished-at="2018-07-11T13:42:54Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@a1217f9 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on Select Organization]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@6d6bc158 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on SiteList]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@a23a01d is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Entered value citroen-annecy.stg-eudemosite.com]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@edf4f36 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on CITROËN ANNECY]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRD_2_3 -->
+        <test-method status="PASS" signature="testRD_2_4()[pri:0, instance:com.r1v2.reporting.test.Scenario2Pages@5bc79255]" name="testRD_2_4" duration-ms="31506" started-at="2018-07-11T13:42:54Z" finished-at="2018-07-11T13:43:26Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@73d69c0f is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on Site Builder]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@1440c311 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on Page Builder]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@52b6319f is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on Add new Page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRD_2_4 -->
+      </class> <!-- com.r1v2.reporting.test.Scenario2Pages -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
