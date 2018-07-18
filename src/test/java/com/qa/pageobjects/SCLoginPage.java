@@ -8,6 +8,7 @@ import static com.r1v2.common.GlobalStaticInfo.LOGINPAGE_LOGIN_USERNAME;
 import org.openqa.selenium.WebDriver;
 import com.core.config.BasicConfig.selectSite;
 import com.core.maindriver.DriverScript;
+import com.core.util.CSVTableRow;
 import com.r1v2.common.PageBase;
 import com.r1v2.common.PageFactory;
 
@@ -63,19 +64,22 @@ public class SCLoginPage extends PageBase {
 		return flag;
 	}
 	
-	public SCHomePage goToHomePage(String email,String password){
+	public SCPages goToHomePage(String email,String password){
 		enterEmail(email);
 		enterPassword(password);
 		clickOnLoginButton();
 		return getPageFactory().scHomePage();
 	}
 	
-	public boolean closeBrowser(){
+	public boolean logoutAdmin(){
 		clickElement(HOMEPAGE_LOGOUT_BUTTON);
 		 closeCurrentBrowser();
 		 return true;
 	}
+
 	
-}
+	}
+	
+
 	
 

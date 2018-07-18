@@ -2,13 +2,26 @@ package com.qa.pageobjects;
 
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
 import com.core.reports.TestNGCustomReporter;
+import com.r1v2.common.BaseTest;
 import com.r1v2.common.PageFactory;
 import static com.r1v2.common.GlobalStaticInfo.*;
 
-public class SCHomePage extends SCLoginPage {
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+
+public class SCPages extends SCLoginPage {
+	BaseTest bt=new BaseTest();
+	public String department_name;
+	List<String> pdfData=new ArrayList<String>();
+	private Map<String, String> td = bt.getTestDataProperties();
 	
-	public SCHomePage(WebDriver webDriver, PageFactory pgFactory) {
+	public SCPages(WebDriver webDriver, PageFactory pgFactory) {
 		super(webDriver, pgFactory);
 	}
 	
@@ -30,7 +43,6 @@ public class SCHomePage extends SCLoginPage {
 					.logbr("change password  is not displayed on Home page");
 		}
 		return (flag1 && flag2);
-
 	}
 	
 	public boolean verifylogoutButtonFunctionality() {
@@ -48,20 +60,20 @@ public class SCHomePage extends SCLoginPage {
 			}
 			return flag;
 		}
-	
-	public SCHomePage  selectOrganization(){
+
+	public SCPages  selectOrganization(){
 		clickElement(HOMEPAGE_SELECT_ORGANIZATION);
 		return this;
 		
 	}
-	
+
 	public boolean selectSiteList(String dealer){
 		clickElement(PAGEBUILDER_SITELIST_MENU);
 		enterValue(PAGEBUILDER_SITELIST_SEARCH, dealer);
 		clickElement(PAGEBUILDER_SITELIST_DLRSELECT);
 		return true;
 	}
-	
+
 	public boolean navigatePageBuilder(){
 		clickElement(PAGEBUILDER_SITEBUILDER_MENU);
 		clickElement(PAGEBUILDER_PAGEBUILDER_MENU);
@@ -69,8 +81,38 @@ public class SCHomePage extends SCLoginPage {
 		return true;
 	}
 	
+	public boolean verifyContentPageButton(){
+ 	 	
+		boolean flag =verifyElementSelected(PAGEBUILDER_CONTENT_PAGERBTN);
+			if (flag) {
+		TestNGCustomReporter
+				.logbr("Content Page RadioButton default is  selected on  PageBuilder page");
+	} else {
+		TestNGCustomReporter
+				.logbr("Content Page RadioButton default is not selected on  PageBuilder page");
+	}
+		return (flag);
+}
+		
+	
+	public boolean selectDepartmentdropdownitem(String labels) {
+		    
+			List<String> actual = new ArrayList<String>();
+			List<String> expected=Arrays.asList(labels.split(","));
+			clickElement(PAGEBUILDER_DEPARTMENT_DROPDOWN);
+			List<WebElement> elements=returnWebElements(PAGEBUILDER_DEPARTMENT_DROPDOWN_LIST);
+			for(WebElement element:elements){
+				actual.add(element.getText().trim());
+			}
+			return actual.equals(expected);
+		}
 	
 	
-
+	 
+	
+	
+	
+	
+	
 	
 }

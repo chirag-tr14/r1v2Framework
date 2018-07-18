@@ -15,7 +15,7 @@ import java.util.HashMap;
 
 public interface LocatorConfig {
 
-	public static String locators = "/Locators.properties";
+	public static String locators = "/locators.properties";
 	
 	
 	/**
@@ -24,5 +24,8 @@ public interface LocatorConfig {
      * @return HashMap - Locators, key : value pairs
      */
 	public HashMap<String, String> getWebElementMapping();
+	
+	
+	
 
 }

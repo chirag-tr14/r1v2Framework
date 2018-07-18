@@ -10,7 +10,6 @@ public interface GlobalStaticInfo {
 	 String LOGINPAGE_LOGIN_LOGIN_BUTTON ="loginpage.login_login.btn";
 	 String LOGINPAGE_LOGIN_LOGIN_HELPTEXT="loginpage.login_login.helptext";
 	
-	 
 	//LoginPage
 	 String HOMEPAGE_LOGOUT_BUTTON ="common.logout_btn";
 	 String HOMEPAGE_CHANGE_PASSWORD ="homepage.change_password";
@@ -25,5 +24,6 @@ public interface GlobalStaticInfo {
 	 String PAGEBUILDER_PAGEBUILDER_ADD_BTN  = "pagebuilder.pageBuilder_add_btn";
 	 //ContentPage
 	 String PAGEBUILDER_CONTENT_PAGERBTN="pagebuilder.content_pagerbtn";
-	 
+	 String PAGEBUILDER_DEPARTMENT_DROPDOWN ="pagebuilder.department_dropdown.list";
+	 String PAGEBUILDER_DEPARTMENT_DROPDOWN_LIST= "pagebuilder.department_dropdown.labels";
 }

@@ -36,4 +36,5 @@ public class PropLocatorConfig implements LocatorConfig{
 			webElementMapping.put(key, properties.getString(key));
 	}
 
+	
 }
