@@ -1,11 +1,14 @@
 package com.r1v2.reporting.test;
 
+import java.util.List;
 import java.util.Map;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.core.util.CSVTable;
+import com.core.util.CSVTableRow;
 import com.qa.pageobjects.SCLoginPage;
 import com.qa.pageobjects.SCPages;
 import com.r1v2.common.BaseTest;
@@ -13,12 +16,20 @@ import com.r1v2.common.BaseTest;
 public class Scenario2Dlr extends BaseTest{
 	private Map<String, String> td = getTestDataProperties();
 	SCPages scpages;
-
+	CSVTable t = new CSVTable("F:\\IZMO FrameWork\\com.r1v2.com\\src\\main\\resource\\TestData.csv");
+	List<CSVTableRow> records = t.getRecords();
+	
+	
+	
+	
+	
+	
 	@BeforeClass
 	public void setUpOnce1() {
+		CSVTableRow record = records.get(0);
 		scpages=getPageFactory().scHomePage();
 			scpages.openEuroSCLoginpage()
-			.goToHomePage(td.get("admin_username"),td.get("admin_password"));
+			.goToHomePage(record.getString("admin_username"),record.getString("admin_password"));
 		
 	}
 	@Test()
@@ -35,8 +46,11 @@ public class Scenario2Dlr extends BaseTest{
 
 	@Test()
 	public void testPG_2_3() {
+		CSVTableRow record = records.get(6);
 			boolean actual= scpages.selectOrganization()
-		  		 .selectSiteList(td.get("login_site_name"));
+		  		 .selectSiteList(record.getString("admin_username"));
+					//.selectSiteList(td.get("login_site_name"));
+			  
 			Assert.assertEquals(actual, true, " Site Name is not searching ");
 	
 	}

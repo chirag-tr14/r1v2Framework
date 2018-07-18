@@ -147,18 +147,18 @@ public class CSVTable {
 
     public static void main(String[] args) throws Exception {
         CSVTable t = new CSVTable("F:\\IZMO FrameWork\\com.r1v2.com\\src\\main\\resource\\TestData.csv");
-        for (CSVTableRow record : t.getRecords()) {
+//        for (CSVTableRow record : t.getRecords()) {
+        	CSVTableRow record = t.getRecords().get(3);
             //record.setDateFormat(new SimpleDateFormat("MM/dd/yyyy"));
             System.out.println(record.getString("admin_username"));//,,
-            System.out.println(record.getInteger("admin_username"));
-            /*System.out.println(record.getString("admin_password"));
+            System.out.println(record.getString("admin_password"));
             System.out.println(record.getString("admin_username_invalid"));
             System.out.println(record.getString("admin_password_invalid"));
             System.out.println(record.getString("admin_username_blank"));
-            System.out.println(record.getString("admin_password_blank"));*/
+            System.out.println(record.getString("admin_password_blank"));
                    
-            break;
-        }
+            
+//        }
 
     }
 

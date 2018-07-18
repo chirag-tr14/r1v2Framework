@@ -23,7 +23,7 @@ public class PageFactory {
 			
 	}*/
 	
-	public SCLoginPage euroLoginPage() {
+	public SCLoginPage adminLoginPage() {
 		return new SCLoginPage(webDriver,this);
 	}
 	

@@ -5,7 +5,7 @@
     <classes>
       <class name="com.r1v2.reporting.test.Scenario1Login">
         <methods>
-          <include name="testSC_9"/>
+          <include name="testSC_7"/>
           <include name="testSC_5"/>
           <include name="setUpOnce"/>
           <include name="testSC_3"/>

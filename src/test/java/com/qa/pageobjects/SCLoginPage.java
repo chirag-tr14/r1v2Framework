@@ -67,13 +67,14 @@ public class SCLoginPage extends PageBase {
 	public SCPages goToHomePage(String email,String password){
 		enterEmail(email);
 		enterPassword(password);
+		
 		clickOnLoginButton();
 		return getPageFactory().scHomePage();
 	}
 	
 	public boolean logoutAdmin(){
 		clickElement(HOMEPAGE_LOGOUT_BUTTON);
-		 closeCurrentBrowser();
+		 //closeCurrentBrowser();
 		 return true;
 	}
 

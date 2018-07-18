@@ -43,6 +43,7 @@ public class GlobalSettings implements BasicConfig {
 	private static String chromeDriverLocation;
 	private static String ieDriverLocation;
 	private static String firefoxDriverLocation;
+	private static String  csvfileLocation;
 	
 	
 	public GlobalSettings() {
@@ -214,17 +215,8 @@ public class GlobalSettings implements BasicConfig {
 		ieDriverLocation = ieDriverExe;
 	}
 	
-	
-	
-	
-	
 	/*
-	
-	
-	
-	
-
-	public String siteSubDomain() {
+    	public String siteSubDomain() {
 		return siteSubDomain;
 	}
 
