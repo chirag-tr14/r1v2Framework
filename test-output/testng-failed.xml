@@ -5,14 +5,8 @@
     <classes>
       <class name="com.r1v2.reporting.test.Scenario1Login">
         <methods>
-          <include name="testSC_7"/>
-          <include name="testSC_5"/>
+          <include name="testSC_9"/>
           <include name="setUpOnce"/>
-          <include name="testSC_3"/>
-          <include name="testSC_6"/>
-          <include name="testSC_1"/>
-          <include name="testSC_4"/>
-          <include name="testSC_2"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.r1v2.reporting.test.Scenario1Login -->

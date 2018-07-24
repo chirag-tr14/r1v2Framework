@@ -17,12 +17,6 @@ public class PageFactory {
 		this.webDriver = webDriver;
 	}
 	
-	/*public ExcelHandler getExcel(){
-		ExcelHandler excel = new ExcelHandler("./ScPages.xlsx");
-		return excel;
-			
-	}*/
-	
 	public SCLoginPage adminLoginPage() {
 		return new SCLoginPage(webDriver,this);
 	}
@@ -30,6 +24,7 @@ public class PageFactory {
 	public SCPages scHomePage() {
 		return new SCPages(webDriver,this);
 	}
+	
 	
 
 	

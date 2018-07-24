@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 
 import com.core.config.BasicConfig;
+import com.core.config.PropTestdataConfig;
 import com.core.util.PropertyFileUtil;
 /**
  * Name:GlobalSettings
@@ -36,14 +37,14 @@ public class GlobalSettings implements BasicConfig {
 	private static boolean checkHomepageLoaded;
 	private static WebElement homepageElement;
 	private PropertyFileUtil propUtil = new PropertyFileUtil("config");
+	private PropTestdataConfig propUtils = new PropTestdataConfig();
 	public static final Logger logger = LogManager.getLogger(GlobalSettings.class);
-			
-			
-	//private static String csvTestDataFile;	    
+	private static String csvTestDataFile;	    
 	private static String chromeDriverLocation;
 	private static String ieDriverLocation;
 	private static String firefoxDriverLocation;
 	private static String  csvfileLocation;
+	private static  String FILE_PATH;
 	
 	
 	public GlobalSettings() {
@@ -59,14 +60,17 @@ public class GlobalSettings implements BasicConfig {
 	}
 
 	
-	/*public String getCsvTestDataFile() {
-		setCsvTestDataFile(propUtil.getString("csv"));
-		return csvTestDataFile;
+	public String getCsvTestDataFile() {
+		setCsvTestDataFile(propUtil.getString("region"));
+			return csvTestDataFile;
 	}
 
 	private void setCsvTestDataFile(String csvTestDataFile) {
+		propUtil.getString(getCsvTestDataFile());
 		GlobalSettings.csvTestDataFile = csvTestDataFile;
-	}*/
+	}
+	
+		
 
 	private   void setHomePages() {
 		for (selectSite page : selectSite.values()) {
@@ -94,6 +98,7 @@ public class GlobalSettings implements BasicConfig {
 		return homePages.get(page);
 	}
 
+	
 	public void defaultTimeout(int value) {
 		defaultTimeout = value;
 	}
@@ -214,8 +219,9 @@ public class GlobalSettings implements BasicConfig {
 		System.setProperty("webdriver.ie.driver", ieDriverExe.replace("//", "////"));
 		ieDriverLocation = ieDriverExe;
 	}
+
+
 	
-	/*
     	public String siteSubDomain() {
 		return siteSubDomain;
 	}
@@ -223,7 +229,7 @@ public class GlobalSettings implements BasicConfig {
 	public String siteDomain() {
 		return siteDomain;
 	}
-
+	/*
 	public selectSite getCurrentlySelectedSite() {
 		return currentlySelectedSite;
 	}

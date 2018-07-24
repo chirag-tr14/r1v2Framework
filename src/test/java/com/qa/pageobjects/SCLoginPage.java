@@ -19,10 +19,15 @@ public class SCLoginPage extends PageBase {
 		super(webDriver, pgFactory);
 	}
 
-	public SCLoginPage openEuroSCLoginpage() {
+	public SCLoginPage openSCLoginpage() {
 		scURL = DriverScript.settings.getHomePage(selectSite.admin_home);
 		// openBankSiteHomepage(scURL);
 		openHomepage(scURL);
+		return this;
+	}
+	
+	public SCLoginPage openBrowser() {
+		DriverScript.settings.getBrowser();
 		return this;
 	}
 	

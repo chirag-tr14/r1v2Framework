@@ -24,6 +24,16 @@ public interface GlobalStaticInfo {
 	 String PAGEBUILDER_PAGEBUILDER_ADD_BTN  = "pagebuilder.pageBuilder_add_btn";
 	 //ContentPage
 	 String PAGEBUILDER_CONTENT_PAGERBTN="pagebuilder.content_pagerbtn";
+	 String PAGEBUILDER_COMMON_TITLE="pagebuilder.common_title";
+	 String PAGEBUILDER_COMMON_URL="pagebuilder.common_url";
 	 String PAGEBUILDER_DEPARTMENT_DROPDOWN ="pagebuilder.department_dropdown.list";
 	 String PAGEBUILDER_DEPARTMENT_DROPDOWN_LIST= "pagebuilder.department_dropdown.labels";
+	 String PAGEBUILDER_COMMON_RESPONSIVECONTENT="pagebuilder.common_responsivecontent";
+	 String PAGEBUILDER_COMMON_SAVEBUTTON="pagebuilder.common_saveButton";
+	 String PAGEBUILDER_COMMON_MANDATORY_TEXT="pagebuilder.common_mandatory_text";
+	 
+	 
+	 
+	 
+	 
 }

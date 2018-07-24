@@ -15,7 +15,12 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Keyboard;
+import org.openqa.selenium.interactions.Mouse;
+
+import com.core.actionhandlers.InputActionsHandler;
 import com.core.actionhandlers.WaitForActionsHandler;
+import com.core.actions.InputActions;
 import com.core.actions.WaitForActions;
 import com.core.config.PropLocatorConfig;
 /*
@@ -66,10 +71,6 @@ public class PageBase {
 		}
 	}
 	
-		
-	
-	
-
 	public WebElement returnWebElement(String key) {
 		return genericGetWebElement(null, key, null , true).get(0);
 	}
@@ -209,8 +210,8 @@ public class PageBase {
 	}
 */
 	public boolean alertAccept(){
-		driver.switchTo().alert().accept();
-		return false;
+			getWebDriver().switchTo().alert().accept();
+		return true;
 	}
 	
 	

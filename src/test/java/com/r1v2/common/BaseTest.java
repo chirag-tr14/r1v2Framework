@@ -24,6 +24,8 @@ public class BaseTest {
 	private GlobalSettings globalSettings = new GlobalSettings();
 	private HashMap<String, String> testDataProperties =new HashMap<String, String>();
 	public static Connection conn;
+	
+	
 	@BeforeClass
 	public void beforeClass() {
 		initWebDriver();
@@ -42,25 +44,10 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		return driver;
 	}
+
 	
 	
-	public HashMap<String, String> getTestDataProperties() {
-		if(testDataProperties.size()<=0){
-			setTestDataProperties();
-		}
-		return testDataProperties;
-	}
-
-	private void setTestDataProperties() {
-		try {
-			testDataProperties = new PropTestdataConfig()
-			.getWebElementMapping();
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-		
+	
 	public PageFactory getPageFactory() {
 		return new PageFactory(driver);
 	}
@@ -93,11 +80,26 @@ public class BaseTest {
 						e.printStackTrace();
 		}
 	}
-	
-		
-	
-	private void closeBrowser(){
+
+	public void closeBrowser(){
 		driverScript.stopSelenium(driver);
 	}
+
 	
+	public HashMap<String, String> getTestDataProperties() {
+		if(testDataProperties.size()<=0){
+			setTestDataProperties();
+		}
+		return testDataProperties;
+	}
+
+	private void setTestDataProperties() {
+		try {
+			testDataProperties = new PropTestdataConfig()
+			.getWebElementMapping();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }
