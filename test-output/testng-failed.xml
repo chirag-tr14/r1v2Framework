@@ -3,16 +3,22 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.r1v2.reporting.test.Scenario2Dlr">
+      <class name="com.r1v2.reporting.test.ScenarioCamapignPage">
         <methods>
-          <include name="testPG_12"/>
           <include name="getResult"/>
           <include name="setUpOnce1"/>
+          <include name="testPG_7"/>
+          <include name="testPG_6"/>
+          <include name="testPG_5"/>
+          <include name="testPG_4"/>
           <include name="extetnReport"/>
           <include name="tearDown"/>
+          <include name="testPG_3"/>
+          <include name="testPG_2"/>
+          <include name="testPG_1"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.r1v2.reporting.test.Scenario2Dlr -->
+      </class> <!-- com.r1v2.reporting.test.ScenarioCamapignPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

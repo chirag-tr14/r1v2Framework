@@ -13,10 +13,7 @@ import com.core.util.PropertyFileUtil;
 import com.qa.pageobjects.SCLoginPage;
 import com.r1v2.common.BaseTest;
 
-
 public class Scenario1Login extends BaseTest {
-
-	
 
 	private SCLoginPage loginPage = null;
 	private Map<String, String> td = getTestDataProperties();
@@ -38,7 +35,6 @@ public class Scenario1Login extends BaseTest {
 				veirfyPageTitle(record.getString("admin_page_title"));
 			Assert.assertEquals(actual, true, " login page is not displayed");
 			extentTest.log(Status.INFO, "Titile is matched");
-		
 	}
 
 	@Test()
@@ -70,8 +66,7 @@ public class Scenario1Login extends BaseTest {
 				.goToHomePage(record.getString("admin_username_invalid"), record.getString("admin_password_invalid"))
 				.veirfyPageTitle(record.getString("admin_page_title"));
 			Assert.assertEquals(actual, true, " login page is not displayed");
-		
-		
+
 	}
 
 	@Test(priority = 5)
@@ -82,7 +77,7 @@ public class Scenario1Login extends BaseTest {
 				//.accetpAlert()
 			    .veirfyPageTitle(record.getString("admin_page_title"));
 				Assert.assertEquals(actual, true, " login page is not displayed");
-		
+
 	}
 
 	@Test(priority = 6)
@@ -92,7 +87,7 @@ public class Scenario1Login extends BaseTest {
 				.goToHomePage(record.getString("admin_username_invalid"), record.getString("admin_password"))
 				.veirfyPageTitle(record.getString("admin_page_title"));
 				Assert.assertEquals(actual, true, " login page is not displayed");
-		
+
 	}
 
 	@Test(priority = 7)
@@ -122,6 +117,5 @@ public class Scenario1Login extends BaseTest {
 				.veirfyPageTitle(record.getString("login_page_title"));
 			Assert.assertEquals(actual, true, " Login Page is not displayed");
 	}
-	
 }
 

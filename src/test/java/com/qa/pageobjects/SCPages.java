@@ -22,6 +22,8 @@ import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_SITELIST_SEARCH;
 import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_SPECIAL_PAGE;
 import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER__FORMCATEGORY_DROPDOWN_LIST;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,6 +31,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.core.reports.TestNGCustomReporter;
+import com.mysql.cj.api.mysqla.result.Resultset;
 import com.r1v2.common.BaseTest;
 import com.r1v2.common.PageFactory;
 
@@ -81,6 +84,19 @@ public class SCPages extends SCLoginPage {
 		return true;
 	}
 
+	
+	
+	public void dataBase() throws ClassNotFoundException, SQLException{
+		String Query = "";
+		ResultSet data = BaseTest.getData(Query);
+		boolean firstData = data.next();
+		String ID = "";
+		if (firstData) {
+			ID = data.getString(1);
+			// System.out.println(ID);
+		}
+	}
+	
 		
 		
 	public boolean  verifyMandatoryField() {
@@ -191,6 +207,7 @@ public class SCPages extends SCLoginPage {
          }
      return flag;	
 	}
+	
 	
 	public boolean selectformCategorydropdownitem(String option)  {
 		boolean flag=false;

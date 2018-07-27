@@ -6,6 +6,7 @@ import java.util.Map;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -36,13 +37,12 @@ public class ScenarioCamapignPage extends BaseTest {
 		CSVTableRow logindata = login.get(0);
 			scpages=getPageFactory().scHomePage();
 			scpages.openSCLoginpage()
-			.goToHomePage(logindata.getString("admin_username"),logindata.getString("admin_password"));	
+		.goToHomePage(logindata.getString("admin_username"),logindata.getString("admin_password"));	
 	}
 	
 	@Test(priority=1)
 	public void testPG_1() {
-		
-		boolean actual= scpages.selectOrganization()
+				boolean actual= scpages.selectOrganization()
 				.selectSiteList(pagesdata.getString("Dealers"));
 				scpages.navigatePageBuilder();
 		Assert.assertEquals(actual, true, " Navigate to PageBuilder Page on  Respective Dealer ");
@@ -50,12 +50,10 @@ public class ScenarioCamapignPage extends BaseTest {
 	
 		@Test(priority=2)
 		public void testPG_2(){
-			boolean actual=scpages.navigatePageBuilder();
-			      scpages.verifyCampaignPageButton();
-				Assert.assertEquals(actual, true, " Navigate to PageBuilder Page on  Respective Dealer ");
-		}
-		
-		
+			boolean actual=     scpages.verifyCampaignPageButton();
+		Assert.assertEquals(actual, true, " Navigate to PageBuilder Page on  Respective Dealer ");
+	}
+
 		@Test(priority=3)
 		public void testPG_3(){
 			CSVTableRow pagesdata = page.get(1);
@@ -64,19 +62,42 @@ public class ScenarioCamapignPage extends BaseTest {
 			scpages.pageTitle(pagesdata.getString("Title")); 
 			scpages.verifyMandatoryField();
 			scpages.pageUrl(pagesdata.getString("url"));
-			Assert.assertEquals(actual, true, " Title and Url  data  passing on Adding Page ");
-		}
+		Assert.assertEquals(actual, true, " Title and Url  data  passing on Adding Page ");
+	}
 		
 		@Test(priority=4)
 		public void testPG_4() {
 				CSVTableRow pagesdata = page.get(1);
 					boolean actual= scpages
 						.selectDepartmentdropdownitem(pagesdata.getString("Department"));
-						scpages.resposniveContent(pagesdata.getString("Responsive_Content"));
-						scpages
-						.savePage();
-		 Assert.assertEquals(actual, true, " Selecting Depsrtment and Responsive Contnet data passing Responsive Editor ");
-		}
+			 Assert.assertEquals(actual, true, " Selecting Depsrtment and Responsive Contnet data passing Responsive Editor ");
+	}
+		@Test(priority=5)
+		public void testPG_5() {
+				CSVTableRow pagesdata = page.get(1);
+					boolean actual= scpages
+						.resposniveContent(pagesdata.getString("Responsive_Content"));
+			 Assert.assertEquals(actual, true, " Selecting Depsrtment and Responsive Contnet data passing Responsive Editor ");
+	}
 
+		@Test(priority=6)
+		public void testPG_6() {
+				CSVTableRow pagesdata1 = page.get(1);
+									String group=pagesdata.getString("Group");
+				if(group!=("PGA")){
+					throw new SkipException("Skipping this Method");
+		     }
+				else{
+					boolean actual= scpages
+						.selectformCategorydropdownitem((pagesdata1.getString("Form_category")));		
+		  Assert.assertEquals(actual, true, " Selecting Department and Responsive Contnet data passing Responsive Editor ");
+		}	
+	}
+		@Test(priority=7)
+		public void testPG_7() {
+				boolean actual= scpages
+						.savePage();
+		Assert.assertEquals(actual, true, " Responsive Content  data  passing on Responsive Editor ");
+	}
 
 }

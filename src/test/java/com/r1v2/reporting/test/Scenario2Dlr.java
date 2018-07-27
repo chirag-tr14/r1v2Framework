@@ -5,6 +5,7 @@ import java.util.Map;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.core.util.CSVTable;
@@ -85,35 +86,7 @@ public class Scenario2Dlr extends BaseTest{
 		Assert.assertEquals(actual, true, " Responsive Content  data  passing on Responsive Editor  ");
 		}
 
-	//campaign Page Add
 	
-	@Test(priority=7)
-	public void testPG_7(){
-		boolean actual=scpages.navigatePageBuilder();
-		      scpages.verifyCampaignPageButton();
-			Assert.assertEquals(actual, true, " Navigate to PageBuilder Page on  Respective Dealer ");
-	}
-	
-	@Test(priority=8)
-	public void testPG_8(){
-		CSVTableRow pagesdata = page.get(1);
-		boolean actual= scpages
-				.verifyMandatoryField();
-		scpages.pageTitle(pagesdata.getString("Title")); 
-		scpages.verifyMandatoryField();
-		scpages.pageUrl(pagesdata.getString("url"));
-			Assert.assertEquals(actual, true, " Title and Url  data  passing on Adding Page ");
-	}
-	
-	@Test(priority=9)
-	public void testPG_9() {
-			CSVTableRow pagesdata = page.get(1);
-				boolean actual= scpages
-					.selectDepartmentdropdownitem(pagesdata.getString("Department"));
-					scpages.resposniveContent(pagesdata.getString("Responsive_Content"));
-					testPG_6();
-				Assert.assertEquals(actual, true, " Selecting Depsrtment and Responsive Contnet data passing Responsive Editor ");
-	}
 
 
 //Speical Page Add
@@ -141,15 +114,6 @@ public class Scenario2Dlr extends BaseTest{
 			CSVTableRow pagesdata = page.get(2);
 				boolean actual= scpages
 					.selectDepartmentdropdownitem(pagesdata.getString("Department"));
-						testPG_6();
-				Assert.assertEquals(actual, true, " Selecting Depsrtment and Responsive Contnet data passing Responsive Editor ");
-	}
-	
-	@Test(priority=13)
-	public void testPG_13() {
-			CSVTableRow pagesdata = page.get(2);
-				boolean actual= scpages
-					.selectformCategorydropdownitem((pagesdata.getString("Form_category")));
 						testPG_6();
 				Assert.assertEquals(actual, true, " Selecting Depsrtment and Responsive Contnet data passing Responsive Editor ");
 	}

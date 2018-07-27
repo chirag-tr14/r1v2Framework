@@ -49,6 +49,29 @@ public class BaseTest extends ExtentReport{
 		return new PageFactory(driver);
 	}
 
+	public void closeBrowser(){
+		driverScript.stopSelenium(driver);
+	}
+
+	
+	public HashMap<String, String> getTestDataProperties() {
+		if(testDataProperties.size()<=0){
+			setTestDataProperties();
+		}
+		return testDataProperties;
+	}
+
+	private void setTestDataProperties() {
+		try {
+			testDataProperties = new PropTestdataConfig()
+			.getWebElementMapping();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
 
 	private static Statement getStatements() throws SQLException, ClassNotFoundException {
 		if (conn == null || conn.isClosed()) {
@@ -77,28 +100,5 @@ public class BaseTest extends ExtentReport{
 						e.printStackTrace();
 		}
 	}
-
-	public void closeBrowser(){
-		driverScript.stopSelenium(driver);
-	}
-
-	
-	public HashMap<String, String> getTestDataProperties() {
-		if(testDataProperties.size()<=0){
-			setTestDataProperties();
-		}
-		return testDataProperties;
-	}
-
-	private void setTestDataProperties() {
-		try {
-			testDataProperties = new PropTestdataConfig()
-			.getWebElementMapping();
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-	
 	
 }
