@@ -1,22 +1,36 @@
 package com.qa.pageobjects;
 
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
-
-import com.core.config.BasicConfig.selectSite;
-import com.core.maindriver.DriverScript;
-import com.core.reports.TestNGCustomReporter;
-import com.core.settings.GlobalSettings;
-import com.r1v2.common.BaseTest;
-import com.r1v2.common.PageFactory;
-import static com.r1v2.common.GlobalStaticInfo.*;
+import static com.r1v2.common.GlobalStaticInfo.HOMEPAGE_CHANGE_PASSWORD;
+import static com.r1v2.common.GlobalStaticInfo.HOMEPAGE_LOGOUT_BUTTON;
+import static com.r1v2.common.GlobalStaticInfo.HOMEPAGE_SELECT_ORGANIZATION;
+import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_CAMPAIGN_PAGEBTN;
+import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_COMMON_FORMCATEGORY_LABELS;
+import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_COMMON_MANDATORY_TEXT;
+import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_COMMON_RESPONSIVECONTENT;
+import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_COMMON_SAVEBUTTON;
+import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_COMMON_TITLE;
+import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_COMMON_URL;
+import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_CONTENT_PAGERBTN;
+import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_DEPARTMENT_DROPDOWN_LIST;
+import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_PAGEBUILDER_ADD_BTN;
+import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_PAGEBUILDER_MENU;
+import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_SITEBUILDER_MENU;
+import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_SITELIST_DLRSELECT;
+import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_SITELIST_MENU;
+import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_SITELIST_SEARCH;
+import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_SPECIAL_PAGE;
+import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER__FORMCATEGORY_DROPDOWN_LIST;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import com.core.reports.TestNGCustomReporter;
+import com.r1v2.common.BaseTest;
+import com.r1v2.common.PageFactory;
 
 public class SCPages extends SCLoginPage {
 	BaseTest bt=new BaseTest();
@@ -36,9 +50,40 @@ public class SCPages extends SCLoginPage {
 		public boolean  processqueUrl(String Url){
 			getWebDriver().get("");	
 			return true;
-		}
+	}
 	
-		public boolean  verifyMandatoryField() {
+		public SCPages  selectOrganization(){
+			clickElement(HOMEPAGE_SELECT_ORGANIZATION);
+		return this;
+	}
+	
+	public boolean selectSiteList(String dealer){
+			clickElement(PAGEBUILDER_SITELIST_MENU);
+				enterValue(PAGEBUILDER_SITELIST_SEARCH, dealer);
+			clickElement(PAGEBUILDER_SITELIST_DLRSELECT);
+		return true;
+	}
+	
+	public boolean navigatePageBuilder(){
+		clickElement(PAGEBUILDER_SITEBUILDER_MENU);
+			clickElement(PAGEBUILDER_PAGEBUILDER_MENU);
+		clickElement(PAGEBUILDER_PAGEBUILDER_ADD_BTN);
+		return true;
+	}
+
+	public boolean pageTitle(String title){
+		enterValue(PAGEBUILDER_COMMON_TITLE,title);
+		return true;
+	}
+	
+	public boolean pageUrl(String url){
+		enterValue(PAGEBUILDER_COMMON_URL, url);
+		return true;
+	}
+
+		
+		
+	public boolean  verifyMandatoryField() {
 			 boolean flag = verifyWebElement(PAGEBUILDER_COMMON_MANDATORY_TEXT);
 			if (flag) {
 				TestNGCustomReporter
@@ -55,7 +100,7 @@ public class SCPages extends SCLoginPage {
 				.logbr("Alert Popup is  not Display");	
 			}
 			return flag;
-		}
+	}
 
 	public boolean verifyLogOutAndChangePasswordLinks() {
 		boolean flag1 = verifyWebElement(HOMEPAGE_LOGOUT_BUTTON);
@@ -90,42 +135,68 @@ public class SCPages extends SCLoginPage {
 		return (flag);
  }
 	
-	public SCPages  selectOrganization(){
-			clickElement(HOMEPAGE_SELECT_ORGANIZATION);
-		return this;
+	public boolean verifyCampaignPageButton(){
+ 	 	
+		boolean flag =verifyWebElement(PAGEBUILDER_CAMPAIGN_PAGEBTN);
+			if (flag) {
+		TestNGCustomReporter
+				.logbr("CampaignPage Page RadioButton default is  selected on  PageBuilder page");
+		
+		clickElement(PAGEBUILDER_CAMPAIGN_PAGEBTN);
+		TestNGCustomReporter
+					.logbr("CampaignPage Page RadioButton  is  selected on  PageBuilder page");
+		
+	} else {
+		TestNGCustomReporter
+				.logbr("Content Page RadioButton default is not selected on  PageBuilder page");
 	}
+		return (flag);
+ }
 	
-	public boolean selectSiteList(String dealer){
-			clickElement(PAGEBUILDER_SITELIST_MENU);
-				enterValue(PAGEBUILDER_SITELIST_SEARCH, dealer);
-			clickElement(PAGEBUILDER_SITELIST_DLRSELECT);
-		return true;
+	public boolean verifySpecialPageButton(){
+ 	 	
+		boolean flag =verifyWebElement(PAGEBUILDER_SPECIAL_PAGE);
+			if (flag) {
+		TestNGCustomReporter
+				.logbr("CampaignPage Page RadioButton default is  selected on  PageBuilder page");
+		
+		clickElement(PAGEBUILDER_SPECIAL_PAGE);
+		TestNGCustomReporter
+					.logbr("CampaignPage Page RadioButton  is  selected on  PageBuilder page");
+		
+	} else {
+		TestNGCustomReporter
+				.logbr("Content Page RadioButton default is not selected on  PageBuilder page");
 	}
-	
-	public boolean navigatePageBuilder(){
-		clickElement(PAGEBUILDER_SITEBUILDER_MENU);
-			clickElement(PAGEBUILDER_PAGEBUILDER_MENU);
-		clickElement(PAGEBUILDER_PAGEBUILDER_ADD_BTN);
-		return true;
-	}
-	
-	public boolean pageTitle(String title){
-		enterValue(PAGEBUILDER_COMMON_TITLE,title);
-		return true;
-	}
-	
-	public boolean pageUrl(String url){
-		enterValue(PAGEBUILDER_COMMON_URL, url);
-		return true;
-	}
+		return (flag);
+ }
 	
 	
-
 	public boolean selectDepartmentdropdownitem(String option)  {
 		boolean flag=false;
 		//clickElement(PAGEBUILDER_DEPARTMENT_DROPDOWN);
+			List<WebElement> elements = returnWebElements(PAGEBUILDER_DEPARTMENT_DROPDOWN_LIST);
+		 for(WebElement el:elements)
+         {
+			 if(el.getText().equalsIgnoreCase(option))
+			 {
+				 el.click();
+				 flag=true;
+				 this.department_name=el.getText();
+				 break;
+			 }
+             else{
+                 flag=false;
+             }
+         }
+     return flag;	
+	}
 	
-		List<WebElement> elements = returnWebElements(PAGEBUILDER_DEPARTMENT_DROPDOWN_LIST);
+	public boolean selectformCategorydropdownitem(String option)  {
+		boolean flag=false;
+		clickElement(PAGEBUILDER__FORMCATEGORY_DROPDOWN_LIST);
+	
+		List<WebElement> elements = returnWebElements(PAGEBUILDER_COMMON_FORMCATEGORY_LABELS);
 		 for(WebElement el:elements)
          {
 			 if(el.getText().equalsIgnoreCase(option))
@@ -140,7 +211,6 @@ public class SCPages extends SCLoginPage {
              }
          }
      return flag;
-		
 	}
 	
 	public boolean resposniveContent(String content){

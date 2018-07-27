@@ -6,6 +6,7 @@ import java.util.Map;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import com.aventstack.extentreports.Status;
 import com.core.util.CSVTable;
 import com.core.util.CSVTableRow;
 import com.core.util.PropertyFileUtil;
@@ -15,36 +16,40 @@ import com.r1v2.common.BaseTest;
 
 public class Scenario1Login extends BaseTest {
 
+	
+
 	private SCLoginPage loginPage = null;
 	private Map<String, String> td = getTestDataProperties();
 	private PropertyFileUtil propUtil = new PropertyFileUtil("config");
 	CSVTable t = new CSVTable(td.get(propUtil.getString("region")+".loginDataFilePath"));
 	List<CSVTableRow> records = t.getRecords();
 	CSVTableRow record = records.get(0);
-	
+
 	@BeforeClass
 	public void setUpOnce() {
-		loginPage = getPageFactory().adminLoginPage();
-		//ExtentReport.logger.assignCategory("Login Euro Site Control");
+			loginPage = getPageFactory().adminLoginPage();
+			
+	}
+
+	@Test()
+	public void testSC_1() {
+		
+		boolean actual = loginPage.openSCLoginpage().
+				veirfyPageTitle(record.getString("admin_page_title"));
+			Assert.assertEquals(actual, true, " login page is not displayed");
+			extentTest.log(Status.INFO, "Titile is matched");
 		
 	}
 
-	@Test(priority = 1)
-	public void testSC_1() {
-		boolean actual = loginPage.openSCLoginpage().
-				veirfyPageTitle(record.getString("admin_page_title"));
-		Assert.assertEquals(actual, true, " login page is not displayed");
-		//ExtentReport.logger.assignCategory("Login Euro Site Control");
-	}
-
-	
-	@Test(priority = 2)
+	@Test()
 	public void testSC_2() {
+		
 				boolean actual = loginPage.openSCLoginpage()
 					.goToHomePage(record.getString("admin_username"), record.getString("admin_password_invalid"))	
 					.veirfyPageTitle(record.getString("admin_page_title"));
+				extentTest.log(Status.INFO, "Titile is vdsvdsvs matched");
 		Assert.assertEquals(actual, true, " Login page is not displayed");
-		//ExtentReport.logger.assignCategory("Login Euro Site Control");
+		
 	}
 
 	@Test(priority = 3)
@@ -53,8 +58,9 @@ public class Scenario1Login extends BaseTest {
 				.openSCLoginpage()
 				.goToHomePage(record.getString("admin_username_invalid"), record.getString("admin_password"))
 				.veirfyPageTitle(record.getString("admin_page_title"));
-		Assert.assertEquals(actual, true, " login page is not displayed");
-		//ExtentReport.logger.assignCategory("Login Euro Site Control");
+		extentTest.log(Status.INFO, "Titile is matched");
+				Assert.assertEquals(actual, true, " login page is not displayed");
+				extentTest.log(Status.INFO, "Titile is matched");
 	}
 
 	@Test(priority = 4)
@@ -63,8 +69,9 @@ public class Scenario1Login extends BaseTest {
 				.openSCLoginpage()
 				.goToHomePage(record.getString("admin_username_invalid"), record.getString("admin_password_invalid"))
 				.veirfyPageTitle(record.getString("admin_page_title"));
-		Assert.assertEquals(actual, true, " login page is not displayed");
-		//ExtentReport.logger.assignCategory("Login Euro Site Control");
+			Assert.assertEquals(actual, true, " login page is not displayed");
+		
+		
 	}
 
 	@Test(priority = 5)
@@ -74,8 +81,8 @@ public class Scenario1Login extends BaseTest {
 				.goToHomePage(record.getString("admin_username_blank"),record.getString("admin_password_invalid"))
 				//.accetpAlert()
 			    .veirfyPageTitle(record.getString("admin_page_title"));
-		Assert.assertEquals(actual, true, " login page is not displayed");
-		//ExtentReport.logger.assignCategory("Login Euro Site Control");
+				Assert.assertEquals(actual, true, " login page is not displayed");
+		
 	}
 
 	@Test(priority = 6)
@@ -84,8 +91,8 @@ public class Scenario1Login extends BaseTest {
 				.openSCLoginpage()
 				.goToHomePage(record.getString("admin_username_invalid"), record.getString("admin_password"))
 				.veirfyPageTitle(record.getString("admin_page_title"));
-		Assert.assertEquals(actual, true, " login page is not displayed");
-		//ExtentReport.logger.assignCategory("Login Euro Site Control");
+				Assert.assertEquals(actual, true, " login page is not displayed");
+		
 	}
 
 	@Test(priority = 7)
@@ -111,16 +118,10 @@ public class Scenario1Login extends BaseTest {
 		boolean actual = loginPage
 				.openSCLoginpage()
 				.goToHomePage(record.getString("admin_username"), record.getString("admin_password"))
+				
 				.veirfyPageTitle(record.getString("login_page_title"));
 			Assert.assertEquals(actual, true, " Login Page is not displayed");
 	}
-	@Test(priority = 10)
-	public void  testSC_10() {
-		 {
-			loginPage = getPageFactory().adminLoginPage();
-			//ExtentReport.logger.assignCategory("Login Euro Site Control");
-			
-		}
-		}
+	
 }
 

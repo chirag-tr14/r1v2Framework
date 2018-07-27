@@ -3,13 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.r1v2.reporting.test.Scenario1Login">
+      <class name="com.r1v2.reporting.test.Scenario2Dlr">
         <methods>
-          <include name="testSC_9"/>
-          <include name="setUpOnce"/>
+          <include name="testPG_12"/>
+          <include name="getResult"/>
+          <include name="setUpOnce1"/>
+          <include name="extetnReport"/>
+          <include name="tearDown"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.r1v2.reporting.test.Scenario1Login -->
+      </class> <!-- com.r1v2.reporting.test.Scenario2Dlr -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

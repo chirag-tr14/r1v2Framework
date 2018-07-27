@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name= "Test suite" > 
- <test verbose="2" name="Scenario 1 Test Cases">
+<suite name= "Test suite"  verbose="10"  >
+ 
+  <test  name="Scenario 1 Test Cases">
     <classes>
       <class name="com.r1v2.reporting.test.Scenario1Login"/>
     </classes>
- </test>  
- <test verbose="2" name="Scenario 2 Test Cases">
+ </test> 
+ 
+ <test  name="Scenario 2 Test Cases">
     <classes>
-      <class name="com.r1v2.reporting.test.Scenario2Pages"/>
+      <class name="com.r1v2.reporting.test.Scenario2Dlr"/>
     </classes>
- </test>
+ </test> 
+ 
+ <!-- 
+ <test name="all-tests">
+        <packages>
+            <package name="com.r1v2.reporting.test"/>
+        </packages>
+   </test> -->
 
 </suite>

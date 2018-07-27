@@ -5,10 +5,11 @@ import static com.r1v2.common.GlobalStaticInfo.LOGINPAGE_LOGIN_LOGIN_BUTTON;
 import static com.r1v2.common.GlobalStaticInfo.LOGINPAGE_LOGIN_LOGIN_HELPTEXT;
 import static com.r1v2.common.GlobalStaticInfo.LOGINPAGE_LOGIN_PASSWORD;
 import static com.r1v2.common.GlobalStaticInfo.LOGINPAGE_LOGIN_USERNAME;
+
 import org.openqa.selenium.WebDriver;
+
 import com.core.config.BasicConfig.selectSite;
 import com.core.maindriver.DriverScript;
-import com.core.util.CSVTableRow;
 import com.r1v2.common.PageBase;
 import com.r1v2.common.PageFactory;
 
@@ -21,7 +22,6 @@ public class SCLoginPage extends PageBase {
 
 	public SCLoginPage openSCLoginpage() {
 		scURL = DriverScript.settings.getHomePage(selectSite.admin_home);
-		// openBankSiteHomepage(scURL);
 		openHomepage(scURL);
 		return this;
 	}
@@ -72,8 +72,7 @@ public class SCLoginPage extends PageBase {
 	public SCPages goToHomePage(String email,String password){
 		enterEmail(email);
 		enterPassword(password);
-		
-		clickOnLoginButton();
+				clickOnLoginButton();
 		return getPageFactory().scHomePage();
 	}
 	

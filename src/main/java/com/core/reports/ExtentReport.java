@@ -18,9 +18,9 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentReport {
 
-public static ExtentHtmlReporter htmlReporter;
-public static ExtentReports report;
-public static ExtentTest logger;
+public  ExtentHtmlReporter htmlReporter;
+public ExtentReports report;
+public ExtentTest extentTest;
 
 @BeforeSuite
 public void extetnReport() {
@@ -29,14 +29,13 @@ public void extetnReport() {
 	 * "F:\\IZMO FrameWork\\com.izomweb.com\\Reports\\Reports.html");
 	 */
 	htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/Reports/Report.html");
-
 	report = new ExtentReports();
 	report.attachReporter(htmlReporter);
 	report.setSystemInfo("OS", "Windows 10");
 	report.setSystemInfo("Host Name", "10.125.3.18");
 	report.setSystemInfo("Environment", "QA");
 	report.setSystemInfo("User Name", "Rajesh");
-
+	extentTest = report.createTest("Automation ");
 	htmlReporter.config().setChartVisibilityOnOpen(true);
 	htmlReporter.config().setDocumentTitle("Extent Report");
 	htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
@@ -48,24 +47,23 @@ public void extetnReport() {
  public void getResult(ITestResult result) throws IOException {
 
 	if (result.getStatus() == ITestResult.FAILURE  ) {
-	    logger.log(Status.FAIL, MarkupHelper
+	    extentTest.log(Status.FAIL, MarkupHelper
 				.createLabel(result.getName() + " Test case FAILED due to below issues:", ExtentColor.RED));
-		logger.fail(result.getThrowable());
+		extentTest.fail(result.getThrowable());
 		
 	} else if (result.getStatus() == ITestResult.SUCCESS) {
-		logger.log(Status.PASS,
+		extentTest.log(Status.PASS,
 				MarkupHelper.createLabel(result.getName() + " Test Case PASSED", ExtentColor.GREEN));
 		// logger.pass("Screen Shot :" +
 		// logger.addScreenCaptureFromPath(screnshot));
 	} else {
-		logger.log(Status.SKIP,
+		extentTest.log(Status.SKIP,
 				MarkupHelper.createLabel(result.getName() + " Test Case SKIPPED", ExtentColor.ORANGE));
-		logger.skip(result.getThrowable());
+		extentTest.skip(result.getThrowable());
 		// logger.pass("Screen Shot :" +
 		// logger.addScreenCaptureFromPath(screnshot));
 	}
 }
-
 
 @AfterSuite
 public void tearDown() {

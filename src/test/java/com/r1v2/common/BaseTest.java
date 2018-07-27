@@ -7,17 +7,16 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeClass;
-
 import com.core.config.BrowserConfig;
 import com.core.config.PropTestdataConfig;
 import com.core.maindriver.DriverScript;
+import com.core.reports.ExtentReport;
 import com.core.reports.TestNGCustomReporter;
 import com.core.settings.GlobalSettings;
 
-public class BaseTest {
+public class BaseTest extends ExtentReport{
 
 	private WebDriver driver;
 	private DriverScript driverScript;
@@ -30,8 +29,10 @@ public class BaseTest {
 	public void beforeClass() {
 		initWebDriver();
 		TestNGCustomReporter.logbr("Browser launched successfully");
+		
+		
 	}
-
+	
 	protected WebDriver initWebDriver() {
 		try {
 			String browser = globalSettings.getBrowser();
@@ -44,10 +45,6 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		return driver;
 	}
-
-	
-	
-	
 	public PageFactory getPageFactory() {
 		return new PageFactory(driver);
 	}
@@ -102,4 +99,6 @@ public class BaseTest {
 			e.printStackTrace();
 		}
 	}
+	
+	
 }

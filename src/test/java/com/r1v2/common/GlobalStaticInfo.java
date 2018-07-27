@@ -23,15 +23,21 @@ public interface GlobalStaticInfo {
 	 String PAGEBUILDER_PAGEBUILDER_MENU =  "pagebuilder.pageBuilder_menu";
 	 String PAGEBUILDER_PAGEBUILDER_ADD_BTN  = "pagebuilder.pageBuilder_add_btn";
 	 //ContentPage
-	 String PAGEBUILDER_CONTENT_PAGERBTN="pagebuilder.content_pagerbtn";
+	 String PAGEBUILDER_CONTENT_PAGERBTN="pagebuilder.contentpage_btn";
 	 String PAGEBUILDER_COMMON_TITLE="pagebuilder.common_title";
 	 String PAGEBUILDER_COMMON_URL="pagebuilder.common_url";
 	 String PAGEBUILDER_DEPARTMENT_DROPDOWN ="pagebuilder.department_dropdown.list";
-	 String PAGEBUILDER_DEPARTMENT_DROPDOWN_LIST= "pagebuilder.department_dropdown.labels";
+	 String PAGEBUILDER_DEPARTMENT_DROPDOWN_LIST= "pagebuilder.department_dropdown_labels";
 	 String PAGEBUILDER_COMMON_RESPONSIVECONTENT="pagebuilder.common_responsivecontent";
 	 String PAGEBUILDER_COMMON_SAVEBUTTON="pagebuilder.common_saveButton";
 	 String PAGEBUILDER_COMMON_MANDATORY_TEXT="pagebuilder.common_mandatory_text";
+	 //CamapignPage
+	 String PAGEBUILDER_CAMPAIGN_PAGEBTN="pagebuilder.campaign_page";
 	 
+	 String PAGEBUILDER__FORMCATEGORY_DROPDOWN_LIST="pagebuilder.common_formcategory_list";
+	 String PAGEBUILDER_COMMON_FORMCATEGORY_LABELS="pagebuilder.common_formcategory_labels";
+	 //SpecialPage
+	 String PAGEBUILDER_SPECIAL_PAGE="pagebuilder.special_page";
 	 
 	 
 	 

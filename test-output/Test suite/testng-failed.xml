@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Test suite]">
-  <test thread-count="5" name="Scenario 1 Test Cases(failed)">
+<suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Test suite]">
+  <test thread-count="5" verbose="10" name="all-tests(failed)">
     <classes>
-      <class name="com.r1v2.reporting.test.Scenario1Login">
+      <class name="com.r1v2.reporting.test.Scenario2Dlr">
         <methods>
-          <include name="testSC_9"/>
-          <include name="setUpOnce"/>
+          <include name="getResult"/>
+          <include name="setUpOnce1"/>
+          <include name="testPG_8"/>
+          <include name="testPG_2"/>
+          <include name="testPG_5"/>
+          <include name="testPG_4"/>
+          <include name="extetnReport"/>
+          <include name="tearDown"/>
+          <include name="testPG_7"/>
           <include name="beforeClass"/>
+          <include name="testPG_3"/>
         </methods>
-      </class> <!-- com.r1v2.reporting.test.Scenario1Login -->
+      </class> <!-- com.r1v2.reporting.test.Scenario2Dlr -->
     </classes>
-  </test> <!-- Scenario 1 Test Cases(failed) -->
+  </test> <!-- all-tests(failed) -->
 </suite> <!-- Failed suite [Test suite] -->
