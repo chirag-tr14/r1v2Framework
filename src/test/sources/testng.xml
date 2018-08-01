@@ -4,21 +4,33 @@
  
   <test  name="Scenario 1 Test Cases">
     <classes>
-      <class name="com.r1v2.reporting.test.Scenario1Login"/>
+      <class name="com.r1v2.backend.modules.Scenario1Login"/>
     </classes>
  </test> 
  
  <test  name="Scenario 2 Test Cases">
     <classes>
-      <class name="com.r1v2.reporting.test.Scenario2Dlr"/>
+      <class name="com.r1v2.backend.modules.ScenarioCamapignPage"/>
+    </classes>
+ </test>  
+ 
+ <test  name="Scenario 3 Test Cases">
+    <classes>
+      <class name="com.r1v2.backend.modules.ScenarioSpecialPage"/>
     </classes>
  </test> 
  
- <!-- 
- <test name="all-tests">
+ <test  name="Scenario 4 Test Cases">
+    <classes>
+      <class name="com.r1v2.backend.modules.ScenarioContentPage"/>
+    </classes>
+ </test> 
+ 
+  
+ <!-- <test name="all-tests">
         <packages>
-            <package name="com.r1v2.reporting.test"/>
+            <package name="com.r1v2.backend.modules"/>
         </packages>
-   </test> -->
-
+   </test> 
+ -->
 </suite>

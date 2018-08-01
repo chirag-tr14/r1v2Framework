@@ -1,23 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Test suite]">
-  <test thread-count="5" verbose="10" name="all-tests(failed)">
+  <test thread-count="5" verbose="10" name="Scenario 1 Test Cases(failed)">
     <classes>
-      <class name="com.r1v2.reporting.test.Scenario2Dlr">
+      <class name="com.r1v2.backend.modules.Scenario1Login">
         <methods>
-          <include name="getResult"/>
-          <include name="setUpOnce1"/>
-          <include name="testPG_8"/>
-          <include name="testPG_2"/>
-          <include name="testPG_5"/>
-          <include name="testPG_4"/>
-          <include name="extetnReport"/>
-          <include name="tearDown"/>
-          <include name="testPG_7"/>
+          <include name="setUpOnce"/>
+          <include name="testSC_9"/>
           <include name="beforeClass"/>
-          <include name="testPG_3"/>
         </methods>
-      </class> <!-- com.r1v2.reporting.test.Scenario2Dlr -->
+      </class> <!-- com.r1v2.backend.modules.Scenario1Login -->
     </classes>
-  </test> <!-- all-tests(failed) -->
+  </test> <!-- Scenario 1 Test Cases(failed) -->
+  <test thread-count="5" verbose="10" name="Scenario 2 Test Cases(failed)">
+    <classes>
+      <class name="com.r1v2.backend.modules.ScenarioCamapignPage">
+        <methods>
+          <include name="setUpOnce1"/>
+          <include name="testPG_5"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.r1v2.backend.modules.ScenarioCamapignPage -->
+    </classes>
+  </test> <!-- Scenario 2 Test Cases(failed) -->
+  <test thread-count="5" verbose="10" name="Scenario 3 Test Cases(failed)">
+    <classes>
+      <class name="com.r1v2.backend.modules.ScenarioSpecialPage">
+        <methods>
+          <include name="testPG_5"/>
+          <include name="setUpOnce1"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.r1v2.backend.modules.ScenarioSpecialPage -->
+    </classes>
+  </test> <!-- Scenario 3 Test Cases(failed) -->
 </suite> <!-- Failed suite [Test suite] -->

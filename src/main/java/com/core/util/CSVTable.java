@@ -155,9 +155,7 @@ public class CSVTable {
             System.out.println(record.getString("Dealers"));
             System.out.println(record.getString("Department"));
             System.out.println(record.getString("Responsive_Content"));
-            
-            
-            
+           
             
             /*System.out.println(record.getString("admin_username_invalid"));
             System.out.println(record.getString("admin_password_invalid"));

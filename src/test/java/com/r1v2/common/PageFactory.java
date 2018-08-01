@@ -3,8 +3,9 @@ package com.r1v2.common;
 
 import org.openqa.selenium.WebDriver;
 import com.core.util.ExcelHandler;
-import com.qa.pageobjects.SCPages;
-import com.qa.pageobjects.SCLoginPage;
+import com.qa.frontend.pageobjects.FrontEndPages;
+import com.qa.sc.pageobjects.SCLoginPage;
+import com.qa.sc.pageobjects.SCPages;
 
 
 
@@ -25,7 +26,13 @@ public class PageFactory {
 		return new SCPages(webDriver,this);
 	}
 	
+	/*public FrontEndPages frontendPage() {
+		return new FrontEndPages(webDriver,this);
+	}*/
 	
+	public DataBase databse() {
+		return new DataBase();
+	}
 
 	
 	/*

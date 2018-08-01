@@ -25,6 +25,7 @@ public class PropertyFileUtil {
 		 properties = ResourceBundle.getBundle("config");
 	}
 	
+	
 	 /**
      *  Get the value of key from property file as string
      *

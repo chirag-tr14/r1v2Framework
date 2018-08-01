@@ -1,563 +1,383 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="7" failed="0" ignored="0" total="7" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
     <line>
       <![CDATA[<br>Browser launched successfully]]>
     </line>
+    <line>
+      <![CDATA[<br>Opened URL : https://qadealeradminv2mx.izmocars.com/login.htm]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@28d18df5 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Entered value chiragr]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@4ed5eb72 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Entered value r@je$h143]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@101639ae is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on ]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@58c34bb3 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Element Displayed Logout]]>
+    </line>
+    <line>
+      <![CDATA[<br>logout link is displayed on Home page]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@18245eb0 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Element Displayed Change password]]>
+    </line>
+    <line>
+      <![CDATA[<br>change password is displayed on Home page]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@46c670a6 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on Select Organization]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@5a4bef8 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on Site List]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@4d4d48a6 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Entered value nissancelaya.stg-izdemosite.com]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@4925f4f5 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on NISSAN AUTOCOM CELAYA]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@29a23c3d is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on Site Builder]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@5b5c0057 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on Page Builder]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@65bb9029 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on Add new Page]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@2b556bb2 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Element is selected ]]>
+    </line>
+    <line>
+      <![CDATA[<br>Content Page RadioButton default is  selected on  PageBuilder page]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@64b70919 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Element Displayed *]]>
+    </line>
+    <line>
+      <![CDATA[<br>Field is mandatory]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@5176d279 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on ]]>
+    </line>
+    <line>
+      <![CDATA[<br>Alert Popup is Display]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@53b8afea is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Entered value content-pagemx]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@3c69362a is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Element Displayed *]]>
+    </line>
+    <line>
+      <![CDATA[<br>Field is mandatory]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@79b84841 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on ]]>
+    </line>
+    <line>
+      <![CDATA[<br>Alert Popup is Display]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@1f53481b is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Entered value content-page-mx]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@61ab89b0 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@7523a3dc is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Entered value Responsive Content for  MX Server ]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@497b560e is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on ]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@5568c66f is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on Logout]]>
+    </line>
+    <line>
+      <![CDATA[<br>Opened URL : http://nissancelaya.stg-izdemosite.com/]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="309112" started-at="2018-07-27T13:12:24Z" finished-at="2018-07-27T13:17:33Z">
+  <suite name="Default suite" duration-ms="49408" started-at="2018-08-01T07:41:02Z" finished-at="2018-08-01T07:41:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="309112" started-at="2018-07-27T13:12:24Z" finished-at="2018-07-27T13:17:33Z">
-      <class name="com.r1v2.reporting.test.ScenarioCamapignPage">
-        <test-method status="PASS" signature="extetnReport()[pri:0, instance:com.r1v2.reporting.test.ScenarioCamapignPage@3fd7a715]" name="extetnReport" is-config="true" duration-ms="102" started-at="2018-07-27T13:12:24Z" finished-at="2018-07-27T13:12:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extetnReport -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.r1v2.reporting.test.ScenarioCamapignPage@3fd7a715]" name="beforeClass" is-config="true" duration-ms="9027" started-at="2018-07-27T13:12:24Z" finished-at="2018-07-27T13:12:33Z">
+    <test name="Default test" duration-ms="49408" started-at="2018-08-01T07:41:02Z" finished-at="2018-08-01T07:41:51Z">
+      <class name="com.r1v2.backend.modules.ScenarioContentPage">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.r1v2.backend.modules.ScenarioContentPage@1f554b06]" name="beforeClass" is-config="true" duration-ms="5324" started-at="2018-08-01T07:41:02Z" finished-at="2018-08-01T07:41:07Z">
           <reporter-output>
             <line>
               <![CDATA[<br>Browser launched successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="setUpOnce1()[pri:0, instance:com.r1v2.reporting.test.ScenarioCamapignPage@3fd7a715]" name="setUpOnce1" is-config="true" duration-ms="300042" started-at="2018-07-27T13:12:33Z" finished-at="2018-07-27T13:17:33Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timeout loading page after 300000ms
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'IZDT-211', ip: '10.125.101.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 20940, moz:profile: C:\Users\rajesh.n\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ef607e15-82b5-448a-911a-c192be868676]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timeout loading page after 300000ms
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'IZDT-211', ip: '10.125.101.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 20940, moz:profile: C:\Users\rajesh.n\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ef607e15-82b5-448a-911a-c192be868676
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-at com.r1v2.common.PageBase.openHomepage(PageBase.java:179)
-at com.qa.pageobjects.SCLoginPage.openSCLoginpage(SCLoginPage.java:25)
-at com.r1v2.reporting.test.ScenarioCamapignPage.setUpOnce1(ScenarioCamapignPage.java:39)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:497)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="setUpOnce1()[pri:0, instance:com.r1v2.backend.modules.ScenarioContentPage@1f554b06]" name="setUpOnce1" is-config="true" duration-ms="4132" started-at="2018-08-01T07:41:07Z" finished-at="2018-08-01T07:41:11Z">
           <reporter-output>
+            <line>
+              <![CDATA[<br>Opened URL : https://qadealeradminv2mx.izmocars.com/login.htm]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@28d18df5 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Entered value chiragr]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@4ed5eb72 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Entered value r@je$h143]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@101639ae is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on ]]>
+            </line>
           </reporter-output>
         </test-method> <!-- setUpOnce1 -->
-        <test-method status="SKIP" signature="testPG_1()[pri:1, instance:com.r1v2.reporting.test.ScenarioCamapignPage@3fd7a715]" name="testPG_1" duration-ms="0" started-at="2018-07-27T13:17:33Z" finished-at="2018-07-27T13:17:33Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timeout loading page after 300000ms
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'IZDT-211', ip: '10.125.101.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 20940, moz:profile: C:\Users\rajesh.n\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ef607e15-82b5-448a-911a-c192be868676]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timeout loading page after 300000ms
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'IZDT-211', ip: '10.125.101.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 20940, moz:profile: C:\Users\rajesh.n\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ef607e15-82b5-448a-911a-c192be868676
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-at com.r1v2.common.PageBase.openHomepage(PageBase.java:179)
-at com.qa.pageobjects.SCLoginPage.openSCLoginpage(SCLoginPage.java:25)
-at com.r1v2.reporting.test.ScenarioCamapignPage.setUpOnce1(ScenarioCamapignPage.java:39)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:497)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="testPG_1()[pri:1, instance:com.r1v2.backend.modules.ScenarioContentPage@1f554b06]" name="testPG_1" duration-ms="190" started-at="2018-08-01T07:41:11Z" finished-at="2018-08-01T07:41:11Z">
           <reporter-output>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@58c34bb3 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Element Displayed Logout]]>
+            </line>
+            <line>
+              <![CDATA[<br>logout link is displayed on Home page]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@18245eb0 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Element Displayed Change password]]>
+            </line>
+            <line>
+              <![CDATA[<br>change password is displayed on Home page]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testPG_1 -->
-        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.r1v2.reporting.test.ScenarioCamapignPage@3fd7a715]" name="getResult" is-config="true" duration-ms="0" started-at="2018-07-27T13:17:33Z" finished-at="2018-07-27T13:17:33Z">
+        <test-method status="PASS" signature="testPG_2()[pri:2, instance:com.r1v2.backend.modules.ScenarioContentPage@1f554b06]" name="testPG_2" duration-ms="13579" started-at="2018-08-01T07:41:11Z" finished-at="2018-08-01T07:41:25Z">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="testPG_2()[pri:2, instance:com.r1v2.reporting.test.ScenarioCamapignPage@3fd7a715]" name="testPG_2" duration-ms="0" started-at="2018-07-27T13:17:33Z" finished-at="2018-07-27T13:17:33Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timeout loading page after 300000ms
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'IZDT-211', ip: '10.125.101.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 20940, moz:profile: C:\Users\rajesh.n\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ef607e15-82b5-448a-911a-c192be868676]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timeout loading page after 300000ms
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'IZDT-211', ip: '10.125.101.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 20940, moz:profile: C:\Users\rajesh.n\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ef607e15-82b5-448a-911a-c192be868676
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-at com.r1v2.common.PageBase.openHomepage(PageBase.java:179)
-at com.qa.pageobjects.SCLoginPage.openSCLoginpage(SCLoginPage.java:25)
-at com.r1v2.reporting.test.ScenarioCamapignPage.setUpOnce1(ScenarioCamapignPage.java:39)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:497)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@46c670a6 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on Select Organization]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@5a4bef8 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on Site List]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@4d4d48a6 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Entered value nissancelaya.stg-izdemosite.com]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@4925f4f5 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on NISSAN AUTOCOM CELAYA]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@29a23c3d is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on Site Builder]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@5b5c0057 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on Page Builder]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@65bb9029 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on Add new Page]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testPG_2 -->
-        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.r1v2.reporting.test.ScenarioCamapignPage@3fd7a715]" name="getResult" is-config="true" duration-ms="0" started-at="2018-07-27T13:17:33Z" finished-at="2018-07-27T13:17:33Z">
+        <test-method status="PASS" signature="testPG_3()[pri:3, instance:com.r1v2.backend.modules.ScenarioContentPage@1f554b06]" name="testPG_3" duration-ms="92" started-at="2018-08-01T07:41:25Z" finished-at="2018-08-01T07:41:25Z">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="testPG_3()[pri:3, instance:com.r1v2.reporting.test.ScenarioCamapignPage@3fd7a715]" name="testPG_3" duration-ms="0" started-at="2018-07-27T13:17:33Z" finished-at="2018-07-27T13:17:33Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timeout loading page after 300000ms
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'IZDT-211', ip: '10.125.101.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 20940, moz:profile: C:\Users\rajesh.n\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ef607e15-82b5-448a-911a-c192be868676]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timeout loading page after 300000ms
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'IZDT-211', ip: '10.125.101.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 20940, moz:profile: C:\Users\rajesh.n\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ef607e15-82b5-448a-911a-c192be868676
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-at com.r1v2.common.PageBase.openHomepage(PageBase.java:179)
-at com.qa.pageobjects.SCLoginPage.openSCLoginpage(SCLoginPage.java:25)
-at com.r1v2.reporting.test.ScenarioCamapignPage.setUpOnce1(ScenarioCamapignPage.java:39)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:497)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@2b556bb2 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Element is selected ]]>
+            </line>
+            <line>
+              <![CDATA[<br>Content Page RadioButton default is  selected on  PageBuilder page]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testPG_3 -->
-        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.r1v2.reporting.test.ScenarioCamapignPage@3fd7a715]" name="getResult" is-config="true" duration-ms="0" started-at="2018-07-27T13:17:33Z" finished-at="2018-07-27T13:17:33Z">
+        <test-method status="PASS" signature="testPG_4()[pri:4, instance:com.r1v2.backend.modules.ScenarioContentPage@1f554b06]" name="testPG_4" duration-ms="852" started-at="2018-08-01T07:41:25Z" finished-at="2018-08-01T07:41:26Z">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="testPG_4()[pri:4, instance:com.r1v2.reporting.test.ScenarioCamapignPage@3fd7a715]" name="testPG_4" duration-ms="0" started-at="2018-07-27T13:17:33Z" finished-at="2018-07-27T13:17:33Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timeout loading page after 300000ms
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'IZDT-211', ip: '10.125.101.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 20940, moz:profile: C:\Users\rajesh.n\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ef607e15-82b5-448a-911a-c192be868676]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timeout loading page after 300000ms
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'IZDT-211', ip: '10.125.101.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 20940, moz:profile: C:\Users\rajesh.n\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ef607e15-82b5-448a-911a-c192be868676
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-at com.r1v2.common.PageBase.openHomepage(PageBase.java:179)
-at com.qa.pageobjects.SCLoginPage.openSCLoginpage(SCLoginPage.java:25)
-at com.r1v2.reporting.test.ScenarioCamapignPage.setUpOnce1(ScenarioCamapignPage.java:39)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:497)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@64b70919 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Element Displayed *]]>
+            </line>
+            <line>
+              <![CDATA[<br>Field is mandatory]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@5176d279 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on ]]>
+            </line>
+            <line>
+              <![CDATA[<br>Alert Popup is Display]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@53b8afea is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Entered value content-pagemx]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@3c69362a is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Element Displayed *]]>
+            </line>
+            <line>
+              <![CDATA[<br>Field is mandatory]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@79b84841 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on ]]>
+            </line>
+            <line>
+              <![CDATA[<br>Alert Popup is Display]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@1f53481b is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Entered value content-page-mx]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testPG_4 -->
-        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.r1v2.reporting.test.ScenarioCamapignPage@3fd7a715]" name="getResult" is-config="true" duration-ms="0" started-at="2018-07-27T13:17:33Z" finished-at="2018-07-27T13:17:33Z">
+        <test-method status="PASS" signature="testPG_5()[pri:5, instance:com.r1v2.backend.modules.ScenarioContentPage@1f554b06]" name="testPG_5" duration-ms="1023" started-at="2018-08-01T07:41:26Z" finished-at="2018-08-01T07:41:27Z">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="testPG_5()[pri:5, instance:com.r1v2.reporting.test.ScenarioCamapignPage@3fd7a715]" name="testPG_5" duration-ms="0" started-at="2018-07-27T13:17:33Z" finished-at="2018-07-27T13:17:33Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timeout loading page after 300000ms
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'IZDT-211', ip: '10.125.101.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 20940, moz:profile: C:\Users\rajesh.n\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ef607e15-82b5-448a-911a-c192be868676]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timeout loading page after 300000ms
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'IZDT-211', ip: '10.125.101.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 20940, moz:profile: C:\Users\rajesh.n\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ef607e15-82b5-448a-911a-c192be868676
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-at com.r1v2.common.PageBase.openHomepage(PageBase.java:179)
-at com.qa.pageobjects.SCLoginPage.openSCLoginpage(SCLoginPage.java:25)
-at com.r1v2.reporting.test.ScenarioCamapignPage.setUpOnce1(ScenarioCamapignPage.java:39)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:497)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@61ab89b0 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@7523a3dc is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Entered value Responsive Content for  MX Server ]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testPG_5 -->
-        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.r1v2.reporting.test.ScenarioCamapignPage@3fd7a715]" name="getResult" is-config="true" duration-ms="0" started-at="2018-07-27T13:17:33Z" finished-at="2018-07-27T13:17:33Z">
+        <test-method status="PASS" signature="testPG_6()[pri:6, instance:com.r1v2.backend.modules.ScenarioContentPage@1f554b06]" name="testPG_6" duration-ms="5249" started-at="2018-08-01T07:41:27Z" finished-at="2018-08-01T07:41:32Z">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="testPG_6()[pri:6, instance:com.r1v2.reporting.test.ScenarioCamapignPage@3fd7a715]" name="testPG_6" duration-ms="0" started-at="2018-07-27T13:17:33Z" finished-at="2018-07-27T13:17:33Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timeout loading page after 300000ms
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'IZDT-211', ip: '10.125.101.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 20940, moz:profile: C:\Users\rajesh.n\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ef607e15-82b5-448a-911a-c192be868676]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timeout loading page after 300000ms
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'IZDT-211', ip: '10.125.101.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 20940, moz:profile: C:\Users\rajesh.n\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ef607e15-82b5-448a-911a-c192be868676
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-at com.r1v2.common.PageBase.openHomepage(PageBase.java:179)
-at com.qa.pageobjects.SCLoginPage.openSCLoginpage(SCLoginPage.java:25)
-at com.r1v2.reporting.test.ScenarioCamapignPage.setUpOnce1(ScenarioCamapignPage.java:39)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:497)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@497b560e is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on ]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testPG_6 -->
-        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.r1v2.reporting.test.ScenarioCamapignPage@3fd7a715]" name="getResult" is-config="true" duration-ms="0" started-at="2018-07-27T13:17:33Z" finished-at="2018-07-27T13:17:33Z">
+        <test-method status="PASS" signature="testPG_7()[pri:7, instance:com.r1v2.backend.modules.ScenarioContentPage@1f554b06]" name="testPG_7" duration-ms="230" started-at="2018-08-01T07:41:32Z" finished-at="2018-08-01T07:41:32Z">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="testPG_7()[pri:7, instance:com.r1v2.reporting.test.ScenarioCamapignPage@3fd7a715]" name="testPG_7" duration-ms="0" started-at="2018-07-27T13:17:33Z" finished-at="2018-07-27T13:17:33Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timeout loading page after 300000ms
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'IZDT-211', ip: '10.125.101.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 20940, moz:profile: C:\Users\rajesh.n\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ef607e15-82b5-448a-911a-c192be868676]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timeout loading page after 300000ms
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'IZDT-211', ip: '10.125.101.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 20940, moz:profile: C:\Users\rajesh.n\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ef607e15-82b5-448a-911a-c192be868676
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-at com.r1v2.common.PageBase.openHomepage(PageBase.java:179)
-at com.qa.pageobjects.SCLoginPage.openSCLoginpage(SCLoginPage.java:25)
-at com.r1v2.reporting.test.ScenarioCamapignPage.setUpOnce1(ScenarioCamapignPage.java:39)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:497)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@5568c66f is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on Logout]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testPG_7 -->
-        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.r1v2.reporting.test.ScenarioCamapignPage@3fd7a715]" name="getResult" is-config="true" duration-ms="0" started-at="2018-07-27T13:17:33Z" finished-at="2018-07-27T13:17:33Z">
+        <test-method status="PASS" signature="testPG_8()[pri:8, instance:com.r1v2.backend.modules.ScenarioContentPage@1f554b06]" name="testPG_8" duration-ms="18712" started-at="2018-08-01T07:41:32Z" finished-at="2018-08-01T07:41:51Z">
           <reporter-output>
+            <line>
+              <![CDATA[<br>Opened URL : http://nissancelaya.stg-izdemosite.com/]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.r1v2.reporting.test.ScenarioCamapignPage@3fd7a715]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-27T13:17:33Z" finished-at="2018-07-27T13:17:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.r1v2.reporting.test.ScenarioCamapignPage -->
+        </test-method> <!-- testPG_8 -->
+      </class> <!-- com.r1v2.backend.modules.ScenarioContentPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

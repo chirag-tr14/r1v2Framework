@@ -99,6 +99,9 @@ public class GlobalSettings implements BasicConfig {
 	}
 
 	
+	
+	
+	
 	public void defaultTimeout(int value) {
 		defaultTimeout = value;
 	}

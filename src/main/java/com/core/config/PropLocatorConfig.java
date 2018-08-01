@@ -15,7 +15,7 @@ import java.util.ResourceBundle;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
-public class PropLocatorConfig implements LocatorConfig{
+public class PropLocatorConfig  {
 
 	private ResourceBundle properties ;
 	private HashMap<String,String> webElementMapping;
@@ -24,7 +24,8 @@ public class PropLocatorConfig implements LocatorConfig{
 	public PropLocatorConfig(){
 		properties = ResourceBundle.getBundle("locators");
 	}
-
+	
+	
 	public HashMap<String, String> getWebElementMapping() {
 		webElementMapping = new HashMap<String,String>();
 		loadProperties();

@@ -1,4 +1,5 @@
 Group,Dealers,Page_Type,Title,url,Layout,Department,Responsive_Content,Form_category,Form_Position,From_Name,Autoresponder_Subject,Tags,Header_tags,Process_Que
 PGA,citroen-annecy.stg-eudemosite.com,,content-pagefr,content-page-fr,,Véhicules d'occasion,Responsive Content for Euro Server ,,,,,,,
-,,,campaign-pagefr,campaign-page-fr,,Véhicules d'occasion,Responsive Content for Euro Server ,Evènements VN,,,,,,
-,,,special-pagefr,special-page-fr,,Véhicules d'occasion,,Evènements VN,,,,,,
+PGA,citroen-annecy.stg-eudemosite.com,,campaign-pagefr,campaign-page-fr,,Véhicules d'occasion,Responsive Content for Euro Server ,Evènements VO,,,,,,
+PGA,citroen-annecy.stg-eudemosite.com,,special-pagefr,special-page-fr,,Véhicules d'occasion,,Evènements VO,,,,,,
+PGA,http://citroen-annecy.stg-eudemosite.com/,,,,,,,,,,,,,

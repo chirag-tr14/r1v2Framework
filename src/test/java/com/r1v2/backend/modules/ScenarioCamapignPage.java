@@ -1,4 +1,4 @@
-package com.r1v2.reporting.test;
+package com.r1v2.backend.modules;
 
 import java.util.List;
 import java.util.Map;
@@ -13,12 +13,12 @@ import org.testng.annotations.Test;
 import com.core.util.CSVTable;
 import com.core.util.CSVTableRow;
 import com.core.util.PropertyFileUtil;
-import com.qa.pageobjects.SCPages;
+import com.qa.sc.pageobjects.SCPages;
 import com.r1v2.common.BaseTest;
 
 public class ScenarioCamapignPage extends BaseTest {
 
-	public static final Logger logger = LogManager.getLogger(Scenario2Dlr.class);
+	public static final Logger logger = LogManager.getLogger(ScenarioCamapignPage.class);
 
 	SCPages scpages;
 	private Map<String, String> td = getTestDataProperties();
@@ -36,8 +36,9 @@ public class ScenarioCamapignPage extends BaseTest {
 	public void setUpOnce1() {
 		CSVTableRow logindata = login.get(0);
 			scpages=getPageFactory().scHomePage();
-			scpages.openSCLoginpage()
-		.goToHomePage(logindata.getString("admin_username"),logindata.getString("admin_password"));	
+			//scpages.openSCLoginpage()
+			scpages.goToHomePage(logindata.getString("admin_username"),logindata.getString("admin_password"));	
+			
 	}
 	
 	@Test(priority=1)
@@ -72,32 +73,40 @@ public class ScenarioCamapignPage extends BaseTest {
 						.selectDepartmentdropdownitem(pagesdata.getString("Department"));
 			 Assert.assertEquals(actual, true, " Selecting Depsrtment and Responsive Contnet data passing Responsive Editor ");
 	}
+		
 		@Test(priority=5)
-		public void testPG_5() {
-				CSVTableRow pagesdata = page.get(1);
-					boolean actual= scpages
-						.resposniveContent(pagesdata.getString("Responsive_Content"));
-			 Assert.assertEquals(actual, true, " Selecting Depsrtment and Responsive Contnet data passing Responsive Editor ");
-	}
-
-		@Test(priority=6)
-		public void testPG_6() {
+		public void testPG_5() throws InterruptedException {
 				CSVTableRow pagesdata1 = page.get(1);
-									String group=pagesdata.getString("Group");
-				if(group!=("PGA")){
-					throw new SkipException("Skipping this Method");
-		     }
-				else{
+				String group=pagesdata1.getString("Group");
+				if(("PGA").equals(group)){
 					boolean actual= scpages
-						.selectformCategorydropdownitem((pagesdata1.getString("Form_category")));		
-		  Assert.assertEquals(actual, true, " Selecting Department and Responsive Contnet data passing Responsive Editor ");
-		}	
-	}
+			          .selectformCategorydropdownitem((pagesdata1.getString("Form_category")));		
+		 Assert.assertEquals(actual, true, " Selecting Department and Responsive Contnet data passing Responsive Editor ");
+		}
+		  else{
+			  throw new SkipException("Skipping this Method");
+			  }
+	}	
+				
+		@Test(priority=6)
+			public void testPG_6() {
+		        CSVTableRow pagesdata = page.get(1);
+				boolean actual= scpages
+					.resposniveContent(pagesdata.getString("Responsive_Content"));
+		Assert.assertEquals(actual, true, " Selecting Depsrtment and Responsive Contnet data passing Responsive Editor ");
+			}
+
 		@Test(priority=7)
 		public void testPG_7() {
 				boolean actual= scpages
-						.savePage();
+				.savePage();
 		Assert.assertEquals(actual, true, " Responsive Content  data  passing on Responsive Editor ");
 	}
-
+		
+		@Test(priority=8)
+		public void testPG_8() {
+			boolean actual= scpages.logoutAdmin();
+			                scpages.browserClose();			
+		Assert.assertEquals(actual, true, "LogOut and Close the browser ");
+	    }
 }

@@ -1,4 +1,4 @@
-package com.qa.pageobjects;
+package com.qa.sc.pageobjects;
 
 
 import static com.r1v2.common.GlobalStaticInfo.HOMEPAGE_CHANGE_PASSWORD;
@@ -26,6 +26,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -33,30 +34,28 @@ import org.openqa.selenium.WebElement;
 import com.core.reports.TestNGCustomReporter;
 import com.mysql.cj.api.mysqla.result.Resultset;
 import com.r1v2.common.BaseTest;
+import com.r1v2.common.DataBase;
 import com.r1v2.common.PageFactory;
 
 public class SCPages extends SCLoginPage {
-	BaseTest bt=new BaseTest();
-	public String department_name;
-	List<String> pdfData=new ArrayList<String>();
-	//private Map<String, String> td = bt.getTestDataProperties();
+	
+		public String department_name;
+		List<String> pdfData=new ArrayList<String>();
 	
 	public SCPages(WebDriver webDriver, PageFactory pgFactory) {
 		super(webDriver, pgFactory);
 	}
 	
-		public String  frontendSite(String Url){
-			getWebDriver().get("");	
-			return Url;
-		}
 	
-		public boolean  processqueUrl(String Url){
-			getWebDriver().get("");	
-			return true;
+	public   SCPages frontendUrl(String url){
+		openHomepage(url);;
+		return this;
 	}
+	
 	
 		public SCPages  selectOrganization(){
 			clickElement(HOMEPAGE_SELECT_ORGANIZATION);
+			
 		return this;
 	}
 	
@@ -85,20 +84,7 @@ public class SCPages extends SCLoginPage {
 	}
 
 	
-	
-	public void dataBase() throws ClassNotFoundException, SQLException{
-		String Query = "";
-		ResultSet data = BaseTest.getData(Query);
-		boolean firstData = data.next();
-		String ID = "";
-		if (firstData) {
-			ID = data.getString(1);
-			// System.out.println(ID);
-		}
-	}
-	
-		
-		
+			
 	public boolean  verifyMandatoryField() {
 			 boolean flag = verifyWebElement(PAGEBUILDER_COMMON_MANDATORY_TEXT);
 			if (flag) {
@@ -209,7 +195,7 @@ public class SCPages extends SCLoginPage {
 	}
 	
 	
-	public boolean selectformCategorydropdownitem(String option)  {
+	public boolean selectformCategorydropdownitem(String option) throws InterruptedException  {
 		boolean flag=false;
 		clickElement(PAGEBUILDER__FORMCATEGORY_DROPDOWN_LIST);
 	
@@ -241,54 +227,7 @@ public class SCPages extends SCLoginPage {
 		 return true;
 	}
 
-	
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-	
+		
 	public boolean verifylogoutButtonFunctionality() {
 	       boolean flag=false;
 			clickElement(HOMEPAGE_LOGOUT_BUTTON);
@@ -305,10 +244,7 @@ public class SCPages extends SCLoginPage {
 			return flag;
 	}
 
-	
-	
-	
-	
-	
-	
 }
+
+
+

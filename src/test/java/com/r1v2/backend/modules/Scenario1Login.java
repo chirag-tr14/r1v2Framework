@@ -1,4 +1,4 @@
-package com.r1v2.reporting.test;
+package com.r1v2.backend.modules;
 
 
 import java.util.List;
@@ -6,16 +6,15 @@ import java.util.Map;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import com.aventstack.extentreports.Status;
 import com.core.util.CSVTable;
 import com.core.util.CSVTableRow;
 import com.core.util.PropertyFileUtil;
-import com.qa.pageobjects.SCLoginPage;
+import com.qa.sc.pageobjects.SCLoginPage;
+import com.qa.sc.pageobjects.SCPages;
 import com.r1v2.common.BaseTest;
 
 public class Scenario1Login extends BaseTest {
-
-	private SCLoginPage loginPage = null;
+	private SCLoginPage loginPage ;
 	private Map<String, String> td = getTestDataProperties();
 	private PropertyFileUtil propUtil = new PropertyFileUtil("config");
 	CSVTable t = new CSVTable(td.get(propUtil.getString("region")+".loginDataFilePath"));
@@ -25,7 +24,6 @@ public class Scenario1Login extends BaseTest {
 	@BeforeClass
 	public void setUpOnce() {
 			loginPage = getPageFactory().adminLoginPage();
-			
 	}
 
 	@Test()
@@ -34,7 +32,7 @@ public class Scenario1Login extends BaseTest {
 		boolean actual = loginPage.openSCLoginpage().
 				veirfyPageTitle(record.getString("admin_page_title"));
 			Assert.assertEquals(actual, true, " login page is not displayed");
-			extentTest.log(Status.INFO, "Titile is matched");
+			//extentTest.log(Status.INFO, "Titile is matched");
 	}
 
 	@Test()
@@ -43,7 +41,7 @@ public class Scenario1Login extends BaseTest {
 				boolean actual = loginPage.openSCLoginpage()
 					.goToHomePage(record.getString("admin_username"), record.getString("admin_password_invalid"))	
 					.veirfyPageTitle(record.getString("admin_page_title"));
-				extentTest.log(Status.INFO, "Titile is vdsvdsvs matched");
+				//extentTest.log(Status.INFO, "Titile is vdsvdsvs matched");
 		Assert.assertEquals(actual, true, " Login page is not displayed");
 		
 	}
@@ -54,9 +52,9 @@ public class Scenario1Login extends BaseTest {
 				.openSCLoginpage()
 				.goToHomePage(record.getString("admin_username_invalid"), record.getString("admin_password"))
 				.veirfyPageTitle(record.getString("admin_page_title"));
-		extentTest.log(Status.INFO, "Titile is matched");
+		//extentTest.log(Status.INFO, "Titile is matched");
 				Assert.assertEquals(actual, true, " login page is not displayed");
-				extentTest.log(Status.INFO, "Titile is matched");
+				//extentTest.log(Status.INFO, "Titile is matched");
 	}
 
 	@Test(priority = 4)
@@ -66,7 +64,6 @@ public class Scenario1Login extends BaseTest {
 				.goToHomePage(record.getString("admin_username_invalid"), record.getString("admin_password_invalid"))
 				.veirfyPageTitle(record.getString("admin_page_title"));
 			Assert.assertEquals(actual, true, " login page is not displayed");
-
 	}
 
 	@Test(priority = 5)
@@ -77,7 +74,6 @@ public class Scenario1Login extends BaseTest {
 				//.accetpAlert()
 			    .veirfyPageTitle(record.getString("admin_page_title"));
 				Assert.assertEquals(actual, true, " login page is not displayed");
-
 	}
 
 	@Test(priority = 6)
@@ -89,7 +85,6 @@ public class Scenario1Login extends BaseTest {
 				Assert.assertEquals(actual, true, " login page is not displayed");
 
 	}
-
 	@Test(priority = 7)
 	public void testSC_7() {
 		boolean actual = loginPage
@@ -117,5 +112,17 @@ public class Scenario1Login extends BaseTest {
 				.veirfyPageTitle(record.getString("login_page_title"));
 			Assert.assertEquals(actual, true, " Login Page is not displayed");
 	}
+	
+	@Test(priority=10)
+	public void testPG_10() {
+		boolean actual= loginPage.logoutAdmin();
+						loginPage.browserClose();			
+		    Assert.assertEquals(actual, true, "LogOut and Close the browser ");
+    }
+	
+	
+	
+	
+	
 }
 

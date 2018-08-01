@@ -180,6 +180,14 @@ public class PageBase {
 		TestNGCustomReporter.logbr("Opened URL : "+homepageURL);
 	}
 
+	
+	public  String openFrontEndPage(String frontendUrl)
+	{
+		driver.get(frontendUrl);
+		TestNGCustomReporter.logbr("Opened URL : "+frontendUrl);
+	    return frontendUrl;
+	}
+	
 
 	/*public void openBankSiteHomepage(String homepageURL)
 	{
