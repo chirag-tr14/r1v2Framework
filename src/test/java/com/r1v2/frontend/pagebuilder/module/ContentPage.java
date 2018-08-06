@@ -21,6 +21,7 @@ public class ContentPage extends BaseTest{
 	DataBase database;
 	SCPages pages;
 	
+	ScenarioContentPage cont= new ScenarioContentPage();
 	
 	private Map<String, String> td = getTestDataProperties();
 	private PropertyFileUtil propUtil = new PropertyFileUtil("config");
@@ -46,19 +47,20 @@ public class ContentPage extends BaseTest{
 	public void testPG_1() {
 		CSVTableRow pagesdata = page.get(3);
 		
-		String query="select fk_webpage_id from page_dealer_map where  date_created= CURDATE() and "+pagesdata.getString("DealerId");
+		String webpageId = cont.testPG_8();
 		
-		String webpageId = database.executeSQLQuery(regiondatabase,query);
+		/*String query="select fk_webpage_id from page_dealer_map where  date_created= CURDATE() and "+pagesdata.getString("DealerId");
+		
+		String webpageId = database.executeSQLQuery(regiondatabase,query);*/
 				
-				System.out.println(webpageId);
+		//System.out.println(webpageId);
 		
 	    String sqlQuery = "select public_url from page_urls where  page_type='CONT'and webpageId="+webpageId+" "
 	    		+ "and fk_dealer_id="
 	    					 +pagesdata.getString("DealerId");
-	    
-	   		String contentpageurl = database.executeSQLQuery(regiondatabase,sqlQuery);
+	  	String contentpageurl = database.executeSQLQuery(regiondatabase,sqlQuery);
 		//SCPages actual=
-				pages.frontendUrl(pagesdata.getString("Dealers")+contentpageurl);
+	  	pages.frontendUrl(pagesdata.getString("Dealers")+contentpageurl);
 		//Assert.assertEquals(actual, true, "Page is not Loading  ");
     }
 	

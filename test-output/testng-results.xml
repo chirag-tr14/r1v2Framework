@@ -5,33 +5,153 @@
       <![CDATA[<br>Browser launched successfully]]>
     </line>
     <line>
-      <![CDATA[<br>Opened URL : http://citroen-annecy.stg-eudemosite.com/campaign-page-fr-fr-fr.htm]]>
+      <![CDATA[<br>Opened URL : https://qadealeradminv2fr.izmocars.com/login.htm]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@6337c201 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Entered value chiragr]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@73194df is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Entered value r@je$h143]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@34f7234e is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on ]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@674658f7 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on Select Organization]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@878452d is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on SiteList]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@66629f63 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Entered value citroen-annemasse.stg-eudemosite.com]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@5489c777 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on CITROËN ANNEMASSE]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@53bc1328 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on Inventory Management]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@344b8190 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on Manage Price Rules]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@18388a3c is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on Add Inventory Rule]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15981" started-at="2018-08-06T07:07:24Z" finished-at="2018-08-06T07:07:40Z">
+  <suite name="Default suite" duration-ms="21007" started-at="2018-08-06T14:37:54Z" finished-at="2018-08-06T14:38:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15981" started-at="2018-08-06T07:07:24Z" finished-at="2018-08-06T07:07:40Z">
-      <class name="com.r1v2.frontend.modules.CampaignPage">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.r1v2.frontend.modules.CampaignPage@614ddd49]" name="beforeClass" is-config="true" duration-ms="6330" started-at="2018-08-06T07:07:24Z" finished-at="2018-08-06T07:07:30Z">
+    <test name="Default test" duration-ms="21007" started-at="2018-08-06T14:37:54Z" finished-at="2018-08-06T14:38:15Z">
+      <class name="com.r1v2.backend.pricerule.module.ScenarioDealerDiscount">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.r1v2.backend.pricerule.module.ScenarioDealerDiscount@614ddd49]" name="beforeClass" is-config="true" duration-ms="8935" started-at="2018-08-06T14:37:54Z" finished-at="2018-08-06T14:38:03Z">
           <reporter-output>
             <line>
               <![CDATA[<br>Browser launched successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="setUpOnce1()[pri:0, instance:com.r1v2.frontend.modules.CampaignPage@614ddd49]" name="setUpOnce1" is-config="true" duration-ms="3" started-at="2018-08-06T07:07:30Z" finished-at="2018-08-06T07:07:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpOnce1 -->
-        <test-method status="PASS" signature="testPG_1()[pri:1, instance:com.r1v2.frontend.modules.CampaignPage@614ddd49]" name="testPG_1" duration-ms="9634" started-at="2018-08-06T07:07:30Z" finished-at="2018-08-06T07:07:40Z">
+        <test-method status="PASS" signature="setUpOnce1()[pri:0, instance:com.r1v2.backend.pricerule.module.ScenarioDealerDiscount@614ddd49]" name="setUpOnce1" is-config="true" duration-ms="5852" started-at="2018-08-06T14:38:03Z" finished-at="2018-08-06T14:38:09Z">
           <reporter-output>
             <line>
-              <![CDATA[<br>Opened URL : http://citroen-annecy.stg-eudemosite.com/campaign-page-fr-fr-fr.htm]]>
+              <![CDATA[<br>Opened URL : https://qadealeradminv2fr.izmocars.com/login.htm]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@6337c201 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Entered value chiragr]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@73194df is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Entered value r@je$h143]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@34f7234e is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUpOnce1 -->
+        <test-method status="PASS" signature="testPG_1()[pri:1, instance:com.r1v2.backend.pricerule.module.ScenarioDealerDiscount@614ddd49]" name="testPG_1" duration-ms="6207" started-at="2018-08-06T14:38:09Z" finished-at="2018-08-06T14:38:15Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@674658f7 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on Select Organization]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@878452d is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on SiteList]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@66629f63 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Entered value citroen-annemasse.stg-eudemosite.com]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@5489c777 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on CITROËN ANNEMASSE]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@53bc1328 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on Inventory Management]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@344b8190 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on Manage Price Rules]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@18388a3c is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on Add Inventory Rule]]>
             </line>
           </reporter-output>
         </test-method> <!-- testPG_1 -->
-      </class> <!-- com.r1v2.frontend.modules.CampaignPage -->
+      </class> <!-- com.r1v2.backend.pricerule.module.ScenarioDealerDiscount -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

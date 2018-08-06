@@ -19,6 +19,7 @@ public class ScenarioContentPage extends BaseTest{
 
 	SCPages scpages;
 	DataBase database=getPageFactory().databse();
+
 	//=getPageFactory().databse();
 	private Map<String, String> td = getTestDataProperties();
 	private PropertyFileUtil propUtil = new PropertyFileUtil("config");
@@ -29,12 +30,11 @@ public class ScenarioContentPage extends BaseTest{
 	CSVTable pagebuilderpage = new CSVTable(td.get(propUtil.getString("region")+".PageBuilderFilePath"));
 	List<CSVTableRow> page = pagebuilderpage.getRecords();
 	CSVTableRow pagesdata = page.get(0);
-
+	String regiondatabase=td.get(propUtil.getString("region")+".env");
 
 	@BeforeClass
 	public void setUpOnce1() {
 		CSVTableRow logindata = login.get(0);
-			//database=getPageFactory().databse();
 			scpages=getPageFactory().scHomePage();
 			scpages.openSCLoginpage()
 			.goToHomePage(logindata.getString("admin_username"),logindata.getString("admin_password"));	
@@ -95,46 +95,23 @@ public class ScenarioContentPage extends BaseTest{
 		    Assert.assertEquals(actual, true, "LogOut and Close the browser ");
     }
   
+	@Test(priority=8)
+	public   String testPG_8() {
+		       String query="select fk_webpage_id from page_dealer_map where  date_created= CURDATE() and "
+		       		+ ""+pagesdata.getString("DealerId");
+				String webpageId = database.executeSQLQuery(regiondatabase,query);
+				System.out.println(webpageId);
+				return webpageId;	
+    }
 	
+	
+
 	/*@AfterClass
 	public void testPG_8() {
 		Wook.display();
     }*/
-	
-
-/*	@Test(priority=8)
-	public void testPG_8() {
-		String sqlQuery = "select public_url from page_urls where fk_dealer_id=102880  and page_type='CONT';'";
-		//boolean actual= scpages.logoutAdmin();
-		                //scpages.browserClose();
-		String actual = database.executeSQLQuery("",sqlQuery);
-		
-		System.out.println(actual);
-		    //Assert.assertEquals(actual, true, "LogOut and Close the browser ");
-    }
-  */
-	
-	/*@Test(priority=8)
-	public void testPG_9() {
-		String sqlQuery = "select module_id  from process_que where change_flag=1 and page_type='CONT'";
-        String expectedEmpName = "23748";
-        String actual = database.executeSQLQuery(sqlQuery);
-        System.out.println("Actalu value "+actual);
-		CSVTableRow pagesdata = page.get(3);
-		 scpages.frontendUrl(pagesdata.getString("Dealers"));
-		 			    
-    }
-	*/
 
 	
-	/*@AfterTest()
-	public void testPG_() {
-		CSVTableRow pagesdata = page.get(3);
-				  initWebDriver();
-		scpages.frontendUrl(pagesdata.getString("Dealers"));
-		
-	//Assert.assertEquals(actual, true, " Responsive Content  data  passing on Responsive Editor  ");
-	}*/
 }
 	
 	

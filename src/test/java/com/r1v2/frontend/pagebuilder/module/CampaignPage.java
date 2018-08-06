@@ -10,6 +10,7 @@ import com.core.util.CSVTable;
 import com.core.util.CSVTableRow;
 import com.core.util.PropertyFileUtil;
 import com.qa.sc.pageobjects.SCPages;
+import com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage;
 import com.r1v2.backend.pagebuilder.module.ScenarioContentPage;
 import com.r1v2.common.BaseTest;
 import com.r1v2.common.DataBase;
@@ -19,7 +20,7 @@ public class CampaignPage extends BaseTest{
 	DataBase database;
 	SCPages pages;
 	
-	
+	ScenarioCamapignPage camp= new ScenarioCamapignPage();
 	private Map<String, String> td = getTestDataProperties();
 	private PropertyFileUtil propUtil = new PropertyFileUtil("config");
 
@@ -43,13 +44,16 @@ public class CampaignPage extends BaseTest{
 	@Test(priority=1)
 	public void testPG_1() {
 		CSVTableRow pagesdata = page.get(3);
+		String webpageId = 
+				camp.testPG_9();
 		
-		String query="select fk_webpage_id from page_dealer_map where  date_created= CURDATE() and "
+		//System.out.println(webpageId);
+		/*String query="select fk_webpage_id from page_dealer_map where  date_created= CURDATE() and "
 						+pagesdata.getString("DealerId");
 		
 		String webpageId = database.executeSQLQuery(regiondatabase,query);
 			System.out.println(webpageId);
-		
+		*/
 	    String sqlQuery = "select public_url from page_urls where  page_type='CAMP'and webpageId="+webpageId+" "
 	    		+ "and fk_dealer_id="
 	    					 +pagesdata.getString("DealerId");

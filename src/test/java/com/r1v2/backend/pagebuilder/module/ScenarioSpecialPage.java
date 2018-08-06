@@ -14,11 +14,14 @@ import com.core.util.CSVTableRow;
 import com.core.util.PropertyFileUtil;
 import com.qa.sc.pageobjects.SCPages;
 import com.r1v2.common.BaseTest;
+import com.r1v2.common.DataBase;
 
 public class ScenarioSpecialPage extends BaseTest {
 	
 	public static final Logger logger = LogManager.getLogger(ScenarioSpecialPage.class);
 	SCPages scpages;
+	DataBase database=getPageFactory().databse();;
+	
 	private Map<String, String> td = getTestDataProperties();
 	private PropertyFileUtil propUtil = new PropertyFileUtil("config");
 
@@ -27,8 +30,10 @@ public class ScenarioSpecialPage extends BaseTest {
 
 	CSVTable pagebuilderpage = new CSVTable(td.get(propUtil.getString("region") + ".PageBuilderFilePath"));
 	List<CSVTableRow> page = pagebuilderpage.getRecords();
+	
 	CSVTableRow pagesdata = page.get(0);
-
+	String regiondatabase=td.get(propUtil.getString("region")+".env");
+	
 	@BeforeClass
 	public void setUpOnce1() {
 		CSVTableRow logindata = login.get(0);
@@ -95,6 +100,17 @@ public class ScenarioSpecialPage extends BaseTest {
 		                scpages.browserClose();			
 		   Assert.assertEquals(actual, true, "LogOut and Close the browser ");
     }
+	
+	@Test(priority=8)
+	public   String testPG_8() {
+		       String query="select fk_webpage_id from page_dealer_map where  date_created= CURDATE() and "
+		       		+ ""+pagesdata.getString("DealerId");
+				String webpageId = database.executeSQLQuery(regiondatabase,query);
+				System.out.println(webpageId);
+				return webpageId;
+    }
+	
+
 	}	
 
 

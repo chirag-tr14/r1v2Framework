@@ -2,6 +2,8 @@ package com.r1v2.common;
 
 
 import org.openqa.selenium.WebDriver;
+
+import com.qa.sc.pageobjects.PriceRulePage;
 import com.qa.sc.pageobjects.SCLoginPage;
 import com.qa.sc.pageobjects.SCPages;
 
@@ -27,11 +29,11 @@ public class PageFactory {
 	}
 
 	
-	/*
-	public StatementCreditPage statementCreditPage() {
-		return new StatementCreditPage(webDriver,this);
+	public PriceRulePage priceRulePage() {
+		return new PriceRulePage(webDriver,this);
 	}
 	
+	/*
 	public CouponRewardsPage couponRewardsPage() {
 		return new CouponRewardsPage(webDriver,this);
 	}

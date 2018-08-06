@@ -39,7 +39,30 @@ public interface GlobalStaticInfo {
 	 //SpecialPage
 	 String PAGEBUILDER_SPECIAL_PAGE="pagebuilder.special_page";
 	 
+	 //Inventory Management>>PriceRuleModule
+	 String INVTMGMT_INVTMANAGE_MENU ="invtmgmt.invtmanage_menu";
+	 String INVTMGMT_PRICERULE_MENU ="invtmgmt.pricerule_menu";
+	 String INVTMGMT_PRICERULE_ADD_BTN="invtmgmt.pricerule_add_btn";
+	 String INVTMGMT_PRICERULE_PRICECATEGORY_LIST="invtmgmt.pricerule_pricecategory_list";
+	 String INVTMGMT_PRICERULE_PRICECATEGORY_LABELS="invtmgmt.pricerule_pricecategory_labels";
+	 String INVTMGMT_RICERULE_VEHICLE_TYPE_LIST="invtmgmt.pricerule_vehicle_type_list";
+	 String INVTMGMT_PRICERULE_VEHICLE_TYPE_LABELS="invtmgmt.pricerule_vehicle_type_labels";
+	 String INVTMGM_PRICERULE_PROVIDER_TYPE_LIST="invtmgmt.pricerule_provider_type_list";
+	 String INVTMGMT_PRICERULE_PROVIDER_TYPE_LABELS="invtmgmt.pricerule_provider_type_labels";
 	 
+	 String INVTMGMT_PRICERULE_STARTDATE_ICON="invtmgmt.pricerule_startdate_icon";
+	 String INVTMGMT_PRICERULE_STARTDATE_TEXTBOX="invtmgmt.pricerule_startdate_textbox";
+	 String INVTMGMT_PRICERULE_ENDDATE_ICON="invtmgmt.pricerule_enddate_icon";
+	 String INVTMGMT_PRICERULE_DISCOUNT_TYPE_LIST="invtmgmt.pricerule_discount_type_list";
+	 String INVTMGMT_PRICERULE_DISCOUNT_TYPE_LABELS="invtmgmt.pricerule_discount_type_labels";
+	 String INVTMGMT_PRICERULE_DISCOUNT_VALUE="invtmgmt.pricerule_discount_value";
+	 String INVTMGMT_PRICERULE_SAVE_BTN="invtmgmt.pricerule_save_btn";
+	 String INVTMGMT_PRICERULE_MAKE_LIST="invtmgmt.pricerule_make_list";
+	 String INVTMGMT_PRICERULE_MAKE_LABELS="invtmgmt.pricerule_make_labels";
+	 String INVTMGMT_PRICERULE_MODEL_LIST="invtmgmt.pricerule_model_list";
+	 String INVTMGMT_PRICERULE_MODEL_LABELS="invtmgmt.pricerule_model_labels";
+	 String INVTMGMT_PRICERULE_TRIM_LIST="invtmgmt.pricerule_trim_list";
+	 String INVTMGMT_PRICERULE_TRIM_LABELS="invtmgmt.pricerule_trim_labels";
 	 
 	 
 }

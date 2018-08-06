@@ -1,26 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Test suite]">
-  <test thread-count="5" verbose="10" name="Scenario 2 Test Cases(failed)">
+  <test thread-count="5" verbose="10" name="Scenario 5 Test Cases(failed)">
     <classes>
-      <class name="com.r1v2.backend.modules.ScenarioCamapignPage">
+      <class name="com.r1v2.frontend.pagebuilder.module.ContentPage">
         <methods>
-          <include name="setUpOnce1"/>
-          <include name="testPG_5"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.r1v2.backend.modules.ScenarioCamapignPage -->
-    </classes>
-  </test> <!-- Scenario 2 Test Cases(failed) -->
-  <test thread-count="5" verbose="10" name="Scenario 3 Test Cases(failed)">
-    <classes>
-      <class name="com.r1v2.backend.modules.ScenarioSpecialPage">
-        <methods>
-          <include name="testPG_5"/>
+          <include name="testPG_1"/>
           <include name="setUpOnce1"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.r1v2.backend.modules.ScenarioSpecialPage -->
+      </class> <!-- com.r1v2.frontend.pagebuilder.module.ContentPage -->
     </classes>
-  </test> <!-- Scenario 3 Test Cases(failed) -->
+  </test> <!-- Scenario 5 Test Cases(failed) -->
+  <test thread-count="5" verbose="10" name="Scenario 6 Test Cases(failed)">
+    <classes>
+      <class name="com.r1v2.frontend.pagebuilder.module.CampaignPage">
+        <methods>
+          <include name="testPG_1"/>
+          <include name="setUpOnce1"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.r1v2.frontend.pagebuilder.module.CampaignPage -->
+    </classes>
+  </test> <!-- Scenario 6 Test Cases(failed) -->
+  <test thread-count="5" verbose="10" name="Scenario 7 Test Cases(failed)">
+    <classes>
+      <class name="com.r1v2.frontend.pagebuilder.module.SpecialPage">
+        <methods>
+          <include name="testPG_1"/>
+          <include name="beforeClass"/>
+          <include name="setUpOnce1"/>
+        </methods>
+      </class> <!-- com.r1v2.frontend.pagebuilder.module.SpecialPage -->
+    </classes>
+  </test> <!-- Scenario 7 Test Cases(failed) -->
 </suite> <!-- Failed suite [Test suite] -->

@@ -21,27 +21,32 @@ import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_SITELIST_MENU;
 import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_SITELIST_SEARCH;
 import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_SPECIAL_PAGE;
 import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER__FORMCATEGORY_DROPDOWN_LIST;
-
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import com.core.reports.TestNGCustomReporter;
-import com.mysql.cj.api.mysqla.result.Resultset;
+import com.core.util.CSVTable;
+import com.core.util.CSVTableRow;
+import com.core.util.PropertyFileUtil;
 import com.r1v2.common.BaseTest;
 import com.r1v2.common.DataBase;
 import com.r1v2.common.PageFactory;
 
 public class SCPages extends SCLoginPage {
 	
+	DataBase database=getPageFactory().databse();
 		public String department_name;
-		List<String> pdfData=new ArrayList<String>();
 	
+		BaseTest t= new BaseTest();
+		private PropertyFileUtil propUtil = new PropertyFileUtil("config");
+		private Map<String, String> td = t.getTestDataProperties();
+		String regiondatabase=td.get(propUtil.getString("region")+".env");
+		
+		CSVTable pagebuilderpage = new CSVTable(td.get(propUtil.getString("region")+".PageBuilderFilePath"));
+		List<CSVTableRow> page = pagebuilderpage.getRecords();
+		CSVTableRow pagesdata = page.get(0);
+		
 	public SCPages(WebDriver webDriver, PageFactory pgFactory) {
 		super(webDriver, pgFactory);
 	}
@@ -243,6 +248,27 @@ public class SCPages extends SCLoginPage {
 			return flag;
 	}
 
+	
+	
+	
+	public SCPages webPage_id(  ){
+		String query="select fk_webpage_id from page_dealer_map where  date_created= CURDATE() and "
+	       		+ ""+pagesdata.getString("DealerId");
+			String webpageId = database.executeSQLQuery(regiondatabase,query);
+			System.out.println(webpageId);
+			return this;
+		
+	}
+	
+	 
+	
+	
+	
+	
+	
+	
+	
+	
 }
 
 

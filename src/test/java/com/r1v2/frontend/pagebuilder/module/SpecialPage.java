@@ -13,6 +13,7 @@ import com.core.util.CSVTableRow;
 import com.core.util.PropertyFileUtil;
 import com.qa.sc.pageobjects.SCPages;
 import com.r1v2.backend.pagebuilder.module.ScenarioContentPage;
+import com.r1v2.backend.pagebuilder.module.ScenarioSpecialPage;
 import com.r1v2.common.BaseTest;
 import com.r1v2.common.DataBase;
 
@@ -20,6 +21,7 @@ public class SpecialPage extends BaseTest{
 	public static final Logger logger = LogManager.getLogger(ScenarioContentPage.class);
 	DataBase database;
 	SCPages pages;
+	ScenarioSpecialPage spec=new ScenarioSpecialPage();
 	private Map<String, String> td = getTestDataProperties();
 	private PropertyFileUtil propUtil = new PropertyFileUtil("config");
 
@@ -43,11 +45,12 @@ public class SpecialPage extends BaseTest{
 	public void testPG_1() {
 		CSVTableRow pagesdata = page.get(3);
 		
-		String query="select fk_webpage_id from page_dealer_map where  date_created= CURDATE() and "+pagesdata.getString("DealerId");
+		String webpageId = spec.testPG_8();
+		/*String query="select fk_webpage_id from page_dealer_map where  date_created= CURDATE() and "+pagesdata.getString("DealerId");
 		
 		String webpageId = database.executeSQLQuery(regiondatabase,query);
 				
-				System.out.println(webpageId);
+				System.out.println(webpageId);*/
 		
 	    String sqlQuery = "select public_url from page_urls where  page_type='SPEL'and webpageId="+webpageId+" "
 	    		+ "and fk_dealer_id="
@@ -57,8 +60,12 @@ public class SpecialPage extends BaseTest{
 		//SCPages actual=
 				pages.frontendUrl(pagesdata.getString("Dealers")+contentpageurl);
 		//Assert.assertEquals(actual, true, "Page is not Loading  ");
+				
+				
     }
 
+	
+	
  }
 
 

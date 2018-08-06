@@ -2,30 +2,57 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name= "Test suite"  verbose="10"  >
  
-  <test  name="Scenario 1 Test Cases">
+  <!-- <test  name="Scenario 1 Test Cases">
     <classes>
-      <class name="com.r1v2.backend.modules.Scenario1Login"/>
+      <class name="com.r1v2.backend.pagebuilder.module.Scenario1Login"/>
     </classes>
- </test> 
+ </test>  -->
  
  <test  name="Scenario 2 Test Cases">
     <classes>
-      <class name="com.r1v2.backend.modules.ScenarioCamapignPage"/>
+      <class name="com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage"/>
     </classes>
  </test>  
  
  <test  name="Scenario 3 Test Cases">
     <classes>
-      <class name="com.r1v2.backend.modules.ScenarioSpecialPage"/>
+      <class name="com.r1v2.backend.pagebuilder.module.ScenarioSpecialPage"/>
     </classes>
  </test> 
  
  <test  name="Scenario 4 Test Cases">
     <classes>
-      <class name="com.r1v2.backend.modules.ScenarioContentPage"/>
+      <class name="com.r1v2.backend.pagebuilder.module.ScenarioContentPage"/>
     </classes>
  </test> 
  
+  <test  name="Scenario 5 Test Cases">
+    <classes>
+      <class name="com.r1v2.frontend.pagebuilder.module.ContentPage"/>
+    </classes>
+ </test> 
+ 
+   <test  name="Scenario 6 Test Cases">
+    <classes>
+      <class name="com.r1v2.frontend.pagebuilder.module.CampaignPage"/>
+    </classes>
+ </test> 
+ 
+  <test  name="Scenario 7 Test Cases">
+    <classes>
+      <class name="com.r1v2.frontend.pagebuilder.module.SpecialPage"/>
+    </classes>
+ </test> 
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
  <!-- <test name="all-tests">
         <packages>

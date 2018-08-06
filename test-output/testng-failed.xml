@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.r1v2.frontend.modules.ContentPage">
+      <class name="com.r1v2.backend.pricerule.module.ScenarioDealerDiscount">
         <methods>
           <include name="setUpOnce1"/>
           <include name="testPG_1"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.r1v2.frontend.modules.ContentPage -->
+      </class> <!-- com.r1v2.backend.pricerule.module.ScenarioDealerDiscount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
