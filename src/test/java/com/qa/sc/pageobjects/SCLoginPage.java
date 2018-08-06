@@ -5,13 +5,9 @@ import static com.r1v2.common.GlobalStaticInfo.LOGINPAGE_LOGIN_LOGIN_BUTTON;
 import static com.r1v2.common.GlobalStaticInfo.LOGINPAGE_LOGIN_LOGIN_HELPTEXT;
 import static com.r1v2.common.GlobalStaticInfo.LOGINPAGE_LOGIN_PASSWORD;
 import static com.r1v2.common.GlobalStaticInfo.LOGINPAGE_LOGIN_USERNAME;
-
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
 import com.core.config.BasicConfig.selectSite;
 import com.core.maindriver.DriverScript;
-import com.qa.frontend.pageobjects.FrontEndPages;
 import com.r1v2.common.PageBase;
 import com.r1v2.common.PageFactory;
 

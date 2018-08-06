@@ -17,33 +17,51 @@ import com.qa.sc.pageobjects.SCLoginPage;
 public  class DataBase   {
 
 	BaseTest b= new BaseTest();
-	public static Connection conn;
+	public static Connection connection;
+	
 	private   Map<String, String> td =b.getTestDataProperties();
 	
-	public String dbusername=td.get("username");
+	public  String dbusername=td.get("username");
     public String dbpassword=td.get("password");
-    String connectionUrl="jdbc:mysql://idbw:3306/izmoweb_r1v2";    
-			//private static String connectionUrl= "jdbc:mysql://idbw:3306/";
-		   // private static String connectionUrl= "jdbc:mysql://idbw:3306/";
-/*
-    public PageFactory getPageFactory() {
-		// TODO Auto-generated method stub
-		return DataBase;
-	}
-    */
+    public String eubdpassowrd=td.get("euro_password");
     
+    public String us_dbname = td.get("us_dbname");
+    public String euro_dbname = td.get("euro_dbname");
+    public String india_dbname = td.get("india_dbname");
     
-    
-	public  String executeSQLQuery(String sqlQuery) {
-	        Connection connection;
-	        String resultValue = "";
-	        ResultSet rs;
-	
+    public  String euroconnectionUrl="jdbc:mysql://"+euro_dbname+":3306/izmoweb_r1v2";    
+    public  String mxconnectionUrl= "jdbc:mysql://"+us_dbname+":3306/izmoweb_r1v2";
+    public  String inidaconnectionUrl= "jdbc:mysql://"+india_dbname+":3306/izmoweb_r1v2";
+
+ 
+	public  String executeSQLQuery(String testEnv,String sqlQuery) {
+		String connectionUrl="";
+		String resultValue = "";
+        ResultSet rs;
+	        //To connect with Euro Database
+	        if(testEnv.equalsIgnoreCase("qa_euro")){
+	            connectionUrl = euroconnectionUrl;
+	            dbpassword = eubdpassowrd;
+	    
+	        }
+	        
+	        //To connect with Mx Database
+	        else if(testEnv.equalsIgnoreCase("qa_mx")) {
+	            connectionUrl = mxconnectionUrl;
+	           
+	            
+	        }
+	        //To connect with India Database
+	        else if(testEnv.equalsIgnoreCase("qa_india")) {
+	            connectionUrl = inidaconnectionUrl;
+	           	        }
+	       	    	        
 	        try {
 	            Class.forName("com.mysql.jdbc.Driver");
 	        }catch(ClassNotFoundException e) {
 	            e.printStackTrace();
 	        }
+	        
 	        try {
 	            connection = DriverManager.getConnection(connectionUrl,dbusername,dbpassword);
 	            if(connection!=null) {
@@ -126,38 +144,11 @@ public  class DataBase   {
         return resultValue;
     }
 
-	
 }
-
-
-
-/*	  private  Statement getStatements() throws SQLException, ClassNotFoundException {
-				if (conn == null || conn.isClosed()) {
-				
-					// For credentials
-					Class.forName("com.mysql.jdbc.Driver");
-					//String userName="rajesh.n";
-					//String passWord="ra&95$sHe2N5";
-					// connection driver
-					  String dbusername=td.get("username");
-				      String dbpassword=td.get("password");
-					
-				conn = DriverManager.getConnection("jdbc:mysql://idbw:3306/izmoweb_r1v2", dbusername, dbpassword);
-				}
-		  		  return conn.createStatement();
-			}
-
-
-		  public  ResultSet getData(String query) throws SQLException, ClassNotFoundException {
-				ResultSet data = getStatements().executeQuery(query);
-				return data;
-			}
- */
-		    
 
 		  /* public static String executeSQLQuery(String testEnv, String sqlQuery) {
 
-	      s  String connectionUrl="";
+	       String connectionUrl="";
 	        Connection connection;
 	        String resultValue = "";
 	        ResultSet rs;
@@ -220,5 +211,27 @@ public  class DataBase   {
 	    }*/
   
 
+/*	  private  Statement getStatements() throws SQLException, ClassNotFoundException {
+if (conn == null || conn.isClosed()) {
+
+	// For credentials
+	Class.forName("com.mysql.jdbc.Driver");
+	//String userName="rajesh.n";
+	//String passWord="ra&95$sHe2N5";
+	// connection driver
+	  String dbusername=td.get("username");
+      String dbpassword=td.get("password");
+	
+conn = DriverManager.getConnection("jdbc:mysql://idbw:3306/izmoweb_r1v2", dbusername, dbpassword);
+}
+	  return conn.createStatement();
+}
+
+
+public  ResultSet getData(String query) throws SQLException, ClassNotFoundException {
+ResultSet data = getStatements().executeQuery(query);
+return data;
+}
+*/
 
 

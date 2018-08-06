@@ -1,4 +1,4 @@
-package com.r1v2.backend.modules;
+package com.r1v2.backend.pagebuilder.module;
 
 import java.util.List;
 import java.util.Map;
@@ -36,7 +36,7 @@ public class ScenarioCamapignPage extends BaseTest {
 	public void setUpOnce1() {
 		CSVTableRow logindata = login.get(0);
 			scpages=getPageFactory().scHomePage();
-			//scpages.openSCLoginpage()
+			scpages.openSCLoginpage();
 			scpages.goToHomePage(logindata.getString("admin_username"),logindata.getString("admin_password"));	
 			
 	}

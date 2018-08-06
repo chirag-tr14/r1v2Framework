@@ -1,4 +1,4 @@
-package com.r1v2.backend.modules;
+package com.r1v2.backend.pagebuilder.module;
 
 import java.util.List;
 import java.util.Map;
@@ -18,7 +18,7 @@ public class ScenarioContentPage extends BaseTest{
 	public static final Logger logger = LogManager.getLogger(ScenarioContentPage.class);
 
 	SCPages scpages;
-	DataBase database;
+	DataBase database=getPageFactory().databse();
 	//=getPageFactory().databse();
 	private Map<String, String> td = getTestDataProperties();
 	private PropertyFileUtil propUtil = new PropertyFileUtil("config");
@@ -34,7 +34,7 @@ public class ScenarioContentPage extends BaseTest{
 	@BeforeClass
 	public void setUpOnce1() {
 		CSVTableRow logindata = login.get(0);
-			database=getPageFactory().databse();
+			//database=getPageFactory().databse();
 			scpages=getPageFactory().scHomePage();
 			scpages.openSCLoginpage()
 			.goToHomePage(logindata.getString("admin_username"),logindata.getString("admin_password"));	
@@ -48,8 +48,7 @@ public class ScenarioContentPage extends BaseTest{
 	
 	@Test(priority=2)
 	public void testPG_2() {
-		
-		boolean actual= scpages.selectOrganization()
+				boolean actual= scpages.selectOrganization()
 				.selectSiteList(pagesdata.getString("Dealers"));
 				scpages.navigatePageBuilder();
 		Assert.assertEquals(actual, true, " Navigate to PageBuilder Page on  Respective Dealer ");
@@ -92,12 +91,31 @@ public class ScenarioContentPage extends BaseTest{
 	@Test(priority=7)
 	public void testPG_7() {
 		boolean actual= scpages.logoutAdmin();
-		                //scpages.browserClose();			
+		                scpages.browserClose();			
 		    Assert.assertEquals(actual, true, "LogOut and Close the browser ");
     }
   
-	@Test(priority=8)
+	
+	/*@AfterClass
 	public void testPG_8() {
+		Wook.display();
+    }*/
+	
+
+/*	@Test(priority=8)
+	public void testPG_8() {
+		String sqlQuery = "select public_url from page_urls where fk_dealer_id=102880  and page_type='CONT';'";
+		//boolean actual= scpages.logoutAdmin();
+		                //scpages.browserClose();
+		String actual = database.executeSQLQuery("",sqlQuery);
+		
+		System.out.println(actual);
+		    //Assert.assertEquals(actual, true, "LogOut and Close the browser ");
+    }
+  */
+	
+	/*@Test(priority=8)
+	public void testPG_9() {
 		String sqlQuery = "select module_id  from process_que where change_flag=1 and page_type='CONT'";
         String expectedEmpName = "23748";
         String actual = database.executeSQLQuery(sqlQuery);
@@ -106,11 +124,8 @@ public class ScenarioContentPage extends BaseTest{
 		 scpages.frontendUrl(pagesdata.getString("Dealers"));
 		 			    
     }
-	
-	
-	
-	
-	
+	*/
+
 	
 	/*@AfterTest()
 	public void testPG_() {

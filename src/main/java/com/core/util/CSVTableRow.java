@@ -434,9 +434,13 @@ public class CSVTableRow {
         return getVString(value, defaultValue);
     }
 
-    private String getVString(String name, String defaultValue) {
+   private String getVString(String name, String defaultValue) {
         return (isNullString(name) ? defaultValue : name);
     }
+    
+   /* private String getVString(String name, String defaultValue) {
+        return (isNullString(name) ? defaultValue : name);
+    }*/
 
     /**
      * Returns a {@link java.util.Date} object. String is parsed by supplied

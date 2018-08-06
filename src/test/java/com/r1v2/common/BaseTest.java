@@ -16,9 +16,7 @@ public class BaseTest  {
 	private DriverScript driverScript;
 	private GlobalSettings globalSettings = new GlobalSettings();
 	private static HashMap<String, String> testDataProperties =new HashMap<String, String>();
-	private static HashMap<String, String> testDatabaseProperties =new HashMap<String, String>();
-	
-	
+		
 	@BeforeClass
 	public void beforeClass() {
 		initWebDriver();

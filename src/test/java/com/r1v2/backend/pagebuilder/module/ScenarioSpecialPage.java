@@ -1,4 +1,4 @@
-package com.r1v2.backend.modules;
+package com.r1v2.backend.pagebuilder.module;
 
 import java.util.List;
 import java.util.Map;

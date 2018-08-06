@@ -55,8 +55,7 @@ public class SCPages extends SCLoginPage {
 	
 		public SCPages  selectOrganization(){
 			clickElement(HOMEPAGE_SELECT_ORGANIZATION);
-			
-		return this;
+				return this;
 	}
 	
 	public boolean selectSiteList(String dealer){

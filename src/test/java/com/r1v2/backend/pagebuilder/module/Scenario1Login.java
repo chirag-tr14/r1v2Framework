@@ -1,5 +1,4 @@
-package com.r1v2.backend.modules;
-
+package com.r1v2.backend.pagebuilder.module;
 
 import java.util.List;
 import java.util.Map;
@@ -10,7 +9,6 @@ import com.core.util.CSVTable;
 import com.core.util.CSVTableRow;
 import com.core.util.PropertyFileUtil;
 import com.qa.sc.pageobjects.SCLoginPage;
-import com.qa.sc.pageobjects.SCPages;
 import com.r1v2.common.BaseTest;
 
 public class Scenario1Login extends BaseTest {
@@ -108,8 +106,7 @@ public class Scenario1Login extends BaseTest {
 		boolean actual = loginPage
 				.openSCLoginpage()
 				.goToHomePage(record.getString("admin_username"), record.getString("admin_password"))
-				
-				.veirfyPageTitle(record.getString("login_page_title"));
+								.veirfyPageTitle(record.getString("login_page_title"));
 			Assert.assertEquals(actual, true, " Login Page is not displayed");
 	}
 	
