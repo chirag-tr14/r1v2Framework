@@ -44,19 +44,10 @@ public class CampaignPage extends BaseTest{
 	@Test(priority=1)
 	public void testPG_1() {
 		CSVTableRow pagesdata = page.get(3);
-		String webpageId = 
-				camp.testPG_9();
 		
-		//System.out.println(webpageId);
-		/*String query="select fk_webpage_id from page_dealer_map where  date_created= CURDATE() and "
-						+pagesdata.getString("DealerId");
-		
-		String webpageId = database.executeSQLQuery(regiondatabase,query);
-			System.out.println(webpageId);
-		*/
-	    String sqlQuery = "select public_url from page_urls where  page_type='CAMP'and webpageId="+webpageId+" "
-	    		+ "and fk_dealer_id="
-	    					 +pagesdata.getString("DealerId");
+	    String sqlQuery = "select page_url from izmoweb_r1v2.idw_dealer_webpages where  page_type='CAMP' and curdate() and "
+				+ "status='ACTV' and fk_dealer_id="+pagesdata.getString("DealerId");
+	    					 
 	    
 	   		String contentpageurl = database.executeSQLQuery(regiondatabase,sqlQuery);
 		//SCPages actual=

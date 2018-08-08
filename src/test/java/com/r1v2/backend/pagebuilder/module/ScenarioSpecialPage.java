@@ -89,8 +89,9 @@ public class ScenarioSpecialPage extends BaseTest {
 	}
 	@Test(priority=6)
 			public void testPG_6() {
-				boolean actual= scpages
-					.savePage();
+			boolean actual= scpages
+					.savePage()
+					.veirfyPageTitle(pagesdata.getString("PageTitle"));
 			Assert.assertEquals(actual, true, " Responsive Content  data  passing on Responsive Editor ");
 		}		
 	
@@ -100,7 +101,7 @@ public class ScenarioSpecialPage extends BaseTest {
 		                scpages.browserClose();			
 		   Assert.assertEquals(actual, true, "LogOut and Close the browser ");
     }
-	
+	/*
 	@Test(priority=8)
 	public   String testPG_8() {
 		       String query="select fk_webpage_id from page_dealer_map where  date_created= CURDATE() and "
@@ -109,7 +110,7 @@ public class ScenarioSpecialPage extends BaseTest {
 				System.out.println(webpageId);
 				return webpageId;
     }
-	
+	*/
 
 	}	
 

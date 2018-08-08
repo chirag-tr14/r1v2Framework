@@ -2,6 +2,7 @@ package com.r1v2.frontend.pagebuilder.module;
 
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -20,9 +21,7 @@ public class ContentPage extends BaseTest{
 	public static final Logger logger = LogManager.getLogger(ScenarioContentPage.class);
 	DataBase database;
 	SCPages pages;
-	
-	ScenarioContentPage cont= new ScenarioContentPage();
-	
+		
 	private Map<String, String> td = getTestDataProperties();
 	private PropertyFileUtil propUtil = new PropertyFileUtil("config");
 
@@ -46,25 +45,34 @@ public class ContentPage extends BaseTest{
 	@Test(priority=1)
 	public void testPG_1() {
 		CSVTableRow pagesdata = page.get(3);
-		
-		String webpageId = cont.testPG_8();
-		
-		/*String query="select fk_webpage_id from page_dealer_map where  date_created= CURDATE() and "+pagesdata.getString("DealerId");
-		
-		String webpageId = database.executeSQLQuery(regiondatabase,query);*/
-				
-		//System.out.println(webpageId);
-		
-	    String sqlQuery = "select public_url from page_urls where  page_type='CONT'and webpageId="+webpageId+" "
-	    		+ "and fk_dealer_id="
-	    					 +pagesdata.getString("DealerId");
-	  	String contentpageurl = database.executeSQLQuery(regiondatabase,sqlQuery);
-		//SCPages actual=
-	  	pages.frontendUrl(pagesdata.getString("Dealers")+contentpageurl);
-		//Assert.assertEquals(actual, true, "Page is not Loading  ");
-    }
-	
-	
+
+		String query = "select page_url from izmoweb_r1v2.idw_dealer_webpages where  page_type='CONT' and curdate() and "
+				+ "status='ACTV' and fk_dealer_id=" + pagesdata.getString("DealerId");
+
+		String webpageId = database.executeSQLQuery(regiondatabase, query);
+		System.out.println(webpageId);
+		// TODO : fetch webpage id from csv
+		// TODO : get process queue entry for given web page id and module name
+		try {
+			Boolean isProcessing = true;
+			// TODO : check if process queue is finished or not.
+			do {
+				isProcessing = true;// fetch it from DB
+				TimeUnit.SECONDS.sleep(10);
+				// TODO : if not finished, sleep this thread for some time and repeat
+				// previous step again
+			} while (isProcessing);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		// TODO : if finished, execute front end code.
+
+		pages.frontendUrl(pagesdata.getString("Dealers") + webpageId);
+		// Assert.assertEquals(actual, true, "Page is not Loading ");
+	}
+
  }
     /*//Test to verify Employee table has a record with employee name 'Jack'
     @Test(priority = 3)

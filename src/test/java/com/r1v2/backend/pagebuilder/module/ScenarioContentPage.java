@@ -19,7 +19,7 @@ public class ScenarioContentPage extends BaseTest{
 
 	SCPages scpages;
 	DataBase database=getPageFactory().databse();
-
+	 
 	//=getPageFactory().databse();
 	private Map<String, String> td = getTestDataProperties();
 	private PropertyFileUtil propUtil = new PropertyFileUtil("config");
@@ -28,10 +28,13 @@ public class ScenarioContentPage extends BaseTest{
 	List<CSVTableRow> login = loginpage.getRecords();
 
 	CSVTable pagebuilderpage = new CSVTable(td.get(propUtil.getString("region")+".PageBuilderFilePath"));
-	List<CSVTableRow> page = pagebuilderpage.getRecords();
+		List<CSVTableRow> page = pagebuilderpage.getRecords();
 	CSVTableRow pagesdata = page.get(0);
 	String regiondatabase=td.get(propUtil.getString("region")+".env");
+    
 
+	
+	
 	@BeforeClass
 	public void setUpOnce1() {
 		CSVTableRow logindata = login.get(0);
@@ -84,8 +87,9 @@ public class ScenarioContentPage extends BaseTest{
 	@Test(priority=6)
 	public void testPG_6() {
 			boolean actual= scpages
-					.savePage();
-		     Assert.assertEquals(actual, true, " Responsive Content  data  passing on Responsive Editor  ");
+					.savePage()
+			.veirfyPageTitle(pagesdata.getString("PageTitle"));
+			Assert.assertEquals(actual, true, " Responsive Content  data  passing on Responsive Editor  ");
 		}
 
 	@Test(priority=7)
@@ -96,12 +100,17 @@ public class ScenarioContentPage extends BaseTest{
     }
   
 	@Test(priority=8)
-	public   String testPG_8() {
+	public   void testPG_8() {
+		
 		       String query="select fk_webpage_id from page_dealer_map where  date_created= CURDATE() and "
 		       		+ ""+pagesdata.getString("DealerId");
-				String webpageId = database.executeSQLQuery(regiondatabase,query);
+		       	String webpageId = database.executeSQLQuery(regiondatabase,query);
 				System.out.println(webpageId);
-				return webpageId;	
+				
+				pagesdata.setCell("ModuleID", webpageId);
+				
+				
+		
     }
 	
 	

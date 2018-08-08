@@ -2,15 +2,18 @@ package com.r1v2.common;
 
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeClass;
+
 import com.core.config.BrowserConfig;
 import com.core.config.PropTestdataConfig;
 import com.core.maindriver.DriverScript;
+import com.core.reports.TestListener;
 import com.core.reports.TestNGCustomReporter;
 import com.core.settings.GlobalSettings;
 
-public class BaseTest  {
+public class BaseTest    {
 
 	private WebDriver driver;
 	private DriverScript driverScript;
@@ -35,6 +38,16 @@ public class BaseTest  {
 		driver.manage().window().maximize();
 		return driver;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	public PageFactory getPageFactory() {
 		return new PageFactory(driver);

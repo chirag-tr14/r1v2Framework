@@ -2,6 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name= "Test suite"  verbose="10"  >
  
+ <listeners>
+		<listener class-name="com.core.reports.ExtentReporterNG" />
+</listeners>
+
   <!-- <test  name="Scenario 1 Test Cases">
     <classes>
       <class name="com.r1v2.backend.pagebuilder.module.Scenario1Login"/>

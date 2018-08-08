@@ -1,6 +1,7 @@
 package com.core.util;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.PrintWriter;
 import java.io.Reader;
@@ -63,8 +64,27 @@ public class CSVTable {
         }
         this.headerList = headerList;
     }
-
-    public void updateWriters(Writer writer) {
+     
+    
+    public CSVTableRow setCellValue (String csvFileName,String name,String value) {
+    	 CSVTableRow csvTableRow = new CSVTableRow();
+		try {
+			csvTableRow.setCell(name, value);
+			File f = new File(csvFileName);
+	        updateWriters(new PrintWriter(f));
+					
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return csvTableRow;
+    }
+    
+    
+    
+    
+    
+	public void updateWriters(Writer writer) {
         this.writer = writer;
         csvWriter = new CSVWriter(writer, CSVWriter.DEFAULT_SEPARATOR, CSVWriter.DEFAULT_QUOTE_CHARACTER, CSVWriter.DEFAULT_ESCAPE_CHARACTER);
     }
@@ -145,26 +165,40 @@ public class CSVTable {
         return writer;
     }
 
+    
+    
+    
+    
+    
     public static void main(String[] args) throws Exception {
-        CSVTable t = new CSVTable("F:\\IZMO FrameWork\\com.r1v2.com\\src\\main\\resource\\USFiels\\PagesData.csv");
+    	
+  
+        /*CSVTable t = new CSVTable("F:\\IZMO FrameWork\\com.r1v2.com\\src\\main\\resource\\USFiles\\PagesData.csv");
 //        for (CSVTableRow record : t.getRecords()) {
         	CSVTableRow record = t.getRecords().get(1);
+        	 		 //record.setHeaderList(headerList);
+        	 		 
+        			System.out.println(record.getHeaderList());
+        			record.setCell("Moduleid", "rajefshf");
+        			
+        			record.setCell("ModuleID", "rajesh", true);
+        		       			
+        			System.out.println(record.getHeaderList());*/
+        			
+             //t.save();
             //record.setDateFormat(new SimpleDateFormat("MM/dd/yyyy"));
-            System.out.println(record.getString("Title"));//,,
+            /*System.out.println(record.getString("Title"));//,,
             System.out.println(record.getString("url"));
             System.out.println(record.getString("Dealers"));
             System.out.println(record.getString("Department"));
-            System.out.println(record.getString("Responsive_Content"));
+            System.out.println(record.getString("Responsive_Content"));*/
+            
            
+   
             
-            /*System.out.println(record.getString("admin_username_invalid"));
-            System.out.println(record.getString("admin_password_invalid"));
-            System.out.println(record.getString("admin_username_blank"));
-            System.out.println(record.getString("admin_password_blank"));*/
-                   
             
-//        }
+         
+}              
+  }
 
-    }
-
-}
+ 

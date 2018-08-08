@@ -37,6 +37,7 @@ public class ScenarioCamapignPage extends BaseTest {
 	@BeforeClass
 	public void setUpOnce1() {
 		CSVTableRow logindata = login.get(0);
+
 			scpages=getPageFactory().scHomePage();
 			scpages.openSCLoginpage();
 			scpages.goToHomePage(logindata.getString("admin_username"),logindata.getString("admin_password"));	
@@ -100,26 +101,27 @@ public class ScenarioCamapignPage extends BaseTest {
 
 		@Test(priority=7)
 		public void testPG_7() {
-				boolean actual= scpages
-				.savePage();
+			boolean actual= scpages
+					.savePage()
+			.veirfyPageTitle(pagesdata.getString("PageTitle"));
 		Assert.assertEquals(actual, true, " Responsive Content  data  passing on Responsive Editor ");
 	}
 		
 		@Test(priority=8)
 		public void testPG_8() {
 			boolean actual= scpages.logoutAdmin();
-			               // scpages.browserClose();			
+			               scpages.browserClose();			
 		Assert.assertEquals(actual, true, "LogOut and Close the browser ");
 	    }
 		
-	@Test(priority=9)
+	/*@Test(priority=9)
 		public  String testPG_9() {
 			       String query="select fk_webpage_id from page_dealer_map where  date_created= CURDATE() and "
 			       		+ ""+pagesdata.getString("DealerId");
 					String webpageid = database.executeSQLQuery(regiondatabase,query);
 					System.out.println(webpageid);
 			return webpageid;
-	    }
+	    }*/
 		
 }
 

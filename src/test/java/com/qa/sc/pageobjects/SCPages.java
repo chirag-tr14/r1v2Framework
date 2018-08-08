@@ -224,13 +224,17 @@ public class SCPages extends SCLoginPage {
 		enterValue(PAGEBUILDER_COMMON_RESPONSIVECONTENT,content);
 		return true;
 	}
-	
-	
-	public boolean savePage(){
+
+	public SCPages savePage(){
 		 clickElement(PAGEBUILDER_COMMON_SAVEBUTTON);
-		 return true;
+		 //System.out.println(getWebDriver().getTitle());
+		 	  return this;
 	}
 
+	public boolean veirfyPageTitle(String title) {
+		boolean flag=getWebDriver().getTitle().equalsIgnoreCase(title);
+		return flag;
+	}
 		
 	public boolean verifylogoutButtonFunctionality() {
 	       boolean flag=false;

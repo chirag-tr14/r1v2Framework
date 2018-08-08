@@ -1,37 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Test suite]">
-  <test thread-count="5" verbose="10" name="Scenario 5 Test Cases(failed)">
+  <listeners>
+    <listener class-name="com.core.reports.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" verbose="10" name="Scenario 2 Test Cases(failed)">
     <classes>
-      <class name="com.r1v2.frontend.pagebuilder.module.ContentPage">
+      <class name="com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage">
         <methods>
-          <include name="testPG_1"/>
+          <include name="setUpOnce1"/>
+          <include name="testPG_7"/>
+          <include name="testPG_5"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage -->
+    </classes>
+  </test> <!-- Scenario 2 Test Cases(failed) -->
+  <test thread-count="5" verbose="10" name="Scenario 3 Test Cases(failed)">
+    <classes>
+      <class name="com.r1v2.backend.pagebuilder.module.ScenarioSpecialPage">
+        <methods>
+          <include name="testPG_6"/>
+          <include name="testPG_5"/>
           <include name="setUpOnce1"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.r1v2.frontend.pagebuilder.module.ContentPage -->
+      </class> <!-- com.r1v2.backend.pagebuilder.module.ScenarioSpecialPage -->
     </classes>
-  </test> <!-- Scenario 5 Test Cases(failed) -->
-  <test thread-count="5" verbose="10" name="Scenario 6 Test Cases(failed)">
+  </test> <!-- Scenario 3 Test Cases(failed) -->
+  <test thread-count="5" verbose="10" name="Scenario 4 Test Cases(failed)">
     <classes>
-      <class name="com.r1v2.frontend.pagebuilder.module.CampaignPage">
+      <class name="com.r1v2.backend.pagebuilder.module.ScenarioContentPage">
         <methods>
-          <include name="testPG_1"/>
           <include name="setUpOnce1"/>
+          <include name="testPG_6"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.r1v2.frontend.pagebuilder.module.CampaignPage -->
+      </class> <!-- com.r1v2.backend.pagebuilder.module.ScenarioContentPage -->
     </classes>
-  </test> <!-- Scenario 6 Test Cases(failed) -->
-  <test thread-count="5" verbose="10" name="Scenario 7 Test Cases(failed)">
-    <classes>
-      <class name="com.r1v2.frontend.pagebuilder.module.SpecialPage">
-        <methods>
-          <include name="testPG_1"/>
-          <include name="beforeClass"/>
-          <include name="setUpOnce1"/>
-        </methods>
-      </class> <!-- com.r1v2.frontend.pagebuilder.module.SpecialPage -->
-    </classes>
-  </test> <!-- Scenario 7 Test Cases(failed) -->
+  </test> <!-- Scenario 4 Test Cases(failed) -->
 </suite> <!-- Failed suite [Test suite] -->

@@ -6,7 +6,6 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -17,50 +16,37 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class ExtentReport {
+public class ExtentReport1 {
 
-public  ExtentHtmlReporter htmlReporter;
-public ExtentReports report;
-public ExtentTest extentTest;
+public static ExtentHtmlReporter htmlReporter;
+public static ExtentReports report;
+public static ExtentTest extentTest;
 
-@BeforeTest
+@BeforeSuite
 public void setUp() {
 	
-	 /** htmlReporter = new ExtentHtmlReporter (
-	 * "F:\\IZMO FrameWork\\com.izomweb.com\\Reports\\Reports.html");*/
-	 
 	htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/Reports/Report.html");
 	report = new ExtentReports();
 	report.attachReporter(htmlReporter);
 	
-	
-	report.setSystemInfo("OS", "Windows 10");
-	report.setSystemInfo("Host Name", "10.125.3.18");
-	report.setSystemInfo("Environment", "QA");
-	report.setSystemInfo("User Name", "Rajesh");
-	//extentTest = report.createTest("Automation ");
-	htmlReporter.config().setChartVisibilityOnOpen(true);
-	htmlReporter.config().setDocumentTitle("Extent Report");
-	htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
-	htmlReporter.config().setTheme(Theme.STANDARD);
-
 }
 
 @AfterMethod
- public void getResult(ITestResult result) throws IOException {
+ public void getResult(ITestResult result)  {
 
 	if (result.getStatus() == ITestResult.FAILURE  ) {
-	    extentTest.log(Status.FAIL, MarkupHelper
+		
+	    extentTest.fail(MarkupHelper
 				.createLabel(result.getName() + " Test case FAILED due to below issues:", ExtentColor.RED));
 		extentTest.fail(result.getThrowable());
 		
 	} else if (result.getStatus() == ITestResult.SUCCESS) {
-		extentTest.log(Status.PASS,
+		extentTest.pass(
 				MarkupHelper.createLabel(result.getName() + " Test Case PASSED", ExtentColor.GREEN));
 		// logger.pass("Screen Shot :" +
 		// logger.addScreenCaptureFromPath(screnshot));
 	} else {
-		extentTest.log(Status.SKIP,
+		extentTest.skip(
 				MarkupHelper.createLabel(result.getName() + " Test Case SKIPPED", ExtentColor.ORANGE));
 		extentTest.skip(result.getThrowable());
 		// logger.pass("Screen Shot :" +
