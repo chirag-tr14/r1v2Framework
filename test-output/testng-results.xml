@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="8" passed="7">
+<testng-results skipped="1" failed="0" ignored="0" total="8" passed="7">
   <reporter-output>
     <line>
       <![CDATA[<br>Browser launched successfully]]>
@@ -8,94 +8,85 @@
       <![CDATA[<br>Opened URL : https://qadealeradminv2mx.izmocars.com/login.htm]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@27adc16e is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@4ae9cfc1 is present]]>
     </line>
     <line>
       <![CDATA[<br>Entered value chiragr]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@1f010bf0 is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@33b1c5c5 is present]]>
     </line>
     <line>
       <![CDATA[<br>Entered value r@je$h143]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@65fe9e33 is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@1af146 is present]]>
     </line>
     <line>
       <![CDATA[<br>Clicked on ]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@62f4ff3b is present]]>
-    </line>
-    <line>
-      <![CDATA[<br>Element Displayed Logout]]>
-    </line>
-    <line>
-      <![CDATA[<br>logout link is displayed on Home page]]>
-    </line>
-    <line>
-      <![CDATA[<br>[Ljava.lang.String;@72a85671 is present]]>
-    </line>
-    <line>
-      <![CDATA[<br>Element Displayed Change password]]>
-    </line>
-    <line>
-      <![CDATA[<br>change password is displayed on Home page]]>
-    </line>
-    <line>
-      <![CDATA[<br>[Ljava.lang.String;@5ae76500 is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@470a696f is present]]>
     </line>
     <line>
       <![CDATA[<br>Clicked on Select Organization]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@62da83ed is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@5c48c0c0 is present]]>
     </line>
     <line>
       <![CDATA[<br>Clicked on Site List]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@7b02e036 is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@56102e1c is present]]>
     </line>
     <line>
       <![CDATA[<br>Entered value nissancelaya.stg-izdemosite.com]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@5f2afe62 is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@11963225 is present]]>
     </line>
     <line>
       <![CDATA[<br>Clicked on NISSAN AUTOCOM CELAYA]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@61e45f87 is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@654b72c0 is present]]>
     </line>
     <line>
       <![CDATA[<br>Clicked on Site Builder]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@6ef81f31 is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@2c42b421 is present]]>
     </line>
     <line>
       <![CDATA[<br>Clicked on Page Builder]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@49601f82 is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@5b78fdb1 is present]]>
     </line>
     <line>
       <![CDATA[<br>Clicked on Add new Page]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@2e34384c is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@344426bf is present]]>
     </line>
     <line>
-      <![CDATA[<br>Element is selected ]]>
+      <![CDATA[<br>Element Displayed ]]>
     </line>
     <line>
-      <![CDATA[<br>Content Page RadioButton default is  selected on  PageBuilder page]]>
+      <![CDATA[<br>CampaignPage Page RadioButton default is  selected on  PageBuilder page]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@328902d5 is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@5432c277 is present]]>
+    </line>
+    <line>
+      <![CDATA[<br>Clicked on ]]>
+    </line>
+    <line>
+      <![CDATA[<br>CampaignPage Page RadioButton  is  selected on  PageBuilder page]]>
+    </line>
+    <line>
+      <![CDATA[<br>[Ljava.lang.String;@12abdfb is present]]>
     </line>
     <line>
       <![CDATA[<br>Element Displayed *]]>
@@ -104,7 +95,7 @@
       <![CDATA[<br>Field is mandatory]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@387bf2d9 is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@7158daf2 is present]]>
     </line>
     <line>
       <![CDATA[<br>Clicked on ]]>
@@ -113,13 +104,13 @@
       <![CDATA[<br>Alert Popup is Display]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@499ef98e is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@4ee5b2d9 is present]]>
     </line>
     <line>
-      <![CDATA[<br>Entered value content-pageus]]>
+      <![CDATA[<br>Entered value campaign-pageus]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@5cbe2654 is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@534180a2 is present]]>
     </line>
     <line>
       <![CDATA[<br>Element Displayed *]]>
@@ -128,7 +119,7 @@
       <![CDATA[<br>Field is mandatory]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@3c3a0032 is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@5981f4a6 is present]]>
     </line>
     <line>
       <![CDATA[<br>Clicked on ]]>
@@ -137,229 +128,253 @@
       <![CDATA[<br>Alert Popup is Display]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@6ae62c7e is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@3762c4fc is present]]>
     </line>
     <line>
-      <![CDATA[<br>Entered value content-page-us]]>
+      <![CDATA[<br>Entered value campaign-page-mx]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@7e4c72d6 is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@3c6c4689 is present]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@75e27856 is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@687e6293 is present]]>
     </line>
     <line>
-      <![CDATA[<br>Entered value Responsive Content for MX Server]]>
+      <![CDATA[<br>Entered value Campaign Page Data for MX Server]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@45b15381 is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@6fcd31c3 is present]]>
     </line>
     <line>
       <![CDATA[<br>Clicked on ]]>
     </line>
     <line>
-      <![CDATA[<br>[Ljava.lang.String;@cedee22 is present]]>
+      <![CDATA[<br>[Ljava.lang.String;@750f64fe is present]]>
     </line>
     <line>
       <![CDATA[<br>Clicked on Logout]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32708" started-at="2018-08-08T09:27:36Z" finished-at="2018-08-08T09:28:09Z">
+  <suite name="Default suite" duration-ms="45356" started-at="2018-08-10T05:20:22Z" finished-at="2018-08-10T05:21:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32708" started-at="2018-08-08T09:27:36Z" finished-at="2018-08-08T09:28:09Z">
-      <class name="com.r1v2.backend.pagebuilder.module.ScenarioContentPage">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.r1v2.backend.pagebuilder.module.ScenarioContentPage@26aa12dd]" name="beforeClass" is-config="true" duration-ms="6503" started-at="2018-08-08T09:27:36Z" finished-at="2018-08-08T09:27:43Z">
+    <test name="Default test" duration-ms="45356" started-at="2018-08-10T05:20:22Z" finished-at="2018-08-10T05:21:07Z">
+      <class name="com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9]" name="setUp" is-config="true" duration-ms="101" started-at="2018-08-10T05:20:22Z" finished-at="2018-08-10T05:20:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9]" name="beforeClass" is-config="true" duration-ms="4519" started-at="2018-08-10T05:20:22Z" finished-at="2018-08-10T05:20:27Z">
           <reporter-output>
             <line>
               <![CDATA[<br>Browser launched successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="setUpOnce1()[pri:0, instance:com.r1v2.backend.pagebuilder.module.ScenarioContentPage@26aa12dd]" name="setUpOnce1" is-config="true" duration-ms="3646" started-at="2018-08-08T09:27:43Z" finished-at="2018-08-08T09:27:47Z">
+        <test-method status="PASS" signature="setUpOnce1()[pri:0, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9]" name="setUpOnce1" is-config="true" duration-ms="4851" started-at="2018-08-10T05:20:27Z" finished-at="2018-08-10T05:20:31Z">
           <reporter-output>
             <line>
               <![CDATA[<br>Opened URL : https://qadealeradminv2mx.izmocars.com/login.htm]]>
             </line>
             <line>
-              <![CDATA[<br>[Ljava.lang.String;@27adc16e is present]]>
+              <![CDATA[<br>[Ljava.lang.String;@4ae9cfc1 is present]]>
             </line>
             <line>
               <![CDATA[<br>Entered value chiragr]]>
             </line>
             <line>
-              <![CDATA[<br>[Ljava.lang.String;@1f010bf0 is present]]>
+              <![CDATA[<br>[Ljava.lang.String;@33b1c5c5 is present]]>
             </line>
             <line>
               <![CDATA[<br>Entered value r@je$h143]]>
             </line>
             <line>
-              <![CDATA[<br>[Ljava.lang.String;@65fe9e33 is present]]>
+              <![CDATA[<br>[Ljava.lang.String;@1af146 is present]]>
             </line>
             <line>
               <![CDATA[<br>Clicked on ]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUpOnce1 -->
-        <test-method status="PASS" signature="testPG_1()[pri:1, instance:com.r1v2.backend.pagebuilder.module.ScenarioContentPage@26aa12dd]" name="testPG_1" duration-ms="167" started-at="2018-08-08T09:27:47Z" finished-at="2018-08-08T09:27:47Z">
+        <test-method status="PASS" signature="testPG_1()[pri:1, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9]" name="testPG_1" duration-ms="16919" started-at="2018-08-10T05:20:31Z" finished-at="2018-08-10T05:20:48Z">
           <reporter-output>
             <line>
-              <![CDATA[<br>[Ljava.lang.String;@62f4ff3b is present]]>
-            </line>
-            <line>
-              <![CDATA[<br>Element Displayed Logout]]>
-            </line>
-            <line>
-              <![CDATA[<br>logout link is displayed on Home page]]>
-            </line>
-            <line>
-              <![CDATA[<br>[Ljava.lang.String;@72a85671 is present]]>
-            </line>
-            <line>
-              <![CDATA[<br>Element Displayed Change password]]>
-            </line>
-            <line>
-              <![CDATA[<br>change password is displayed on Home page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testPG_1 -->
-        <test-method status="PASS" signature="testPG_2()[pri:2, instance:com.r1v2.backend.pagebuilder.module.ScenarioContentPage@26aa12dd]" name="testPG_2" duration-ms="14159" started-at="2018-08-08T09:27:47Z" finished-at="2018-08-08T09:28:01Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<br>[Ljava.lang.String;@5ae76500 is present]]>
+              <![CDATA[<br>[Ljava.lang.String;@470a696f is present]]>
             </line>
             <line>
               <![CDATA[<br>Clicked on Select Organization]]>
             </line>
             <line>
-              <![CDATA[<br>[Ljava.lang.String;@62da83ed is present]]>
+              <![CDATA[<br>[Ljava.lang.String;@5c48c0c0 is present]]>
             </line>
             <line>
               <![CDATA[<br>Clicked on Site List]]>
             </line>
             <line>
-              <![CDATA[<br>[Ljava.lang.String;@7b02e036 is present]]>
+              <![CDATA[<br>[Ljava.lang.String;@56102e1c is present]]>
             </line>
             <line>
               <![CDATA[<br>Entered value nissancelaya.stg-izdemosite.com]]>
             </line>
             <line>
-              <![CDATA[<br>[Ljava.lang.String;@5f2afe62 is present]]>
+              <![CDATA[<br>[Ljava.lang.String;@11963225 is present]]>
             </line>
             <line>
               <![CDATA[<br>Clicked on NISSAN AUTOCOM CELAYA]]>
             </line>
             <line>
-              <![CDATA[<br>[Ljava.lang.String;@61e45f87 is present]]>
+              <![CDATA[<br>[Ljava.lang.String;@654b72c0 is present]]>
             </line>
             <line>
               <![CDATA[<br>Clicked on Site Builder]]>
             </line>
             <line>
-              <![CDATA[<br>[Ljava.lang.String;@6ef81f31 is present]]>
+              <![CDATA[<br>[Ljava.lang.String;@2c42b421 is present]]>
             </line>
             <line>
               <![CDATA[<br>Clicked on Page Builder]]>
             </line>
             <line>
-              <![CDATA[<br>[Ljava.lang.String;@49601f82 is present]]>
+              <![CDATA[<br>[Ljava.lang.String;@5b78fdb1 is present]]>
             </line>
             <line>
               <![CDATA[<br>Clicked on Add new Page]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testPG_2 -->
-        <test-method status="PASS" signature="testPG_3()[pri:3, instance:com.r1v2.backend.pagebuilder.module.ScenarioContentPage@26aa12dd]" name="testPG_3" duration-ms="79" started-at="2018-08-08T09:28:01Z" finished-at="2018-08-08T09:28:01Z">
+        </test-method> <!-- testPG_1 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9]" name="getResult" is-config="true" duration-ms="271" started-at="2018-08-10T05:20:48Z" finished-at="2018-08-10T05:20:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPG_1 status=SUCCESS method=ScenarioCamapignPage.testPG_1()[pri:1, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9] output=<br>[Ljava.lang.String;@470a696f is present]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="testPG_2()[pri:2, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9]" name="testPG_2" duration-ms="469" started-at="2018-08-10T05:20:49Z" finished-at="2018-08-10T05:20:49Z">
           <reporter-output>
             <line>
-              <![CDATA[<br>[Ljava.lang.String;@2e34384c is present]]>
+              <![CDATA[<br>[Ljava.lang.String;@344426bf is present]]>
             </line>
             <line>
-              <![CDATA[<br>Element is selected ]]>
+              <![CDATA[<br>Element Displayed ]]>
             </line>
             <line>
-              <![CDATA[<br>Content Page RadioButton default is  selected on  PageBuilder page]]>
+              <![CDATA[<br>CampaignPage Page RadioButton default is  selected on  PageBuilder page]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@5432c277 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on ]]>
+            </line>
+            <line>
+              <![CDATA[<br>CampaignPage Page RadioButton  is  selected on  PageBuilder page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testPG_2 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9]" name="getResult" is-config="true" duration-ms="31" started-at="2018-08-10T05:20:49Z" finished-at="2018-08-10T05:20:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPG_2 status=SUCCESS method=ScenarioCamapignPage.testPG_2()[pri:2, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9] output=<br>[Ljava.lang.String;@344426bf is present]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="testPG_3()[pri:3, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9]" name="testPG_3" duration-ms="1035" started-at="2018-08-10T05:20:49Z" finished-at="2018-08-10T05:20:50Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@12abdfb is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Element Displayed *]]>
+            </line>
+            <line>
+              <![CDATA[<br>Field is mandatory]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@7158daf2 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on ]]>
+            </line>
+            <line>
+              <![CDATA[<br>Alert Popup is Display]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@4ee5b2d9 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Entered value campaign-pageus]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@534180a2 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Element Displayed *]]>
+            </line>
+            <line>
+              <![CDATA[<br>Field is mandatory]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@5981f4a6 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Clicked on ]]>
+            </line>
+            <line>
+              <![CDATA[<br>Alert Popup is Display]]>
+            </line>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@3762c4fc is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Entered value campaign-page-mx]]>
             </line>
           </reporter-output>
         </test-method> <!-- testPG_3 -->
-        <test-method status="PASS" signature="testPG_4()[pri:4, instance:com.r1v2.backend.pagebuilder.module.ScenarioContentPage@26aa12dd]" name="testPG_4" duration-ms="904" started-at="2018-08-08T09:28:01Z" finished-at="2018-08-08T09:28:02Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9]" name="getResult" is-config="true" duration-ms="32" started-at="2018-08-10T05:20:50Z" finished-at="2018-08-10T05:20:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPG_3 status=SUCCESS method=ScenarioCamapignPage.testPG_3()[pri:3, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9] output=<br>[Ljava.lang.String;@12abdfb is present]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="testPG_4()[pri:4, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9]" name="testPG_4" duration-ms="284" started-at="2018-08-10T05:20:50Z" finished-at="2018-08-10T05:20:50Z">
           <reporter-output>
             <line>
-              <![CDATA[<br>[Ljava.lang.String;@328902d5 is present]]>
-            </line>
-            <line>
-              <![CDATA[<br>Element Displayed *]]>
-            </line>
-            <line>
-              <![CDATA[<br>Field is mandatory]]>
-            </line>
-            <line>
-              <![CDATA[<br>[Ljava.lang.String;@387bf2d9 is present]]>
-            </line>
-            <line>
-              <![CDATA[<br>Clicked on ]]>
-            </line>
-            <line>
-              <![CDATA[<br>Alert Popup is Display]]>
-            </line>
-            <line>
-              <![CDATA[<br>[Ljava.lang.String;@499ef98e is present]]>
-            </line>
-            <line>
-              <![CDATA[<br>Entered value content-pageus]]>
-            </line>
-            <line>
-              <![CDATA[<br>[Ljava.lang.String;@5cbe2654 is present]]>
-            </line>
-            <line>
-              <![CDATA[<br>Element Displayed *]]>
-            </line>
-            <line>
-              <![CDATA[<br>Field is mandatory]]>
-            </line>
-            <line>
-              <![CDATA[<br>[Ljava.lang.String;@3c3a0032 is present]]>
-            </line>
-            <line>
-              <![CDATA[<br>Clicked on ]]>
-            </line>
-            <line>
-              <![CDATA[<br>Alert Popup is Display]]>
-            </line>
-            <line>
-              <![CDATA[<br>[Ljava.lang.String;@6ae62c7e is present]]>
-            </line>
-            <line>
-              <![CDATA[<br>Entered value content-page-us]]>
+              <![CDATA[<br>[Ljava.lang.String;@3c6c4689 is present]]>
             </line>
           </reporter-output>
         </test-method> <!-- testPG_4 -->
-        <test-method status="PASS" signature="testPG_5()[pri:5, instance:com.r1v2.backend.pagebuilder.module.ScenarioContentPage@26aa12dd]" name="testPG_5" duration-ms="1087" started-at="2018-08-08T09:28:02Z" finished-at="2018-08-08T09:28:03Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9]" name="getResult" is-config="true" duration-ms="45" started-at="2018-08-10T05:20:50Z" finished-at="2018-08-10T05:20:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPG_4 status=SUCCESS method=ScenarioCamapignPage.testPG_4()[pri:4, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9] output=<br>[Ljava.lang.String;@3c6c4689 is present]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
-            <line>
-              <![CDATA[<br>[Ljava.lang.String;@7e4c72d6 is present]]>
-            </line>
-            <line>
-              <![CDATA[<br>[Ljava.lang.String;@75e27856 is present]]>
-            </line>
-            <line>
-              <![CDATA[<br>Entered value Responsive Content for MX Server]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testPG_5 -->
-        <test-method status="FAIL" signature="testPG_6()[pri:6, instance:com.r1v2.backend.pagebuilder.module.ScenarioContentPage@26aa12dd]" name="testPG_6" duration-ms="5293" started-at="2018-08-08T09:28:03Z" finished-at="2018-08-08T09:28:08Z">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- getResult -->
+        <test-method status="SKIP" signature="testPG_5()[pri:5, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9]" name="testPG_5" duration-ms="1" started-at="2018-08-10T05:20:50Z" finished-at="2018-08-10T05:20:50Z">
+          <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[ Responsive Content  data  passing on Responsive Editor   expected [true] but found [false]]]>
+              <![CDATA[Skipping this Method]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError:  Responsive Content  data  passing on Responsive Editor   expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:568)
-at com.r1v2.backend.pagebuilder.module.ScenarioContentPage.testPG_6(ScenarioContentPage.java:92)
+              <![CDATA[org.testng.SkipException: Skipping this Method
+at com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage.testPG_5(ScenarioCamapignPage.java:91)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -387,31 +402,89 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPG_5 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9]" name="getResult" is-config="true" duration-ms="33" started-at="2018-08-10T05:20:50Z" finished-at="2018-08-10T05:20:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPG_5 status=SKIP method=ScenarioCamapignPage.testPG_5()[pri:5, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="testPG_6()[pri:6, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9]" name="testPG_6" duration-ms="797" started-at="2018-08-10T05:20:51Z" finished-at="2018-08-10T05:20:51Z">
           <reporter-output>
             <line>
-              <![CDATA[<br>[Ljava.lang.String;@45b15381 is present]]>
+              <![CDATA[<br>[Ljava.lang.String;@687e6293 is present]]>
+            </line>
+            <line>
+              <![CDATA[<br>Entered value Campaign Page Data for MX Server]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testPG_6 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9]" name="getResult" is-config="true" duration-ms="35" started-at="2018-08-10T05:20:51Z" finished-at="2018-08-10T05:20:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPG_6 status=SUCCESS method=ScenarioCamapignPage.testPG_6()[pri:6, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9] output=<br>[Ljava.lang.String;@687e6293 is present]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="testPG_7()[pri:7, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9]" name="testPG_7" duration-ms="15284" started-at="2018-08-10T05:20:51Z" finished-at="2018-08-10T05:21:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<br>[Ljava.lang.String;@6fcd31c3 is present]]>
             </line>
             <line>
               <![CDATA[<br>Clicked on ]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testPG_6 -->
-        <test-method status="PASS" signature="testPG_7()[pri:7, instance:com.r1v2.backend.pagebuilder.module.ScenarioContentPage@26aa12dd]" name="testPG_7" duration-ms="408" started-at="2018-08-08T09:28:08Z" finished-at="2018-08-08T09:28:09Z">
+        </test-method> <!-- testPG_7 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9]" name="getResult" is-config="true" duration-ms="27" started-at="2018-08-10T05:21:07Z" finished-at="2018-08-10T05:21:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPG_7 status=SUCCESS method=ScenarioCamapignPage.testPG_7()[pri:7, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9] output=<br>[Ljava.lang.String;@6fcd31c3 is present]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="testPG_8()[pri:8, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9]" name="testPG_8" duration-ms="646" started-at="2018-08-10T05:21:07Z" finished-at="2018-08-10T05:21:07Z">
           <reporter-output>
             <line>
-              <![CDATA[<br>[Ljava.lang.String;@cedee22 is present]]>
+              <![CDATA[<br>[Ljava.lang.String;@750f64fe is present]]>
             </line>
             <line>
               <![CDATA[<br>Clicked on Logout]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testPG_7 -->
-        <test-method status="PASS" signature="testPG_8()[pri:8, instance:com.r1v2.backend.pagebuilder.module.ScenarioContentPage@26aa12dd]" name="testPG_8" duration-ms="437" started-at="2018-08-08T09:28:09Z" finished-at="2018-08-08T09:28:09Z">
+        </test-method> <!-- testPG_8 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9]" name="getResult" is-config="true" duration-ms="52" started-at="2018-08-10T05:21:07Z" finished-at="2018-08-10T05:21:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPG_8 status=SUCCESS method=ScenarioCamapignPage.testPG_8()[pri:8, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9] output=<br>[Ljava.lang.String;@750f64fe is present]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPG_8 -->
-      </class> <!-- com.r1v2.backend.pagebuilder.module.ScenarioContentPage -->
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage@711f39f9]" name="tearDown" is-config="true" duration-ms="21" started-at="2018-08-10T05:21:07Z" finished-at="2018-08-10T05:21:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

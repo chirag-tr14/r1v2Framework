@@ -26,7 +26,7 @@ public class Scenario1Login extends BaseTest {
 
 	@Test()
 	public void testSC_1() {
-		
+		extentTest = report.createTest("LoginPage ");
 		boolean actual = loginPage.openSCLoginpage().
 				veirfyPageTitle(record.getString("admin_page_title"));
 			Assert.assertEquals(actual, true, " login page is not displayed");

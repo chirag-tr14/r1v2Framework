@@ -227,12 +227,14 @@ public class SCPages extends SCLoginPage {
 
 	public SCPages savePage(){
 		 clickElement(PAGEBUILDER_COMMON_SAVEBUTTON);
+		 waitforPageTolaod(10);
 		 //System.out.println(getWebDriver().getTitle());
 		 	  return this;
 	}
 
 	public boolean veirfyPageTitle(String title) {
 		boolean flag=getWebDriver().getTitle().equalsIgnoreCase(title);
+		//System.out.println(getWebDriver().getTitle());
 		return flag;
 	}
 		
@@ -252,9 +254,6 @@ public class SCPages extends SCLoginPage {
 			return flag;
 	}
 
-	
-	
-	
 	public SCPages webPage_id(  ){
 		String query="select fk_webpage_id from page_dealer_map where  date_created= CURDATE() and "
 	       		+ ""+pagesdata.getString("DealerId");
@@ -264,14 +263,7 @@ public class SCPages extends SCLoginPage {
 		
 	}
 	
-	 
-	
-	
-	
-	
-	
-	
-	
+
 	
 }
 

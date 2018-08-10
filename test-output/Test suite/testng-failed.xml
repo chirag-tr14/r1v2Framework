@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Test suite]">
-  <listeners>
-    <listener class-name="com.core.reports.ExtentReporterNG"/>
-  </listeners>
   <test thread-count="5" verbose="10" name="Scenario 2 Test Cases(failed)">
     <classes>
       <class name="com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage">
         <methods>
           <include name="setUpOnce1"/>
           <include name="testPG_7"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
           <include name="testPG_5"/>
           <include name="beforeClass"/>
         </methods>
@@ -22,7 +22,10 @@
         <methods>
           <include name="testPG_6"/>
           <include name="testPG_5"/>
+          <include name="getResult"/>
           <include name="setUpOnce1"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.r1v2.backend.pagebuilder.module.ScenarioSpecialPage -->
@@ -32,7 +35,10 @@
     <classes>
       <class name="com.r1v2.backend.pagebuilder.module.ScenarioContentPage">
         <methods>
+          <include name="getResult"/>
           <include name="setUpOnce1"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
           <include name="testPG_6"/>
           <include name="beforeClass"/>
         </methods>

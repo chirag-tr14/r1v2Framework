@@ -36,6 +36,7 @@ public class ScenarioSpecialPage extends BaseTest {
 	
 	@BeforeClass
 	public void setUpOnce1() {
+		extentTest = report.createTest("SpecialPage ");
 		CSVTableRow logindata = login.get(0);
 		scpages = getPageFactory().scHomePage();
 		scpages.openSCLoginpage().goToHomePage(logindata.getString("admin_username"),
@@ -50,13 +51,13 @@ public class ScenarioSpecialPage extends BaseTest {
 	}
 
 	@Test(priority = 2)
-	public void testPG_10() {
+	public void testPG_2() {
 		boolean actual = scpages.verifySpecialPageButton();
 		Assert.assertEquals(actual, true, " Navigate to PageBuilder Page on  Respective Dealer ");
 	}
 
 	@Test(priority = 3)
-		public void testPG_11() {
+		public void testPG_3() {
 		CSVTableRow pagesdata = page.get(2);
 		boolean actual = scpages.verifyMandatoryField();
 		scpages.pageTitle(pagesdata.getString("Title"));
@@ -66,7 +67,7 @@ public class ScenarioSpecialPage extends BaseTest {
 	}
 
 	@Test(priority = 4)
-	 	public void testPG_12() {
+	 	public void testPG_4() {
 		CSVTableRow pagesdata = page.get(2);
 		boolean actual = scpages.selectDepartmentdropdownitem(pagesdata.getString("Department"));
 		Assert.assertEquals(actual, true,

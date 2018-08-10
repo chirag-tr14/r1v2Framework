@@ -1,6 +1,5 @@
 package com.core.reports;
 
-
 import org.testng.Reporter;
 
 public class TestNGCustomReporter extends Reporter{

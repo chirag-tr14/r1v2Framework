@@ -38,20 +38,13 @@
 			<version>3.5.2</version>
 		</dependency>
 
-		<!-- pom.xml -->
-	<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
-		<dependency>
-    		<groupId>com.relevantcodes</groupId>
-    		<artifactId>extentreports</artifactId>
-    	<version>2.41.2</version>
-		</dependency>
-		<!-- pom.xml -->
-		<dependency>
-			<groupId>com.aventstack</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>3.1.5</version>
-		</dependency>
-
+	<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>3.1.4</version>
+    <scope>provided</scope>
+</dependency>
 
 		<dependency>
 			<groupId>com.opencsv</groupId>

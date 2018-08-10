@@ -3,6 +3,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.Reader;
 import java.io.Writer;
@@ -14,6 +16,8 @@ import org.apache.commons.lang3.StringUtils;
 
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
+import com.opencsv.bean.StatefulBeanToCsvBuilder;
+
 
 public class CSVTable {
 
@@ -66,24 +70,19 @@ public class CSVTable {
     }
      
     
-    public CSVTableRow setCellValue (String csvFileName,String name,String value) {
-    	 CSVTableRow csvTableRow = new CSVTableRow();
-		try {
-			csvTableRow.setCell(name, value);
-			File f = new File(csvFileName);
-	        updateWriters(new PrintWriter(f));
-					
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+    public CSVTableRow writeCellValue (String name,String value) throws Exception {
+    	CSVTableRow csvTableRow = new CSVTableRow();
+    	csvTableRow.setCell(name, value);
+    	//getCsvWriter().writeNext(value);
+		//writer.write(value);
+		//getWriter().write(value);
+    	//csvWriter.flushQuietly();
+    	    	updateWriters(new PrintWriter(value));
+    	save();
 		return csvTableRow;
     }
-    
-    
-    
-    
-    
+
+
 	public void updateWriters(Writer writer) {
         this.writer = writer;
         csvWriter = new CSVWriter(writer, CSVWriter.DEFAULT_SEPARATOR, CSVWriter.DEFAULT_QUOTE_CHARACTER, CSVWriter.DEFAULT_ESCAPE_CHARACTER);
@@ -165,26 +164,24 @@ public class CSVTable {
         return writer;
     }
 
-    
-    
-    
-    
+
     
     public static void main(String[] args) throws Exception {
     	
-  
-        /*CSVTable t = new CSVTable("F:\\IZMO FrameWork\\com.r1v2.com\\src\\main\\resource\\USFiles\\PagesData.csv");
-//        for (CSVTableRow record : t.getRecords()) {
-        	CSVTableRow record = t.getRecords().get(1);
+  CSVTable t = new CSVTable("F:\\IZMO FrameWork\\com.r1v2.com\\src\\main\\resource\\EuroFiles\\PagesData34.csv");
+      {
+        	CSVTableRow record = t.getRecords().get(0);
         	 		 //record.setHeaderList(headerList);
         	 		 
         			System.out.println(record.getHeaderList());
-        			record.setCell("Moduleid", "rajefshf");
+        			//record.setCell("ModuleID", "rajefshf");
         			
-        			record.setCell("ModuleID", "rajesh", true);
-        		       			
-        			System.out.println(record.getHeaderList());*/
+        			//t.writeCellValue("ModuleID", "rajefshf");
         			
+        			System.out.println(record.getString("ModuleID"));
+      }
+    }
+}
              //t.save();
             //record.setDateFormat(new SimpleDateFormat("MM/dd/yyyy"));
             /*System.out.println(record.getString("Title"));//,,
@@ -193,12 +190,6 @@ public class CSVTable {
             System.out.println(record.getString("Department"));
             System.out.println(record.getString("Responsive_Content"));*/
             
-           
-   
-            
-            
-         
-}              
-  }
+
 
  

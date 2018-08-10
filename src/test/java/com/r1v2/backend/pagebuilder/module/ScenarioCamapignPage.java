@@ -36,6 +36,7 @@ public class ScenarioCamapignPage extends BaseTest {
 	
 	@BeforeClass
 	public void setUpOnce1() {
+		extentTest = report.createTest("CampaignPage ");
 		CSVTableRow logindata = login.get(0);
 
 			scpages=getPageFactory().scHomePage();
@@ -104,7 +105,7 @@ public class ScenarioCamapignPage extends BaseTest {
 			boolean actual= scpages
 					.savePage()
 			.veirfyPageTitle(pagesdata.getString("PageTitle"));
-		Assert.assertEquals(actual, true, " Responsive Content  data  passing on Responsive Editor ");
+		Assert.assertEquals(actual, true, " Campaign Page Save");
 	}
 		
 		@Test(priority=8)

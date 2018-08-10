@@ -37,6 +37,7 @@ public class ContentPage extends BaseTest{
 	 
 	@BeforeClass
 	public void setUpOnce1() {
+		extentTest = report.createTest("Front end ContentPage ");
 			 database=getPageFactory().databse();
 			 pages=getPageFactory().scHomePage();
 
@@ -49,15 +50,40 @@ public class ContentPage extends BaseTest{
 		String query = "select page_url from izmoweb_r1v2.idw_dealer_webpages where  page_type='CONT' and curdate() and "
 				+ "status='ACTV' and fk_dealer_id=" + pagesdata.getString("DealerId");
 
+		
+		
 		String webpageId = database.executeSQLQuery(regiondatabase, query);
 		System.out.println(webpageId);
+		pages.frontendUrl(pagesdata.getString("Dealers") + webpageId);
+	 }	
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		/*
+		 String queri1="select module_id  from process_que where change_flag=1 and page_type='CONT'";
 		// TODO : fetch webpage id from csv
 		// TODO : get process queue entry for given web page id and module name
+		 
+		 
 		try {
-			Boolean isProcessing = true;
+			String webpageId1 = database.executeSQLQuery(regiondatabase, queri1);
+		   Boolean isProcessing = true;
 			// TODO : check if process queue is finished or not.
 			do {
-				isProcessing = true;// fetch it from DB
+				 isProcessing = true;// fetch it from DB
 				TimeUnit.SECONDS.sleep(10);
 				// TODO : if not finished, sleep this thread for some time and repeat
 				// previous step again
@@ -71,9 +97,9 @@ public class ContentPage extends BaseTest{
 
 		pages.frontendUrl(pagesdata.getString("Dealers") + webpageId);
 		// Assert.assertEquals(actual, true, "Page is not Loading ");
-	}
+	}*/
 
- }
+
     /*//Test to verify Employee table has a record with employee name 'Jack'
     @Test(priority = 3)
     public void tesVerifyListOfRecords() {

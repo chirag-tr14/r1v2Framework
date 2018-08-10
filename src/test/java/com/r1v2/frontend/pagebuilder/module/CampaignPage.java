@@ -36,6 +36,7 @@ public class CampaignPage extends BaseTest{
 	 
 	@BeforeClass
 	public void setUpOnce1() {
+		extentTest = report.createTest("Front end SpecialPage ");
 			 database=getPageFactory().databse();
 			 pages=getPageFactory().scHomePage();
 
@@ -47,8 +48,7 @@ public class CampaignPage extends BaseTest{
 		
 	    String sqlQuery = "select page_url from izmoweb_r1v2.idw_dealer_webpages where  page_type='CAMP' and curdate() and "
 				+ "status='ACTV' and fk_dealer_id="+pagesdata.getString("DealerId");
-	    					 
-	    
+	  
 	   		String contentpageurl = database.executeSQLQuery(regiondatabase,sqlQuery);
 		//SCPages actual=
 				pages.frontendUrl(pagesdata.getString("Dealers")+contentpageurl);

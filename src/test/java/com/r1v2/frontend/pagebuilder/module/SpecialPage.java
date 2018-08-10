@@ -36,6 +36,7 @@ public class SpecialPage extends BaseTest{
 	 
 	@BeforeClass
 	public void setUpOnce1() {
+		extentTest = report.createTest("Front end SpecialPage ");
 			 database=getPageFactory().databse();
 			 pages=getPageFactory().scHomePage();
 

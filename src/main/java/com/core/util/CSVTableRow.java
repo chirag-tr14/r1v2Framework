@@ -1,7 +1,5 @@
 package com.core.util;
 
-import java.io.File;
-import java.io.PrintWriter;
 import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.text.NumberFormat;
@@ -81,9 +79,8 @@ public class CSVTableRow {
             }
         } else {
             dataArray.set(position, value);
-        }
-        
-        
+        }  
+ 
     }
 
     public void setCell(String name, String value) {
@@ -116,7 +113,11 @@ public class CSVTableRow {
         int position = headerFieldMap.get(name);
         value = dataArray.get(position);
         return value;
+      
     }
+    
+       
+    
 
     public String getString(String name) {
         String value = getValue(name);
