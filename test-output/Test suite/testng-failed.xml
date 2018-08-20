@@ -1,48 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Test suite]">
-  <test thread-count="5" verbose="10" name="Scenario 2 Test Cases(failed)">
+<suite thread-count="3" guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Test suite]">
+  <test thread-count="3" verbose="10" name="SC PageBuilder Pages(failed)" parallel="classes">
     <classes>
+      <class name="com.r1v2.backend.pagebuilder.module.ScenarioSpecialPage">
+        <methods>
+          <include name="testPG_5"/>
+          <include name="getResult"/>
+          <include name="setUpOnce1"/>
+          <include name="setUp"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.r1v2.backend.pagebuilder.module.ScenarioSpecialPage -->
       <class name="com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage">
         <methods>
           <include name="setUpOnce1"/>
-          <include name="testPG_7"/>
           <include name="getResult"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
           <include name="testPG_5"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage -->
     </classes>
-  </test> <!-- Scenario 2 Test Cases(failed) -->
-  <test thread-count="5" verbose="10" name="Scenario 3 Test Cases(failed)">
-    <classes>
-      <class name="com.r1v2.backend.pagebuilder.module.ScenarioSpecialPage">
-        <methods>
-          <include name="testPG_6"/>
-          <include name="testPG_5"/>
-          <include name="getResult"/>
-          <include name="setUpOnce1"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.r1v2.backend.pagebuilder.module.ScenarioSpecialPage -->
-    </classes>
-  </test> <!-- Scenario 3 Test Cases(failed) -->
-  <test thread-count="5" verbose="10" name="Scenario 4 Test Cases(failed)">
-    <classes>
-      <class name="com.r1v2.backend.pagebuilder.module.ScenarioContentPage">
-        <methods>
-          <include name="getResult"/>
-          <include name="setUpOnce1"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="testPG_6"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.r1v2.backend.pagebuilder.module.ScenarioContentPage -->
-    </classes>
-  </test> <!-- Scenario 4 Test Cases(failed) -->
+  </test> <!-- SC PageBuilder Pages(failed) -->
 </suite> <!-- Failed suite [Test suite] -->

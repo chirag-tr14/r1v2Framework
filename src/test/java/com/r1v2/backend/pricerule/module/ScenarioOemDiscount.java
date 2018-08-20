@@ -38,6 +38,7 @@ public class ScenarioOemDiscount extends BaseTest {
 	
 	@BeforeClass
 	public void setUpOnce1() {
+		extentTest = report.createTest("SC OEM Discount ");
 		CSVTableRow logindata = login.get(0);
 			scpages=getPageFactory().scHomePage();
 			pricerule=getPageFactory().priceRulePage();

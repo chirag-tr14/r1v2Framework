@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name= "Test suite"  verbose="10"   >
+<suite name= "Test suite"  verbose="10"  thread-count="3"  >
  
   <!-- <test  name="Scenario 1 Test Cases">
     <classes>
@@ -8,14 +8,24 @@
     </classes>
  </test>  -->
  
- <test  name="Scenario 2 Test Cases" >
+ <test  name="SC PageBuilder Pages" parallel="classes">
     <classes>
       <class name="com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage"/>
-     
+       <class name="com.r1v2.backend.pagebuilder.module.ScenarioSpecialPage"/>
+       <class name="com.r1v2.backend.pagebuilder.module.ScenarioContentPage"/>
+    </classes>
+ </test> 
+
+ <test  name="Front end Pages" parallel="classes">
+    <classes>
+      <class name="com.r1v2.frontend.pagebuilder.module.ContentPage"/>
+      <class name="com.r1v2.frontend.pagebuilder.module.CampaignPage"/>
+      <class name="com.r1v2.frontend.pagebuilder.module.SpecialPage"/>
     </classes>
  </test>  
 
- <test  name="Scenario 3 Test Cases">
+
+ <!-- <test  name="Scenario 3 Test Cases">
     <classes>
       <class name="com.r1v2.backend.pagebuilder.module.ScenarioSpecialPage"/>
     </classes>
@@ -25,9 +35,10 @@
     <classes>
       <class name="com.r1v2.backend.pagebuilder.module.ScenarioContentPage"/>
     </classes>
- </test> 
-  
-    <test  name="Scenario 5 Test Cases">
+ </test>  -->
+
+  <!-- 
+    <test  name="Scenario 5 Test Cases" parallel="false">
     <classes>
       <class name="com.r1v2.frontend.pagebuilder.module.ContentPage"/>
     </classes>
@@ -43,7 +54,7 @@
     <classes>
       <class name="com.r1v2.frontend.pagebuilder.module.SpecialPage"/>
     </classes>
- </test>  
+ </test>   -->
  
  <!-- <test name="all-tests">
         <packages>

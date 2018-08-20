@@ -36,7 +36,7 @@ public class ScenarioSpecialPage extends BaseTest {
 	
 	@BeforeClass
 	public void setUpOnce1() {
-		extentTest = report.createTest("SpecialPage ");
+		extentTest = report.createTest(getClass().getName());
 		CSVTableRow logindata = login.get(0);
 		scpages = getPageFactory().scHomePage();
 		scpages.openSCLoginpage().goToHomePage(logindata.getString("admin_username"),

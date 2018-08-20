@@ -1,18 +1,6 @@
-Group,DealerId,Dealers,Page_Type,Title,url,Layout,Department,Responsive_Content,PageTitlle,ModuleID
-Nissan,100150,nissancelaya.stg-izdemosite.com,,content-pagemx,content-page-mx,,Venta de Autos,Responsive Content for MX Server,SEO List,
-Nissan,100150,nissancelaya.stg-izdemosite.com,,campaign-pageus,campaign-page-mx,,Venta de Autos,Responsive Content for MX Server,SEO List,
-Nissan,100150,nissancelaya.stg-izdemosite.com,,special-pagemx,special-page-mx,,Venta de Autos,Responsive Content for MX Server,SEO List,
-Nissan,100150,http://nissancelaya.stg-izdemosite.com/,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,test,,,,,,,,,
+Group,DealerId,Dealers,Title,url,Layout,Department,Responsive_Content,Form_category,PageTitle
+PGA,102880,citroen-annecy.stg-eudemosite.com,content-pagefr,content-page-fr,,Véhicules d'occasion,Responsive Content for Euro Server,,SEO List
+PGA,102880,citroen-annecy.stg-eudemosite.com,campaign-pagefr,campaign-page-fr,,Véhicules d'occasion,Responsive Content for Euro Server,Evènements VO,SEO List
+PGA,102880,citroen-annecy.stg-eudemosite.com,special-pagefr,special-page-fr,,Véhicules d'occasion,,Evènements VO,SEO List
+PGA,102880,http://citroen-annecy.stg-eudemosite.com/,,,,,,,
+"5","tsdfnbdhdfh","90"

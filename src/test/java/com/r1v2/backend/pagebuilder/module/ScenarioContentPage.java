@@ -8,7 +8,6 @@ import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import com.core.util.CSVTable;
 import com.core.util.CSVTableRow;
 import com.core.util.PropertyFileUtil;
@@ -33,12 +32,13 @@ public class ScenarioContentPage extends BaseTest{
 		List<CSVTableRow> page = pagebuilderpage.getRecords();
 	CSVTableRow pagesdata = page.get(0);
 	String regiondatabase=td.get(propUtil.getString("region")+".env");
-    
+
+	String csv=td.get(propUtil.getString("region")+".PageBuilderFilePath");
 
 	
 	@BeforeClass
 	public void setUpOnce1() {
-		extentTest = report.createTest("ContentPage ");
+		extentTest = report.createTest(getClass().getName());
 		CSVTableRow logindata = login.get(0);
 			scpages=getPageFactory().scHomePage();
 			scpages.openSCLoginpage()
@@ -101,24 +101,27 @@ public class ScenarioContentPage extends BaseTest{
 		    Assert.assertEquals(actual, true, "LogOut and Close the browser ");
     }
   
-	@Test(priority=8)
+/*	@Test(priority=8)
 	public   void testPG_8() {
 		
-		//String csvfile="F:\\IZMO FrameWork\\com.r1v2.com\\src\\main\\resource\\USFiles\\PagesData.csv";
+		pagebuilderpage.setCsvFileName(csv);
+		CSVWriter writer = new CSVWriter(new FileWriter(CSV, true));
+		pagebuilderpage.getWriter();
+				//String csvfile="F:\\IZMO FrameWork\\com.r1v2.com\\src\\main\\resource\\USFiles\\PagesData.csv";
 		       String query="select fk_webpage_id from page_dealer_map where  date_created= CURDATE() and "
 		       		+ ""+pagesdata.getString("DealerId");
 		       	String webpageId = database.executeSQLQuery(regiondatabase,query);
 				System.out.println(webpageId);
 				pagesdata.setCell("ModuleID", webpageId);
 				
-    }
+    }*/
 
 
 	/*@AfterClass
 	public void testPG_8() {
 		Wook.display();
-    }*/
-
+    }
+*/
 	
 }
 	

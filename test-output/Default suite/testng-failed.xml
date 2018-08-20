@@ -3,16 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage">
+      <class name="com.r1v2.backend.pagebuilder.module.ScenarioSpecialPage">
         <methods>
-          <include name="setUpOnce1"/>
-          <include name="getResult"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="testPG_7"/>
+          <include name="testPG_6"/>
           <include name="testPG_5"/>
+          <include name="getResult"/>
+          <include name="setUpOnce1"/>
+          <include name="setUp"/>
+          <include name="testPG_4"/>
+          <include name="testPG_3"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage -->
+      </class> <!-- com.r1v2.backend.pagebuilder.module.ScenarioSpecialPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

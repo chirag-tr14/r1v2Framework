@@ -1,5 +1,5 @@
-Group,Dealer,DealerId,Provider,InvetoryId,InvetoryLocation,Make,Model,Trim,EndDate,DiscountType,DiscountValue
-PGA,citroen-annemasse.stg-eudemosite.com,102878,IZMOVN-PGA-RENAULT#VNC4491#ANNEMASSE,,,,,,,FLAT,6000
-PGA,,,IZMOVN-PGA-CITROEN#SADAL CITROËN ANNECY#SEYNOD,,,CITROEN,,,,Percentage,4
-PGA,,,IZMOVN-PGA-RENAULT#VNC4491#ANNEMASSE,,,RENAULT,CAPTUR,Intens dCi 110 Energy 5 Portes,,FLAT,8000
-PGA,,,IZMOVN-PGA-CITROEN#SADAL CITROËN ANNECY#SEYNOD,,,,,,,FLAT,5000
+Group,Dealer,DealerId,Price Category,Vehicle Type,Provider,Make,Model,Trim,EndDate,Discount Type,DiscountValue
+PGA,citroen-annemasse.stg-eudemosite.com,102878,Trade in Discount,New / Demonstration,IZMOVN-PGA-CITROEN#SADAL CITROËN ANNECY#SEYNOD,,,,,Flat,6000
+PGA,,,,,IZMOVN-PGA-CITROEN#SADAL CITROËN ANNECY#SEYNOD,CITROEN,,,,Percentage,4
+PGA,,,,,IZMOVN-PGA-RENAULT#VNC4491#ANNEMASSE,RENAULT,CAPTUR,Intens dCi 110 Energy 5 Portes,,FLAT,8000
+PGA,,,,,IZMOVN-PGA-RENAULT#VNC4491#ANNEMASSE,,,,,FLAT,5000

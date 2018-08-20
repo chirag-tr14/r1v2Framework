@@ -36,7 +36,7 @@ public class ScenarioCamapignPage extends BaseTest {
 	
 	@BeforeClass
 	public void setUpOnce1() {
-		extentTest = report.createTest("CampaignPage ");
+		extentTest = report.createTest(getClass().getName());
 		CSVTableRow logindata = login.get(0);
 
 			scpages=getPageFactory().scHomePage();

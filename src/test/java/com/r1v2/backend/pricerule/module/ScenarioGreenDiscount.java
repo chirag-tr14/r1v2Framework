@@ -38,12 +38,11 @@ public class ScenarioGreenDiscount extends BaseTest {
 	
 	@BeforeClass
 	public void setUpOnce1() {
+		extentTest = report.createTest(getClass().getName());
 		CSVTableRow logindata = login.get(0);
-			scpages=getPageFactory().scHomePage();
-			pricerule=getPageFactory().priceRulePage();
-			scpages.openSCLoginpage();
-			scpages.goToHomePage(logindata.getString("admin_username"),logindata.getString("admin_password"));	
-			
+		scpages = getPageFactory().scHomePage();
+		scpages.openSCLoginpage().goToHomePage(logindata.getString("admin_username"),
+				logindata.getString("admin_password"));
 	}
 	@Test(priority=1)
 	public void testPG_1() {

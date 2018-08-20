@@ -1,5 +1,7 @@
 package com.core.util;
 
+import java.io.IOException;
+import java.io.Writer;
 import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.text.NumberFormat;
@@ -16,9 +18,11 @@ import java.util.UUID;
 
 import org.apache.commons.lang3.StringUtils;
 
+import com.opencsv.CSVWriter;
 
 
-public class CSVTableRow {
+
+public class CSVTableRow  {
 
     Map<String, Integer> headerFieldMap = new TreeMap<String, Integer>();
 
@@ -28,6 +32,11 @@ public class CSVTableRow {
 
     List<String> dataArray = null;
 
+
+    CSVWriter csvWriter = null;
+
+    Writer writer = null;
+   
     public CSVTableRow() {
 
     }
@@ -59,7 +68,7 @@ public class CSVTableRow {
         this.dataArray = data;
     }
 
-    public void setCell(String name, String value1, boolean createNew) {
+    public void setCell(String name, String value1, boolean createNew) throws IOException   {
         String value = value1;
         if (headerFieldMap.get(name) == null && !createNew) { return; }
 
@@ -74,16 +83,19 @@ public class CSVTableRow {
             if (dataArray == null) {
                 dataArray = new ArrayList<String>();
                 dataArray.add(position, value);
+                
             } else {
                 dataArray.add(position, value);
             }
         } else {
-            dataArray.set(position, value);
-        }  
- 
-    }
+        
+        	dataArray.set(position, value);
+        }
+      }  
 
-    public void setCell(String name, String value) {
+    
+
+    public void setCell(String name, String value) throws IOException   {
         setCell(name, value, false);
     }
 
@@ -116,8 +128,7 @@ public class CSVTableRow {
       
     }
     
-       
-    
+     
 
     public String getString(String name) {
         String value = getValue(name);

@@ -160,6 +160,11 @@ public class DriverScript implements BasicConfig {
 
 			case FIREFOX:
 				
+				DesiredCapabilities capabilities1 = DesiredCapabilities.firefox();
+				//capabilities1.setCapability(capabilityName, value);
+				
+				capabilities1.setJavascriptEnabled(false);
+				
 				String ffLocation = GlobalSettings.firefoxDriverLocation();
 				System.setProperty("webdriver.gecko.driver", ffLocation);
 				driverObject = new FirefoxDriver();

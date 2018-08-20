@@ -2,6 +2,7 @@ package com.r1v2.frontend.pagebuilder.module;
 
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -11,6 +12,7 @@ import org.testng.annotations.Test;
 import com.core.util.CSVTable;
 import com.core.util.CSVTableRow;
 import com.core.util.PropertyFileUtil;
+import com.core.util.Utility;
 import com.qa.sc.pageobjects.SCPages;
 import com.r1v2.backend.pagebuilder.module.ScenarioContentPage;
 import com.r1v2.backend.pagebuilder.module.ScenarioSpecialPage;
@@ -35,11 +37,27 @@ public class SpecialPage extends BaseTest{
 	String regiondatabase=td.get(propUtil.getString("region")+".env");
 	 
 	@BeforeClass
-	public void setUpOnce1() {
-		extentTest = report.createTest("Front end SpecialPage ");
+	public void setUpOnce1() throws InterruptedException {
+		extentTest = report.createTest(getClass().getName());
 			 database=getPageFactory().databse();
 			 pages=getPageFactory().scHomePage();
-
+			 String processqueQuery="select  module_id  from  process_que where  page_type='SPEL' "
+						+ "and change_flag=1 and  curdate()and fk_dealer_id="+pagesdata.getString("DealerId");
+				
+				/*String proceesque=database.executeSQLQuery(regiondatabase,processqueQuery);
+				Utility.processQue(proceesque);*/
+				 Boolean isProcessing = true;
+				   while (isProcessing) { 
+					 String proceesque =database.executeSQLQuery(regiondatabase, processqueQuery);
+					 	System.out.println(proceesque); 
+				  		if (proceesque == null || proceesque.isEmpty()) { 
+					  break; 
+					  }
+				  TimeUnit.SECONDS.sleep(10);
+				  //Thread.sleep(10000);
+				  
+				  } System.out.println("Job done getting out!!!!"); 
+				
 	}
 	
 	@Test(priority=1)

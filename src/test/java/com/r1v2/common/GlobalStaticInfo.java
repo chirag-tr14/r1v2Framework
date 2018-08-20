@@ -39,10 +39,13 @@ public interface GlobalStaticInfo {
 	 //SpecialPage
 	 String PAGEBUILDER_SPECIAL_PAGE="pagebuilder.special_page";
 	 
+	 
+	 
 	 //Inventory Management>>PriceRuleModule
 	 String INVTMGMT_INVTMANAGE_MENU ="invtmgmt.invtmanage_menu";
 	 String INVTMGMT_PRICERULE_MENU ="invtmgmt.pricerule_menu";
 	 String INVTMGMT_PRICERULE_ADD_BTN="invtmgmt.pricerule_add_btn";
+	 
 	 String INVTMGMT_PRICERULE_PRICECATEGORY_LIST="invtmgmt.pricerule_pricecategory_list";
 	 String INVTMGMT_PRICERULE_PRICECATEGORY_LABELS="invtmgmt.pricerule_pricecategory_labels";
 	 String INVTMGMT_RICERULE_VEHICLE_TYPE_LIST="invtmgmt.pricerule_vehicle_type_list";

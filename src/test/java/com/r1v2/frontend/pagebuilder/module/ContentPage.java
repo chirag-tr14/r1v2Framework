@@ -36,15 +36,32 @@ public class ContentPage extends BaseTest{
 
 	 
 	@BeforeClass
-	public void setUpOnce1() {
-		extentTest = report.createTest("Front end ContentPage ");
+	public void setUpOnce1() throws InterruptedException {
+		extentTest = report.createTest(getClass().getName());
 			 database=getPageFactory().databse();
 			 pages=getPageFactory().scHomePage();
 
+			 String processqueQuery="select  module_id  from  process_que where  page_type='CONT' "
+						+ "and change_flag=1 and  curdate()and fk_dealer_id="+pagesdata.getString("DealerId");
+				
+				//String proceesque=database.executeSQLQuery(regiondatabase,processqueQuery);
+				//Utility.processQue(proceesque);
+			 
+				 Boolean isProcessing = true;
+				   while (isProcessing) { 
+					 String proceesque =database.executeSQLQuery(regiondatabase, processqueQuery);
+					 	System.out.println(proceesque); 
+				  		if (proceesque == null || proceesque.isEmpty()) { 
+					  break; 
+					  }
+				  TimeUnit.SECONDS.sleep(10);
+				  //Thread.sleep(10000);
+				  
+				  } System.out.println("Job done getting out!!!!"); 
 	}
 	
 	@Test(priority=1)
-	public void testPG_1() {
+	public void testCOPG_1() {
 		CSVTableRow pagesdata = page.get(3);
 
 		String query = "select page_url from izmoweb_r1v2.idw_dealer_webpages where  page_type='CONT' and curdate() and "

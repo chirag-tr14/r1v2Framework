@@ -4,9 +4,13 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.collections.map.StaticBucketMap;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+
+import com.r1v2.common.DataBase;
 
 /**
  * Name : Utility
@@ -19,17 +23,33 @@ import org.apache.log4j.Logger;
  * 
  **/
 public class Utility {
-
+	DataBase database;
 	public static final Logger logger = LogManager.getLogger(Utility.class);
 
-	/**
-	 * Will create a random e-mail address for the supplied domain
-	 * 
-	 * @param domain
-	 *            - email domain
-	 * @return String - randomly generated email address
-	 * 
-	 **/
+		
+	public  static void processQue(String query) throws InterruptedException{
+		Boolean isProcessing = true;
+		while (isProcessing) {
+		//String proceesque = database.executeSQLQuery(regiondatabase, processqueQuery);
+		System.out.println(query);
+		if (query == null || query.isEmpty()) {
+			break;
+		}
+		TimeUnit.SECONDS.sleep(10);
+		} 
+		System.out.println("Job done getting out!!!!");
+	} 
+	//This Method return Current Date 
+	public static String getTodaysDate(String format) {
+		DateFormat dateFormat = new SimpleDateFormat(format);
+		Calendar cal = Calendar.getInstance();
+		return dateFormat.format(cal.getTime());
+	}
+	
+	
+	
+	
+	
 	public String generateRandomEmailAddress(String domain) {
 		String emailAddress = "";
 		// Generate random email address
@@ -43,12 +63,7 @@ public class Utility {
 		return emailAddress;
 	}
 
-	public static String getTodaysDate(String format) {
-		DateFormat dateFormat = new SimpleDateFormat(format);
-		Calendar cal = Calendar.getInstance();
-
-		return dateFormat.format(cal.getTime());
-	}
+	
 
 	public static String stripNonDigits(final CharSequence input) {
 		final StringBuilder sb = new StringBuilder(input.length());
@@ -79,4 +94,14 @@ public class Utility {
 		return sb.toString();
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

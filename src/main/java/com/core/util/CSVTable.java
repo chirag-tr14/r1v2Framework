@@ -18,6 +18,8 @@ import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
 import com.opencsv.bean.StatefulBeanToCsvBuilder;
 
+import net.bytebuddy.dynamic.scaffold.TypeWriter.FieldPool.Record;
+
 
 public class CSVTable {
 
@@ -157,13 +159,24 @@ public class CSVTable {
     }
 
     public CSVWriter getCsvWriter() {
+    	
         return csvWriter;
     }
 
+    
+ public CSVWriter getCsvWriter( String csvFileName,Boolean flag ) throws IOException {
+	   setCsvFileName(csvFileName);
+	 
+    	 csvWriter=new CSVWriter(new FileWriter(csvFileName,flag));
+	 
+        return csvWriter;
+    }
+ 
+ 
     public Writer getWriter() {
+    	
         return writer;
     }
-
 
     
     public static void main(String[] args) throws Exception {
@@ -177,11 +190,31 @@ public class CSVTable {
         			//record.setCell("ModuleID", "rajefshf");
         			
         			//t.writeCellValue("ModuleID", "rajefshf");
-        			
+        		    record.setCell("ModuleID", "value");
         			System.out.println(record.getString("ModuleID"));
       }
-    }
-}
+      
+      String CSV="F:\\IZMO FrameWork\\com.r1v2.com\\src\\main\\resource\\EuroFiles\\PagesData34.csv";
+      String [] record = "5,tsdfnbdhdfh,90".split(",");
+      t.getCsvWriter(CSV, true);
+      t.csvWriter.writeNext(record, true);
+      //writeNext(record);
+      t.csvWriter.flush();
+      
+      //t.csvWriter.close();
+     
+     /* CSVWriter writer = new CSVWriter(new FileWriter(CSV, true));
+        
+      String [] record = "3,David,Feezor,USA,40".split(",");
+        
+      writer.writeNext(record);
+        
+      writer.close();*/
+   }
+
+   }
+
+
              //t.save();
             //record.setDateFormat(new SimpleDateFormat("MM/dd/yyyy"));
             /*System.out.println(record.getString("Title"));//,,

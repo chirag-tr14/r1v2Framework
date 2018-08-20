@@ -1,10 +1,12 @@
 package com.core.reports;
 
 import java.io.IOException;
+import java.lang.reflect.Method;
 
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
@@ -21,8 +23,8 @@ public class ExtentReport {
 
  public static  ExtentHtmlReporter htmlReporter;
  public static ExtentReports report;
- public static ExtentTest extentTest;
-
+ public  ExtentTest extentTest;
+ 
 @BeforeSuite
 public void setUp() {
 	
@@ -39,10 +41,6 @@ public void setUp() {
 	report.setSystemInfo("Environment", "QA");
 	report.setSystemInfo("User Name", "Rajesh");
 	
-	
-    
-    htmlReporter.config().setReportName("Final Report");
-	
 	htmlReporter.config().setChartVisibilityOnOpen(true);
 	htmlReporter.config().setDocumentTitle("Extent Report");
 	htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
@@ -50,7 +48,9 @@ public void setUp() {
 	
 }
 
-@AfterMethod
+
+
+@AfterMethod()
  public void getResult(ITestResult result) throws IOException {
 	
 	if (result.getStatus() == ITestResult.FAILURE) {
@@ -71,12 +71,12 @@ public void setUp() {
 	
 	report.flush();
 }
-
-@AfterSuite
+/*
+@AfterSuite()
 public void tearDown() {
-	report.flush();
+	
 	
 
-}
+}*/
 
 }
