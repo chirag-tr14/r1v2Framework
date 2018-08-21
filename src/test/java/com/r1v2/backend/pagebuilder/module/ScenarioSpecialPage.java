@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import com.core.util.CSVTable;
 import com.core.util.CSVTableRow;
 import com.core.util.PropertyFileUtil;
+import com.core.util.Utility;
 import com.qa.sc.pageobjects.SCPages;
 import com.r1v2.common.BaseTest;
 import com.r1v2.common.DataBase;
@@ -93,6 +94,7 @@ public class ScenarioSpecialPage extends BaseTest {
 			boolean actual= scpages
 					.savePage()
 					.veirfyPageTitle(pagesdata.getString("PageTitle"));
+			Utility.captureScreenshot(driver, "SpecialPageSaved");
 			Assert.assertEquals(actual, true, " Responsive Content  data  passing on Responsive Editor ");
 		}		
 	
@@ -102,17 +104,7 @@ public class ScenarioSpecialPage extends BaseTest {
 		                scpages.browserClose();			
 		   Assert.assertEquals(actual, true, "LogOut and Close the browser ");
     }
-	/*
-	@Test(priority=8)
-	public   String testPG_8() {
-		       String query="select fk_webpage_id from page_dealer_map where  date_created= CURDATE() and "
-		       		+ ""+pagesdata.getString("DealerId");
-				String webpageId = database.executeSQLQuery(regiondatabase,query);
-				System.out.println(webpageId);
-				return webpageId;
-    }
-	*/
-
+	
 	}	
 
 

@@ -1,4 +1,4 @@
-/*package com.core.actionhandlers;
+package com.core.actionhandlers;
 
 
 import java.util.List;
@@ -13,7 +13,7 @@ import com.core.actions.WebElementActions;
 import com.core.exceptions.InvalidElementTypeException;
 import com.core.util.LocatorHandler;
 
-*//**
+/**
  * Name : WebElementActionsHandler
  * 
  * Description : This class is an implementer for WebElementActions.
@@ -22,7 +22,7 @@ import com.core.util.LocatorHandler;
  * 
  * Version : 1.0
  * 
- **//*
+ **/
 public  class WebElementActionHandler implements WebElementActions{
 
 
@@ -98,4 +98,3 @@ public  class WebElementActionHandler implements WebElementActions{
 		}
 	}
 }
-*/

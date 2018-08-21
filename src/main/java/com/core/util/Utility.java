@@ -1,14 +1,21 @@
 package com.core.util;
 
+import java.io.File;
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.collections.map.StaticBucketMap;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import org.codehaus.plexus.util.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 
 import com.r1v2.common.DataBase;
 
@@ -45,6 +52,41 @@ public class Utility {
 		Calendar cal = Calendar.getInstance();
 		return dateFormat.format(cal.getTime());
 	}
+	
+	
+		//public static DateFormat dateformat = new SimpleDateFormat("yyyy_MM_dd_hh_mm_ss");
+		public static String captureScreenshot(WebDriver driver, String screenshotName) {
+
+			String datename = new SimpleDateFormat("yyyy_MM_dd_hh_mm_ss").format(new Date());
+
+			TakesScreenshot ts = (TakesScreenshot) driver;
+
+			File src = ts.getScreenshotAs(OutputType.FILE);
+
+			String destination = "F:\\IZMO FrameWork\\com.r1v2.com\\ScreenShots\\PageBuilder\\" +screenshotName  + 
+					datename+  ".png";
+		
+			try {
+				FileUtils.copyFile(src, new File(destination));
+			} catch (IOException e) {
+				System.out.println("Failed to capture screenshots" + e.getMessage());
+			}
+
+			return destination;
+		}
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

@@ -12,6 +12,7 @@ import java.util.NoSuchElementException;
 import java.util.regex.Pattern;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchFrameException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,6 +24,7 @@ import com.core.actionhandlers.WaitForActionsHandler;
 import com.core.actions.InputActions;
 import com.core.actions.WaitForActions;
 import com.core.config.PropLocatorConfig;
+import com.core.exceptions.FrameNotFoundException;
 /*
 import com.core.actionhandlers.WaitForActionsHandler;
 import com.core.actions.WaitForActions;
@@ -358,7 +360,27 @@ public class PageBase {
 	}
 	
 	
-	
+	public boolean switchToFrame(String id){
+		try{
+			driver.switchTo().frame(id);
+			return true;
+		}catch(NoSuchFrameException e){
+			try{
+				List<WebElement> iframes = driver.findElements(By.tagName("iframe"));
+				if (!iframes.isEmpty()) {
+					for (WebElement iframe : iframes) {
+						if (iframe.getAttribute("id").equals(id)) {
+							driver.switchTo().frame(id);
+							return true;
+						}
+					}
+				}
+				return false;   
+			} catch (Exception Ex) {
+				throw new FrameNotFoundException("Unable to find a frame with the id '" + id + "'!");
+			}
+		}
+	}
 	
 
 	

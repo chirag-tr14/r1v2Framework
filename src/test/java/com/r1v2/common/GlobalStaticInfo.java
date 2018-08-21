@@ -28,7 +28,11 @@ public interface GlobalStaticInfo {
 	 String PAGEBUILDER_COMMON_URL="pagebuilder.common_url";
 	 String PAGEBUILDER_DEPARTMENT_DROPDOWN ="pagebuilder.department_dropdown.list";
 	 String PAGEBUILDER_DEPARTMENT_DROPDOWN_LIST= "pagebuilder.department_dropdown_labels";
+	 
+	 String PAGEBUILDER_COMMON_RESPONSIVEFRAME="pagebuilder.common_responsiveframe";
+	 String PAGEBUILDER_COMMON_RESPONSIVEBODY="pagebuilder.common_responsivebody";
 	 String PAGEBUILDER_COMMON_RESPONSIVECONTENT="pagebuilder.common_responsivecontent";
+	 
 	 String PAGEBUILDER_COMMON_SAVEBUTTON="pagebuilder.common_saveButton";
 	 String PAGEBUILDER_COMMON_MANDATORY_TEXT="pagebuilder.common_mandatory_text";
 	 //CamapignPage

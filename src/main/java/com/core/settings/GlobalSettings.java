@@ -75,17 +75,17 @@ public class GlobalSettings implements BasicConfig {
 	private   void setHomePages() {
 		for (selectSite page : selectSite.values()) {
 			//If command line parameters are not present
-			if(System.getProperty("euro_home")!=null){
+			if(System.getProperty("admin_home")!=null){
 				homePages.put(page, System.getProperty("euro_home"));
 			}
-			else if(
-				System.getProperty("us_home")!=null){
+			/*else if(
+				System.getProperty("admin_home")!=null){
 					homePages.put(page, System.getProperty("us_home"));
 			}
 			else if(
-					System.getProperty("india_home")!=null){
+					System.getProperty("admin_home")!=null){
 					homePages.put(page, System.getProperty("india_home"));
-			}
+			}*/
 			
 
 			homePages.put(page, propUtil.getString(page.toString().toLowerCase()).trim());

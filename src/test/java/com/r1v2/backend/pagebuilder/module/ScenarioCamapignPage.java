@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 import com.core.util.CSVTable;
 import com.core.util.CSVTableRow;
 import com.core.util.PropertyFileUtil;
+import com.core.util.Utility;
 import com.qa.sc.pageobjects.SCPages;
 import com.r1v2.common.BaseTest;
 import com.r1v2.common.DataBase;
@@ -31,7 +32,7 @@ public class ScenarioCamapignPage extends BaseTest {
 	CSVTable pagebuilderpage = new CSVTable(td.get(propUtil.getString("region")+".PageBuilderFilePath"));
 	List<CSVTableRow> page = pagebuilderpage.getRecords();
 	CSVTableRow pagesdata = page.get(0);
-	
+	CSVTableRow pagesdata1 = page.get(1);
 	String regiondatabase=td.get(propUtil.getString("region")+".env");
 	
 	@BeforeClass
@@ -61,26 +62,23 @@ public class ScenarioCamapignPage extends BaseTest {
 
 		@Test(priority=3)
 		public void testPG_3(){
-			CSVTableRow pagesdata = page.get(1);
 			boolean actual= scpages
 					.verifyMandatoryField();
-			scpages.pageTitle(pagesdata.getString("Title")); 
+			scpages.pageTitle(pagesdata1.getString("Title")); 
 			scpages.verifyMandatoryField();
-			scpages.pageUrl(pagesdata.getString("url"));
+			scpages.pageUrl(pagesdata1.getString("url"));
 		Assert.assertEquals(actual, true, " Title and Url  data  passing on Adding Page ");
 	}
 		
 		@Test(priority=4)
 		public void testPG_4() {
-				CSVTableRow pagesdata = page.get(1);
-					boolean actual= scpages
-						.selectDepartmentdropdownitem(pagesdata.getString("Department"));
-			 Assert.assertEquals(actual, true, " Selecting Depsrtment and Responsive Contnet data passing Responsive Editor ");
+						boolean actual= scpages
+						.selectDepartmentdropdownitem(pagesdata1.getString("Department"));
+			 Assert.assertEquals(actual, true, " Selecting Department and Responsive Contnet data passing Responsive Editor ");
 	}
 		
 		@Test(priority=5)
 		public void testPG_5() throws InterruptedException {
-				CSVTableRow pagesdata1 = page.get(1);
 				String group=pagesdata1.getString("Group");
 				if(("PGA").equals(group)){
 					boolean actual= scpages
@@ -94,17 +92,17 @@ public class ScenarioCamapignPage extends BaseTest {
 				
 		@Test(priority=6)
 			public void testPG_6() {
-		        CSVTableRow pagesdata = page.get(1);
-				boolean actual= scpages
-					.resposniveContent(pagesdata.getString("Responsive_Content"));
+		        boolean actual= scpages
+					.resposniveContent(pagesdata1.getString("Responsive_Content"));
 		Assert.assertEquals(actual, true, " Selecting Depsrtment and Responsive Contnet data passing Responsive Editor ");
 			}
 
 		@Test(priority=7)
 		public void testPG_7() {
-			boolean actual= scpages
+						boolean actual= scpages
 					.savePage()
 			.veirfyPageTitle(pagesdata.getString("PageTitle"));
+			Utility.captureScreenshot(driver, "CampaignPageSaved");
 		Assert.assertEquals(actual, true, " Campaign Page Save");
 	}
 		
@@ -114,16 +112,7 @@ public class ScenarioCamapignPage extends BaseTest {
 			               scpages.browserClose();			
 		Assert.assertEquals(actual, true, "LogOut and Close the browser ");
 	    }
-		
-	/*@Test(priority=9)
-		public  String testPG_9() {
-			       String query="select fk_webpage_id from page_dealer_map where  date_created= CURDATE() and "
-			       		+ ""+pagesdata.getString("DealerId");
-					String webpageid = database.executeSQLQuery(regiondatabase,query);
-					System.out.println(webpageid);
-			return webpageid;
-	    }*/
-		
+	
 }
 
 

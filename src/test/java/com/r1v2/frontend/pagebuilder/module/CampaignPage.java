@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import com.core.util.CSVTable;
 import com.core.util.CSVTableRow;
 import com.core.util.PropertyFileUtil;
+import com.core.util.Utility;
 import com.qa.sc.pageobjects.SCPages;
 import com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage;
 import com.r1v2.backend.pagebuilder.module.ScenarioContentPage;
@@ -72,6 +73,8 @@ public class CampaignPage extends BaseTest {
 		// SCPages actual=
 		pages.frontendUrl(pagesdata.getString("Dealers") + contentpageurl);
 		// Assert.assertEquals(actual, true, "Page is not Loading ");
+		
+		Utility.captureScreenshot(driver, "Front end CampaignPage");
 	}
 
 }

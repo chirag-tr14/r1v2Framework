@@ -5,17 +5,37 @@
     <classes>
       <class name="com.r1v2.backend.pagebuilder.module.ScenarioSpecialPage">
         <methods>
+          <include name="testPG_7"/>
+          <include name="testPG_6"/>
           <include name="testPG_5"/>
           <include name="getResult"/>
           <include name="setUpOnce1"/>
           <include name="setUp"/>
+          <include name="testPG_4"/>
+          <include name="testPG_3"/>
+          <include name="testPG_2"/>
           <include name="beforeClass"/>
+          <include name="testPG_1"/>
         </methods>
       </class> <!-- com.r1v2.backend.pagebuilder.module.ScenarioSpecialPage -->
+      <class name="com.r1v2.backend.pagebuilder.module.ScenarioContentPage">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUpOnce1"/>
+          <include name="setUp"/>
+          <include name="testPG_6"/>
+          <include name="testPG_5"/>
+          <include name="beforeClass"/>
+          <include name="testPG_7"/>
+        </methods>
+      </class> <!-- com.r1v2.backend.pagebuilder.module.ScenarioContentPage -->
       <class name="com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage">
         <methods>
           <include name="setUpOnce1"/>
+          <include name="testPG_4"/>
+          <include name="testPG_7"/>
           <include name="getResult"/>
+          <include name="testPG_8"/>
           <include name="setUp"/>
           <include name="testPG_5"/>
           <include name="beforeClass"/>
@@ -23,4 +43,17 @@
       </class> <!-- com.r1v2.backend.pagebuilder.module.ScenarioCamapignPage -->
     </classes>
   </test> <!-- SC PageBuilder Pages(failed) -->
+  <test thread-count="3" verbose="10" name="Front end Pages(failed)" parallel="classes">
+    <classes>
+      <class name="com.r1v2.frontend.pagebuilder.module.CampaignPage">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUpOnce1"/>
+          <include name="testCPG_1"/>
+          <include name="setUp"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.r1v2.frontend.pagebuilder.module.CampaignPage -->
+    </classes>
+  </test> <!-- Front end Pages(failed) -->
 </suite> <!-- Failed suite [Test suite] -->

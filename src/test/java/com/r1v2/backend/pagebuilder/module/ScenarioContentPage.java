@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
 import com.core.util.CSVTable;
 import com.core.util.CSVTableRow;
 import com.core.util.PropertyFileUtil;
@@ -69,7 +70,6 @@ public class ScenarioContentPage extends BaseTest{
 
 	@Test(priority=4)
 	public void testPG_4() {
-		
 			boolean actual= scpages
 					.verifyMandatoryField();
 			scpages.pageTitle(pagesdata.getString("Title"));
@@ -80,49 +80,36 @@ public class ScenarioContentPage extends BaseTest{
 	
 	@Test(priority=5)
 	public void testPG_5() {
-					boolean actual= scpages
-					.selectDepartmentdropdownitem(pagesdata.getString("Department"));
-					scpages.resposniveContent(pagesdata.getString("Responsive_Content"));
+					boolean actual=scpages.
+					selectDepartmentdropdownitem(pagesdata.getString("Department"));
+	  Assert.assertEquals(actual, true, " Selecting Depsrtment and Responsive Contnet data passing Responsive Editor ");
+	}
+
+	
+	@Test(priority=6)
+	public void testPG_6() {
+					boolean actual=scpages.
+					resposniveContent(pagesdata.getString("Responsive_Content"));
 		     Assert.assertEquals(actual, true, " Selecting Depsrtment and Responsive Contnet data passing Responsive Editor ");
 	}
 
-	@Test(priority=6)
-	public void testPG_6() {
+	
+	/*@Test(priority=7)
+	public void testPG_7() {
 			boolean actual= scpages
 					.savePage()
 			.veirfyPageTitle(pagesdata.getString("PageTitle"));
+			Utility.captureScreenshot(driver, "ContentPageSaved");
 			Assert.assertEquals(actual, true, " Responsive Content  data  passing on Responsive Editor  ");
 		}
 
-	@Test(priority=7)
-	public void testPG_7() {
+	@Test(priority=8)
+	public void testPG_8() {
 		boolean actual= scpages.logoutAdmin();
 		                scpages.browserClose();			
 		    Assert.assertEquals(actual, true, "LogOut and Close the browser ");
-    }
-  
-/*	@Test(priority=8)
-	public   void testPG_8() {
-		
-		pagebuilderpage.setCsvFileName(csv);
-		CSVWriter writer = new CSVWriter(new FileWriter(CSV, true));
-		pagebuilderpage.getWriter();
-				//String csvfile="F:\\IZMO FrameWork\\com.r1v2.com\\src\\main\\resource\\USFiles\\PagesData.csv";
-		       String query="select fk_webpage_id from page_dealer_map where  date_created= CURDATE() and "
-		       		+ ""+pagesdata.getString("DealerId");
-		       	String webpageId = database.executeSQLQuery(regiondatabase,query);
-				System.out.println(webpageId);
-				pagesdata.setCell("ModuleID", webpageId);
-				
     }*/
 
-
-	/*@AfterClass
-	public void testPG_8() {
-		Wook.display();
-    }
-*/
-	
 }
 	
 	

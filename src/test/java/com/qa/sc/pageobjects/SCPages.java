@@ -1,7 +1,7 @@
 package com.qa.sc.pageobjects;
 
 
-import static com.r1v2.common.GlobalStaticInfo.HOMEPAGE_CHANGE_PASSWORD;
+import static com.r1v2.common.GlobalStaticInfo.*;
 import static com.r1v2.common.GlobalStaticInfo.HOMEPAGE_LOGOUT_BUTTON;
 import static com.r1v2.common.GlobalStaticInfo.HOMEPAGE_SELECT_ORGANIZATION;
 import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_CAMPAIGN_PAGEBTN;
@@ -180,11 +180,11 @@ public class SCPages extends SCLoginPage {
 	
 	public boolean selectDepartmentdropdownitem(String option)  {
 		boolean flag=false;
-		//clickElement(PAGEBUILDER_DEPARTMENT_DROPDOWN);
+	//	clickElement(PAGEBUILDER_DEPARTMENT_DROPDOWN);PAGEBUILDER_DEPARTMENT_DROPDOWN_LIST
 			List<WebElement> elements = returnWebElements(PAGEBUILDER_DEPARTMENT_DROPDOWN_LIST);
 		 for(WebElement el:elements)
          {
-			 if(el.getText().equalsIgnoreCase(option))
+			 if(el.getText().trim().equalsIgnoreCase(option))
 			 {
 				 el.click();
 				 flag=true;
@@ -197,16 +197,15 @@ public class SCPages extends SCLoginPage {
          }
      return flag;	
 	}
-	
-	
-	public boolean selectformCategorydropdownitem(String option) throws InterruptedException  {
+
+	public boolean selectformCategorydropdownitem(String option)    {
 		boolean flag=false;
 		clickElement(PAGEBUILDER__FORMCATEGORY_DROPDOWN_LIST);
 	
 		List<WebElement> elements = returnWebElements(PAGEBUILDER_COMMON_FORMCATEGORY_LABELS);
 		 for(WebElement el:elements)
          {
-			 if(el.getText().equalsIgnoreCase(option))
+			 if(el.getText().trim().equalsIgnoreCase(option))
 			 {
 				 el.click();
 				 flag=true;
@@ -221,7 +220,11 @@ public class SCPages extends SCLoginPage {
 	}
 	
 	public boolean resposniveContent(String content){
+		
+		//switchToFrame(PAGEBUILDER_COMMON_RESPONSIVEFRAME);
+		//clickElement(PAGEBUILDER_COMMON_RESPONSIVEBODY);
 		enterValue(PAGEBUILDER_COMMON_RESPONSIVECONTENT,content);
+		getWebDriver().switchTo().defaultContent();
 		return true;
 	}
 
@@ -229,7 +232,7 @@ public class SCPages extends SCLoginPage {
 		 clickElement(PAGEBUILDER_COMMON_SAVEBUTTON);
 		 waitforPageTolaod(10);
 		 //System.out.println(getWebDriver().getTitle());
-		 	  return this;
+		 return this;
 	}
 
 	public boolean veirfyPageTitle(String title) {

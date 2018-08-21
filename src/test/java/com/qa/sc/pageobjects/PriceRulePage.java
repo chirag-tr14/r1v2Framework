@@ -32,7 +32,7 @@ public class PriceRulePage extends SCLoginPage {
 
 		List<WebElement> elements = returnWebElements(INVTMGMT_PRICERULE_PRICECATEGORY_LABELS);
 		for (WebElement el : elements) {
-			if (el.getText().equalsIgnoreCase(option)) {
+			if (el.getText().trim().equalsIgnoreCase(option)) {
 				el.click();
 				flag = true;
 				this.drop_down = el.getText();
@@ -50,7 +50,7 @@ public class PriceRulePage extends SCLoginPage {
 
 		List<WebElement> elements = returnWebElements(INVTMGMT_PRICERULE_VEHICLE_TYPE_LABELS);
 		for (WebElement el : elements) {
-			if (el.getText().equalsIgnoreCase(option)) {
+			if (el.getText().trim().equalsIgnoreCase(option)) {
 				el.click();
 				flag = true;
 				this.drop_down = el.getText();
@@ -68,7 +68,7 @@ public class PriceRulePage extends SCLoginPage {
 
 		List<WebElement> elements = returnWebElements(INVTMGMT_PRICERULE_PROVIDER_TYPE_LABELS);
 		for (WebElement el : elements) {
-			if (el.getText().equalsIgnoreCase(option)) {
+			if (el.getText().trim().equalsIgnoreCase(option)) {
 				el.click();
 				flag = true;
 				this.drop_down = el.getText();
@@ -92,7 +92,7 @@ public class PriceRulePage extends SCLoginPage {
 
 		List<WebElement> elements = returnWebElements(INVTMGMT_PRICERULE_DISCOUNT_TYPE_LABELS);
 		for (WebElement el : elements) {
-			if (el.getText().equalsIgnoreCase(option)) {
+			if (el.getText().trim().equalsIgnoreCase(option)) {
 				el.click();
 				flag = true;
 				this.drop_down = el.getText();
@@ -104,7 +104,59 @@ public class PriceRulePage extends SCLoginPage {
 		return flag;
 		
 	}
+	public boolean selectMakeDropdownitem(String option) {
+		boolean flag = false;
+		clickElement(INVTMGMT_PRICERULE_MAKE_LIST);
 
+		List<WebElement> elements = returnWebElements(INVTMGMT_PRICERULE_MAKE_LABELS);
+		for (WebElement el : elements) {
+			if (el.getText().trim().equalsIgnoreCase(option)) {
+				el.click();
+				flag = true;
+				this.drop_down = el.getText();
+				break;
+			} else {
+				flag = false;
+			}
+		}
+		return flag;
+	}
+	public boolean selectModelDropdownitem(String option) {
+		boolean flag = false;
+		//clickElement(INVTMGMT_PRICERULE_MODEL_LIST);
+
+		List<WebElement> elements = returnWebElements(INVTMGMT_PRICERULE_MODEL_LABELS);
+		for (WebElement el : elements) {
+			if (el.getText().trim().equalsIgnoreCase(option)) {
+				el.click();
+				flag = true;
+				this.drop_down = el.getText();
+				break;
+			} else {
+				flag = false;
+			}
+		}
+		return flag;
+	}
+	public boolean selectTrimDropdownitem(String option) {
+		boolean flag = false;
+		//clickElement(INVTMGMT_PRICERULE_TRIM_LIST);
+
+		List<WebElement> elements = returnWebElements(INVTMGMT_PRICERULE_TRIM_LABELS);
+		for (WebElement el : elements) {
+			if (el.getText().trim().equalsIgnoreCase(option)) {
+				el.click();
+				flag = true;
+				this.drop_down = el.getText();
+				break;
+			} else {
+				flag = false;
+			}
+		}
+		return flag;
+	}
+	
+	
 	public boolean discountValue(String value) {
 				enterValue(INVTMGMT_PRICERULE_DISCOUNT_VALUE,value);
 		return true;

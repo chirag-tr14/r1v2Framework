@@ -73,7 +73,7 @@ public class SpecialPage extends BaseTest{
 		//SCPages actual=
 				pages.frontendUrl(pagesdata.getString("Dealers")+contentpageurl);
 		//Assert.assertEquals(actual, true, "Page is not Loading  ");
-				
+				Utility.captureScreenshot(driver, "Front end SpecialPage");		
 				
     }
 

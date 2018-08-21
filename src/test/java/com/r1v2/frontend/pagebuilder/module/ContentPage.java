@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import com.core.util.CSVTable;
 import com.core.util.CSVTableRow;
 import com.core.util.PropertyFileUtil;
+import com.core.util.Utility;
 import com.qa.sc.pageobjects.SCPages;
 import com.r1v2.backend.pagebuilder.module.ScenarioContentPage;
 import com.r1v2.common.BaseTest;
@@ -72,6 +73,7 @@ public class ContentPage extends BaseTest{
 		String webpageId = database.executeSQLQuery(regiondatabase, query);
 		System.out.println(webpageId);
 		pages.frontendUrl(pagesdata.getString("Dealers") + webpageId);
+		Utility.captureScreenshot(driver, "Front end ContentPage");
 	 }	
 	}
 
