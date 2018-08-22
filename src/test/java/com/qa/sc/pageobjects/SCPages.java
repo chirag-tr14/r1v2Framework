@@ -23,6 +23,8 @@ import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER_SPECIAL_PAGE;
 import static com.r1v2.common.GlobalStaticInfo.PAGEBUILDER__FORMCATEGORY_DROPDOWN_LIST;
 import java.util.List;
 import java.util.Map;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import com.core.reports.TestNGCustomReporter;
@@ -176,8 +178,7 @@ public class SCPages extends SCLoginPage {
 	}
 		return (flag);
  }
-	
-	
+
 	public boolean selectDepartmentdropdownitem(String option)  {
 		boolean flag=false;
 	//	clickElement(PAGEBUILDER_DEPARTMENT_DROPDOWN);PAGEBUILDER_DEPARTMENT_DROPDOWN_LIST
@@ -194,7 +195,7 @@ public class SCPages extends SCLoginPage {
              else{
                  flag=false;
              }
-         }
+    }
      return flag;	
 	}
 
@@ -217,17 +218,28 @@ public class SCPages extends SCLoginPage {
              }
          }
      return flag;
-	}
-	
+ }
+
+
 	public boolean resposniveContent(String content){
 		
-		//switchToFrame(PAGEBUILDER_COMMON_RESPONSIVEFRAME);
-		//clickElement(PAGEBUILDER_COMMON_RESPONSIVEBODY);
-		enterValue(PAGEBUILDER_COMMON_RESPONSIVECONTENT,content);
-		getWebDriver().switchTo().defaultContent();
-		return true;
+		/*getWebDriver().switchTo().frame("idContent_editorobj1");
+			ell.click();
+			ell.sendKeys(content);*/
+				//WebElement ell=getWebDriver().findElement(By.xpath("//html/body[1]"));
+		//switchToFrame(PAGEBUILDER_COMMON_RESPONSIVEFRAME1);
+				//clickElement(ell);
+				
+		switchToFrame(PAGEBUILDER_COMMON_RESPONSIVEFRAME1);
+		clickElement(PAGEBUILDER_COMMON_RESPONSIVEBODY);
+		enterValue(PAGEBUILDER_COMMON_RESPONSIVEBODY, content);
+		 getWebDriver().switchTo().defaultContent();
+ 		return true;
 	}
 
+	
+	
+	
 	public SCPages savePage(){
 		 clickElement(PAGEBUILDER_COMMON_SAVEBUTTON);
 		 waitforPageTolaod(10);
@@ -257,14 +269,15 @@ public class SCPages extends SCLoginPage {
 			return flag;
 	}
 
-	public SCPages webPage_id(  ){
+	
+/*	public SCPages webPage_id(  ){
 		String query="select fk_webpage_id from page_dealer_map where  date_created= CURDATE() and "
 	       		+ ""+pagesdata.getString("DealerId");
 			String webpageId = database.executeSQLQuery(regiondatabase,query);
 			System.out.println(webpageId);
 			return this;
 		
-	}
+	}*/
 	
 
 	

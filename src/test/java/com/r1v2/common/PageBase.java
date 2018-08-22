@@ -19,12 +19,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Keyboard;
 import org.openqa.selenium.interactions.Mouse;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.core.actionhandlers.InputActionsHandler;
 import com.core.actionhandlers.WaitForActionsHandler;
 import com.core.actions.InputActions;
 import com.core.actions.WaitForActions;
 import com.core.config.PropLocatorConfig;
 import com.core.exceptions.FrameNotFoundException;
+import com.core.reports.ExtentReport;
 /*
 import com.core.actionhandlers.WaitForActionsHandler;
 import com.core.actions.WaitForActions;
@@ -34,7 +37,7 @@ import com.core.reports.TestNGCustomReporter;
 import com.core.util.LocatorHandler;
 
 
-public class PageBase {
+public class PageBase   {
     
 	protected PageFactory pageFactory;
 	protected WebDriver driver;
@@ -157,6 +160,7 @@ public class PageBase {
 			if(key!=null){
 				String[] rptr = key.split(Pattern.quote("."));
 				TestNGCustomReporter.logbr(rptr+" is present");
+				
 			}
 		}else if(elements.size() < 1){
 			if(key==null){
@@ -180,6 +184,7 @@ public class PageBase {
 	{
 		driver.get(homepageURL);
 		TestNGCustomReporter.logbr("Opened URL : "+homepageURL);
+		
 	}
 
 	
@@ -240,9 +245,8 @@ public class PageBase {
 
 	public void clickElement(WebElement element) {
 		TestNGCustomReporter.logbr("Clicked on "+element.getText());
-		element.click();
+			element.click();
 	}
-	
 	
 
 	public void clickElement(String key) {
@@ -259,6 +263,7 @@ public class PageBase {
 			element.clear();
 		element.sendKeys(value);
 		TestNGCustomReporter.logbr("Entered value "+value);
+		
 	}
 	public void enterValue(String key,String value) {
 		enterValue(returnWebElement(key), value);
@@ -271,9 +276,11 @@ public class PageBase {
 
 	public boolean verifyWebElement(WebElement element) {
 		if(element.isDisplayed())
-			TestNGCustomReporter.logbr("Element Displayed "+ element.getText());
+		TestNGCustomReporter.logbr("Element Displayed "+ element.getText());
+	
 		else
-			TestNGCustomReporter.logbr("Element Not Displayed "+ element.getText());
+		TestNGCustomReporter.logbr("Element Not Displayed "+ element.getText());
+		
 		return element.isDisplayed();
 	}
 
@@ -294,7 +301,7 @@ public class PageBase {
 		if(element.isEnabled())
 			TestNGCustomReporter.logbr("Element Enabled "+ element.getText());
 		else
-			TestNGCustomReporter.logbr("Element Not Enabled "+ element.getText());
+		TestNGCustomReporter.logbr("Element Not Enabled "+ element.getText());
 		return element.isEnabled();
 	}
 
@@ -305,14 +312,14 @@ public class PageBase {
 	public boolean verifyElementSelected(String key) {
 		WebElement element = returnWebElement(key);
 		if(element.isSelected())
-			TestNGCustomReporter.logbr("Element is selected "+ element.getText());
-		else
-			TestNGCustomReporter.logbr("Element is not selected "+ element.getText());
-		return element.isSelected();
+		TestNGCustomReporter.logbr("Element is selected "+ element.getText());
+				else
+		TestNGCustomReporter.logbr("Element is not selected "+ element.getText());
+			return element.isSelected();
 	}
 
 	public void refreshPage(){
-		driver.navigate().refresh();
+		getWebDriver().navigate().refresh();
 		TestNGCustomReporter.logbr("Page Refreshed");
 	}
 
@@ -336,9 +343,9 @@ public class PageBase {
 		String temp=getText(key);
 		boolean flag=temp.trim().equalsIgnoreCase(expected.trim());
 		if(flag)
-			TestNGCustomReporter.logbr(expected+" is displayed");
+		TestNGCustomReporter.logbr(expected+" is displayed");
 		else
-			TestNGCustomReporter.logbr(expected+" is not displayed");
+		TestNGCustomReporter.logbr(expected+" is not displayed");
 		return flag;
 	}
 
@@ -362,15 +369,15 @@ public class PageBase {
 	
 	public boolean switchToFrame(String id){
 		try{
-			driver.switchTo().frame(id);
-			return true;
+		    getWebDriver().switchTo().frame(id);
+		   			return true;
 		}catch(NoSuchFrameException e){
 			try{
-				List<WebElement> iframes = driver.findElements(By.tagName("iframe"));
+				List<WebElement> iframes = getWebDriver().findElements(By.tagName("iframe"));
 				if (!iframes.isEmpty()) {
 					for (WebElement iframe : iframes) {
 						if (iframe.getAttribute("id").equals(id)) {
-							driver.switchTo().frame(id);
+							getWebDriver().switchTo().frame(id);
 							return true;
 						}
 					}
@@ -381,13 +388,7 @@ public class PageBase {
 			}
 		}
 	}
-	
-
-	
-	
-	
-	
-	
-	
-
 }
+
+
+

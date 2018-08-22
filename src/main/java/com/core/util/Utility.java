@@ -6,10 +6,9 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
-
-import org.apache.commons.collections.map.StaticBucketMap;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.codehaus.plexus.util.FileUtils;
@@ -17,6 +16,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import com.r1v2.common.BaseTest;
 import com.r1v2.common.DataBase;
 
 /**
@@ -26,63 +26,64 @@ import com.r1v2.common.DataBase;
  * functions that are used for automation
  * 
  * 
-
+ * 
  * 
  **/
 public class Utility {
-	DataBase database;
+
 	public static final Logger logger = LogManager.getLogger(Utility.class);
 
-		
-	public  static void processQue(String query) throws InterruptedException{
+	public static void processQue(String query) throws InterruptedException {
+
+		DataBase database = new DataBase();
+		BaseTest t = new BaseTest();
+		Map<String, String> td = t.getTestDataProperties();
+		PropertyFileUtil propUtil = new PropertyFileUtil("config");
+		String regiondatabase = td.get(propUtil.getString("region") + ".env");
+
 		Boolean isProcessing = true;
 		while (isProcessing) {
-		//String proceesque = database.executeSQLQuery(regiondatabase, processqueQuery);
-		System.out.println(query);
-		if (query == null || query.isEmpty()) {
-			break;
+			String proceesque = database.executeSQLQuery(regiondatabase, query);
+			System.out.println(proceesque);
+			if (proceesque == null || proceesque.isEmpty()) {
+				break;
+			}
+			TimeUnit.SECONDS.sleep(15);
 		}
-		TimeUnit.SECONDS.sleep(10);
-		} 
 		System.out.println("Job done getting out!!!!");
-	} 
-	//This Method return Current Date 
+	}
+
+	// This Method return Current Date
 	public static String getTodaysDate(String format) {
 		DateFormat dateFormat = new SimpleDateFormat(format);
 		Calendar cal = Calendar.getInstance();
 		return dateFormat.format(cal.getTime());
 	}
+
+	// public static DateFormat dateformat = new
+	// SimpleDateFormat("yyyy_MM_dd_hh_mm_ss");
 	
 	
-		//public static DateFormat dateformat = new SimpleDateFormat("yyyy_MM_dd_hh_mm_ss");
-		public static String captureScreenshot(WebDriver driver, String screenshotName) {
+	public static String captureScreenshot(WebDriver driver, String screenshotName) {
 
-			String datename = new SimpleDateFormat("yyyy_MM_dd_hh_mm_ss").format(new Date());
+		String datename = new SimpleDateFormat("yyyy_MM_dd_hh_mm_ss").format(new Date());
 
-			TakesScreenshot ts = (TakesScreenshot) driver;
+		TakesScreenshot ts = (TakesScreenshot) driver;
 
-			File src = ts.getScreenshotAs(OutputType.FILE);
+		File src = ts.getScreenshotAs(OutputType.FILE);
 
-			String destination = "F:\\IZMO FrameWork\\com.r1v2.com\\ScreenShots\\PageBuilder\\" +screenshotName  + 
-					datename+  ".png";
-		
-			try {
-				FileUtils.copyFile(src, new File(destination));
-			} catch (IOException e) {
-				System.out.println("Failed to capture screenshots" + e.getMessage());
-			}
+		String destination = "F:\\IZMO FrameWork\\com.r1v2.com\\ScreenShots\\PageBuilder\\" + screenshotName + datename
+				+ ".png";
 
-			return destination;
+		try {
+			FileUtils.copyFile(src, new File(destination));
+		} catch (IOException e) {
+			System.out.println("Failed to capture screenshots" + e.getMessage());
 		}
-		
-	
-	
-	
-	
-	
-	
-	
-	
+
+		return destination;
+	}
+
 	
 	
 	
@@ -105,8 +106,6 @@ public class Utility {
 		return emailAddress;
 	}
 
-	
-
 	public static String stripNonDigits(final CharSequence input) {
 		final StringBuilder sb = new StringBuilder(input.length());
 		for (int i = 0; i < input.length(); i++) {
@@ -126,7 +125,7 @@ public class Utility {
 			sb.append(AB.charAt(rnd.nextInt(AB.length())));
 		return sb.toString();
 	}
-	
+
 	public static String getRandomAlphabet(int len) {
 		final String AB = "qwertyuiopasdfghjklzxcvbnmABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		Random rnd = new Random();
@@ -136,14 +135,4 @@ public class Utility {
 		return sb.toString();
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

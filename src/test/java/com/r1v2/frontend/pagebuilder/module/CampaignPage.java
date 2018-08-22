@@ -45,23 +45,22 @@ public class CampaignPage extends BaseTest {
 
 		String processqueQuery = "select  module_id  from  process_que where  page_type='CAMP' "
 				+ "and change_flag=1 and  curdate()and fk_dealer_id=" + pagesdata.getString("DealerId");
-		// String proceesque = database.executeSQLQuery(regiondatabase,
-		// processqueQuery);
-		// Utility.processQue(proceesque);
+		 //String proceesque = database.executeSQLQuery(regiondatabase, processqueQuery);
+		 Utility.processQue(processqueQuery);
 
-		Boolean isProcessing = true;
+		/*Boolean isProcessing = true;
 		while (isProcessing) {
 			String proceesque = database.executeSQLQuery(regiondatabase, processqueQuery);
 			System.out.println(proceesque);
 			if (proceesque == null || proceesque.isEmpty()) {
 				break;
 			}
-			TimeUnit.SECONDS.sleep(10);
+			TimeUnit.SECONDS.sleep(15);
 		}
 		System.out.println("Job done getting out!!!!");
 
+	}*/
 	}
-
 	@Test(priority = 1)
 	public void testCPG_1() {
 		CSVTableRow pagesdata = page.get(3);
@@ -70,11 +69,8 @@ public class CampaignPage extends BaseTest {
 				+ "status='ACTV' and fk_dealer_id=" + pagesdata.getString("DealerId");
 
 		String contentpageurl = database.executeSQLQuery(regiondatabase, sqlQuery);
-		// SCPages actual=
 		pages.frontendUrl(pagesdata.getString("Dealers") + contentpageurl);
-		// Assert.assertEquals(actual, true, "Page is not Loading ");
-		
-		Utility.captureScreenshot(driver, "Front end CampaignPage");
+					Utility.captureScreenshot(driver, "Front end CampaignPage");
 	}
 
 }

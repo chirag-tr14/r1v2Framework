@@ -94,8 +94,6 @@ public class SCLoginPage extends PageBase {
 		return true;
 	}
 
-
-	
 }
 	
 

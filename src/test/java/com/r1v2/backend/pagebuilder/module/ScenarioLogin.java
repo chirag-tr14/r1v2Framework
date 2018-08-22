@@ -11,7 +11,7 @@ import com.core.util.PropertyFileUtil;
 import com.qa.sc.pageobjects.SCLoginPage;
 import com.r1v2.common.BaseTest;
 
-public class Scenario1Login extends BaseTest {
+public class ScenarioLogin extends BaseTest {
 	private SCLoginPage loginPage ;
 	private Map<String, String> td = getTestDataProperties();
 	private PropertyFileUtil propUtil = new PropertyFileUtil("config");

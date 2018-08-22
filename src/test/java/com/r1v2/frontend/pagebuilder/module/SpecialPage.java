@@ -41,12 +41,11 @@ public class SpecialPage extends BaseTest{
 		extentTest = report.createTest(getClass().getName());
 			 database=getPageFactory().databse();
 			 pages=getPageFactory().scHomePage();
-			 String processqueQuery="select  module_id  from  process_que where  page_type='SPEL' "
+			 String processqueQuery="select  module_id  from  process_que where  page_type='SPEL'"
 						+ "and change_flag=1 and  curdate()and fk_dealer_id="+pagesdata.getString("DealerId");
 				
-				/*String proceesque=database.executeSQLQuery(regiondatabase,processqueQuery);
-				Utility.processQue(proceesque);*/
-				 Boolean isProcessing = true;
+				Utility.processQue(processqueQuery);
+				/* Boolean isProcessing = true;
 				   while (isProcessing) { 
 					 String proceesque =database.executeSQLQuery(regiondatabase, processqueQuery);
 					 	System.out.println(proceesque); 
@@ -57,7 +56,7 @@ public class SpecialPage extends BaseTest{
 				  //Thread.sleep(10000);
 				  
 				  } System.out.println("Job done getting out!!!!"); 
-				
+				*/
 	}
 	
 	@Test(priority=1)

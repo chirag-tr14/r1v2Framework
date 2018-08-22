@@ -16,6 +16,15 @@
     </classes>
  </test> 
  
+ <test  name="Front end Pages" parallel="classes">
+    <classes>
+       <class name="com.r1v2.frontend.pagebuilder.module.CampaignPage"/>
+       <class name="com.r1v2.frontend.pagebuilder.module.SpecialPage"/>
+       <class name="com.r1v2.frontend.pagebuilder.module.ContentPage"/>
+    </classes>
+ </test>  
+ 
+ 
  <!-- <test  name="SC PriceRule Pages" parallel="classes">
     <classes>
       <class name="com.r1v2.backend.pricerule.module.ScenarioDealerDiscount"/>
@@ -26,13 +35,7 @@
  </test> 
   -->
 
- <test  name="Front end Pages" parallel="classes">
-    <classes>
-      <class name="com.r1v2.frontend.pagebuilder.module.ContentPage"/>
-      <class name="com.r1v2.frontend.pagebuilder.module.CampaignPage"/>
-      <class name="com.r1v2.frontend.pagebuilder.module.SpecialPage"/>
-    </classes>
- </test>  
+ 
 
 
 
