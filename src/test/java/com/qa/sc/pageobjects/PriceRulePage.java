@@ -18,6 +18,8 @@ public class PriceRulePage extends SCLoginPage {
 	}
 
 	private String drop_down;
+	
+	
 
 	public boolean navigatePriceRulePage() {
 		clickElement(INVTMGMT_INVTMANAGE_MENU);
