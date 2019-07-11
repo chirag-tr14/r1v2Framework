@@ -26,6 +26,7 @@ public class SCLoginPage extends PageBase {
 		return this;
 	}
 	
+	
 	public   SCPages frontendUrl(String url){
 		
 		openHomepage(url);
