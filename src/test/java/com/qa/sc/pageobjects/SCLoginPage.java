@@ -14,10 +14,11 @@ import com.r1v2.common.PageFactory;
 public class SCLoginPage extends PageBase {
 	private String scURL;
 	
-	
+	// conflict 
 	
 	public SCLoginPage(WebDriver webDriver, PageFactory pgFactory) {
 		super(webDriver, pgFactory);
+///test
 	}
 
 	public SCLoginPage openSCLoginpage() {
@@ -25,6 +26,9 @@ public class SCLoginPage extends PageBase {
 		openHomepage(scURL);
 		return this;
 	}
+	
+	
+	
 	
 	
 	public   SCPages frontendUrl(String url){
