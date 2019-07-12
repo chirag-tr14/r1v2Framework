@@ -13,8 +13,7 @@ import com.r1v2.common.PageFactory;
 
 public class SCLoginPage extends PageBase {
 	private String scURL;
-	
-	// conflict 
+		// conflict 
 	
 	public SCLoginPage(WebDriver webDriver, PageFactory pgFactory) {
 		super(webDriver, pgFactory);
