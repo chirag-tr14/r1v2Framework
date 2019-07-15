@@ -3,15 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.r1v2.frontend.pagebuilder.module.ContentPage">
+      <class name="com.r1v2.backend.pagebuilder.module.Sample">
         <methods>
-          <include name="getResult"/>
-          <include name="setUp"/>
-          <include name="setUpOnce1"/>
-          <include name="testCOPG_1"/>
-          <include name="beforeClass"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- com.r1v2.frontend.pagebuilder.module.ContentPage -->
+      </class> <!-- com.r1v2.backend.pagebuilder.module.Sample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
