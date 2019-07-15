@@ -11,7 +11,7 @@ public class Sample {
 		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", 
 				"C:\\Users\\Rajesh.n2\\Desktop\\Driver\\chrome\\chromedriver.exe");
-		driver=new ChromeDriver();
+	      	driver=new ChromeDriver();
 		
 	}
 

@@ -33,7 +33,7 @@ public class ScenarioCamapignPage extends BaseTest {
 	List<CSVTableRow> page = pagebuilderpage.getRecords();
 	CSVTableRow pagesdata = page.get(0);
 	CSVTableRow pagesdata1 = page.get(1);
-	String regiondatabase=td.get(propUtil.getString("region")+".env");
+	  String regiondatabase=td.get(propUtil.getString("region")+".env");
 	
 	@BeforeClass
 	public void setUpOnce1() {
